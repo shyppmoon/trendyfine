@@ -1,0 +1,240 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script type="text/javascript">
+var process_request = "{$lang.process_request}";
+</script>
+ 
+<div class="block clearfix" >
+ <div class="f_l">
+ 
+ 
+ 
+ <a id="logo" href="../index.php"  >
+	<img src="../images/logo.gif" />
+	<span>Homepage</span>
+	</a>
+ 
+<p id="slogan"><a href="http://www.lightinthebox.com/">Shopping Global</a> <br>One World One Price</p>
+ 
+ 
+ 
+ 
+ 
+ 
+ </div>
+ 
+ 
+ <div style=" float:right">
+ 
+ <div class="f_r log"> 
+
+ 
+ <div style="float:right;  ">
+  <a href="../index.php" class="home"></a>
+ {insert_scripts files='utils.js'}
+   <font id="ECS_MEMBERZONE">{* ECSHOP 提醒您：根据用户id来调用member_info.lbi显示不同的界面  *}{insert name='member_info'} </font>
+ 
+    <!--{if $navigator_list.top}-->
+   
+    <!-- {foreach name=nav_top_list from=$navigator_list.top item=nav} -->
+    
+   <b>·</b>
+    
+      <a href="{$nav.url}" <!-- {if $nav.opennew eq 1} --> target="_blank" <!-- {/if} -->>{$nav.name}</a>
+        
+    <!-- {/foreach} -->
+ 
+   <!-- {/if} --> 
+   <select name="hbxz" id="hbxz" onchange="changhb(this.value)" style="margin-left:5px;">
+      <option value="USD" selected="selected">US Dollars</option><option value="GBP">GBP</option><option value="AUD">AUD</option><option value="EUR">Euro</option> 
+      </select>
+ </div>  
+ 
+ 
+ 
+   
+ </div>
+ 
+ <div class="blank"></div>
+ 
+ <div class="f_r">
+ 
+  <div style="float:left;  " id="google_translate_element"><div class="skiptranslate goog-te-gadget" dir="ltr" style=""> </div> </div>
+   <a href="http://www.lovelywholesale.com/dialog_4.htm?arg=macmakeup&amp;style=3&amp;kflist=off&amp;kf=macmakeup,liumin&amp;zdkf_type=1&amp;language=en&amp;charset=utf-8&amp;lytype=0&amp;referer=http%3A%2F%2Fcrm.glyle.net%2F&amp;keyword=http%3A//www.lovelywholesale.com/lovelyadm/index.php%3Fact%3Dtop&amp;tfrom=1&amp;tpl=crystal_blue">
+ <img style="float:left; padding-left:6px; padding-top:4px;" src="themes/lightin/images/chat.gif">
+ </a>
+  </div>
+ 
+   <script type="text/javascript">
+    function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'UA-24541816-1'}, 'google_translate_element');
+}
+    </script><script type="text/javascript" src="themes/lightin/js/element.js"></script>
+ 
+ 
+ 
+ 
+</div>
+<div  class="blank"  ></div>
+
+<script type="text/javascript">
+var _gaq = [], litb = {"baseURL":"http:///","imagesURL":["","","","","","","",""],"theme":"default","curDate":"2012/10/01 01:49:42","lan":"en","currency":"USD","ctrPath":"","currSymbol":"USD $","mainPage":"index","ctr":[]};
+</script>
+ <script type="text/javascript" src="themes/lightin/js/transport_1.js"></script>
+ <script type="text/javascript" src="themes/lightin/js/jquery.js"></script>
+ <script type="text/javascript" src="themes/lightin/js/jscript_global_en.js"></script>
+
+ 
+
+<div class="widget w-mainNav" id="mainNav">
+<div class="allCates navSp">
+<dl>
+<dt><b><a class="linkAllCate" href="catalog.php"  >SHOP ALL CATEGORIES</a></b>
+</dt>
+<dd class="cateWrap">
+    <!--{foreach from=$categories item=cat name=no}-->
+    <div class="cate <!-- {if $smarty.foreach.no.last} -->  last  <!-- {/if} -->" >
+        <h2 class="">
+        	<a href="{$cat.url}">{$cat.name|escape:html}<span>&nbsp;(13416)</span><em style="display: block; "></em></a>
+        </h2>
+        <div class="subMenu" style="width:600px; display: none; top: 0px; ">
+            <div class="subCate" style="width:400px;">
+            <!--{foreach from=$cat.cat_id item=child}-->
+                <dl>
+                    <dt> <a href="{$child.url}">{$child.name|escape:html}</a> </dt>
+                    <!--{foreach from=$child.cat_id item=childer}-->
+                    <dd><a class="view-all" href="{$childer.url}">{$childer.name|escape:html}»</a></dd>
+                    <!--{/foreach}-->
+                </dl> 
+            <!--{/foreach}-->
+            </div>
+            <div class="specialOffer">
+                <dl>
+                    <dt><span>Offres exclusives</span></dt>
+                    <dd>
+                    <p><a href="#">SALE! Wedding Dresses</a></p>
+                    <p><a href="#">NEW! Dress Collection</a></p>
+                    <p><a href="#">Dresses Under $100</a></p>
+                    <p><a href="#">SALE! Weekly Deals</a></p>
+                    <p><a href="#">SALE! All Accessories</a></p>
+                    <p><a href="#">Favors Under $5</a></p>
+                    <p><a href="#">Bottle Favors</a></p>
+                    <p><a href="#">Bridal Wraps</a></p>
+                    <p><a href="#">Favor Holders</a></p>
+                    <p><a href="#">Dancewear & Dance Shoes</a></p>
+                    <p><a href="#">Fur & Leather</a></p>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <!--{/foreach}-->    
+</dd>
+</dl>
+</div>
+<div class="mainSearch navSp">
+<div id="searchWrap" class="navSp">
+<div id="searchWrapInner" class="navSp">
+ 
+
+
+<form id="searchForm" name="searchForm" method="get" action="search.php" onSubmit="return checkSearchForm()"  class="navSp"   >
+  
+   <input name="keywords" type="text" id="keyword" value="{$search_keywords|escape}" class="searchArea" maxlength="120" style="background:#fefdf9"   />
+ <button class="searchBtn navSp" type="submit"></button> 
+   </form>
+
+
+
+</div>
+</div>
+ 
+ <div id="uniYourCart" class="navSp">
+<dl id="cartContainer" class="js_toggleCart cartWidth">
+  {insert name='cart_info'} 
+ </dl>
+
+</div>
+<script>
+(function(){
+	var cateWrap = $('#mainNav .cateWrap');
+	var showingCate, showingMenu;
+	litb['onMenu'] = false;
+	function hideCate() {
+		if (showingCate != null) {
+			showingCate.removeClass('hover').find('h2 em').show();
+			showingMenu.hide();
+		};
+	}
+	function showCate(cate) {
+		var currentCate = $(cate), subMenu = currentCate.children('.subMenu');
+		return function() {
+			hideCate();
+			currentCate.addClass('hover').find('h2 em').hide();
+			subMenu.show().ie6bgiframe();
+			var wrapTop = cateWrap.offset().top, scrollTop = $(window).scrollTop(),
+				menuHeight = subMenu.height(), cateTop = currentCate.offset().top,
+				cateBottom = cateTop + currentCate.height(),
+				menuTop = wrapTop >= scrollTop ? wrapTop : scrollTop;
+			var spare = 20;
+			if (menuTop + menuHeight >= cateBottom + spare) {
+				subMenu.css('top', menuTop - cateTop);
+			} else {
+				subMenu.css('top', cateBottom - cateTop + spare - menuHeight);
+			};
+			showingCate = currentCate;
+			showingMenu = subMenu;
+		};
+	};
+	
+	var browser = $.browser, isIE9 = browser.msie === true && browser.version === '9.0';
+	$('#mainNav div.cate').each( function(n){
+		if(!isIE9){
+			var timer;
+			$(this).hover(function(){
+				if($('.subMenu',this).size() === 0)$(this).append(navgationArray[n]);
+				timer = window.setTimeout(showCate(this), 25);
+			}, function(){
+				window.clearTimeout(timer);
+			});
+		}else{//IE9特殊处理之
+			$(this).hover(function(){
+				if($('.subMenu',this).size() === 0)$(this).append(navgationArray[n]);
+				showCate(this)();
+			}, function(){
+				hideCate();
+			});
+		}
+	});
+			$('#mainNav .allCates').mouseleave(function(){
+			hideCate();
+		});
+	
+})();
+ $('.js_toggleCart').hover(function(){
+	var $me = $(this), loaded = false;
+	$me.addClass('over');
+	if (!$me.data('cartInfo')) {
+	$me.data('cartInfo', 'loading');
+ 	 
+	 
+	}  
+}, function(){
+	$(this).removeClass('over');
+});
+ 
+ 
+</script>
+</div>
+
+
+</div>
+ </div>
+<div class="blank"></div>
+ 
+ 
+
+ 
+
+ 
+
+

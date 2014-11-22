@@ -1,0 +1,23 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ 
+  <div class="tit_2"><span><a href="{$goods_cat.url}" class="f6">{$goods_cat.name|escape:html}</a></span>   <a href="../search.php?intro=hot" class="clear more right">See More »</a>  </div>
+  <div class="blank"></div>
+  <div class="tab_body" >
+      <!--{foreach from=$cat_goods item=goods name=no}-->
+      <div class="goodsItem <!-- {if $smarty.foreach.no.iteration<5}-->goodsItem_yipai<!--{/if}-->"   <!--{if $smarty.foreach.no.index mod 4 eq 0}-->id=""<!--{else}-->id="jianju"<!--{/if}-->>
+           <a href="{$goods.url}"><img src="{$goods.thumb}" alt="{$goods.name|escape:html}" class="goodsimg" /></a><br />
+           <p><a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.short_name|escape:html}</a></p>
+           <!-- {if $goods.promote_price neq ""} -->
+          <font class="shop_s">{$goods.promote_price}</font>
+          <!-- {else}-->
+          <font class="shop_s">{$goods.shop_price}</font>
+          <!--{/if}-->
+          
+            <font class="market">{$goods.market_price}</font> 
+   
+          
+          
+        </div>
+      <!--{/foreach}-->
+    </div>
+<div class="blank"></div>

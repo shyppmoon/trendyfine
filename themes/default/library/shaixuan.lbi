@@ -1,0 +1,43 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!--{if $price_grade.1 || $filter_attr_list}-->
+<div id="producttypecontainer" class="tm_infor_con"> 
+  
+  <!--{foreach from=$filter_attr_list item=filter_attr name=filter_attr key=key}-->
+  {if $filter_attr.attr_list}
+  <div style="overflow:hidden" class="tm_infor_list clearfix"> <span class="list_tit">{$filter_attr.filter_attr_name|escape:html}</span>
+    <ul id="efficacyselect" class="list_con">
+      <!--{foreach from=$filter_attr.attr_list item=attr name=attr}-->
+      
+      <!--当无选择的时候展示所有的链接，当有选择属性的时候，数量小于或等于1的链接不显示链接只展示内容-->
+      <li <!-- {if $attr.selected} -->class="select"<!-- {/if} --> style="{if $smarty.foreach.attr.iteration>7}display:none{/if}" > <!--{if $flag_filter_attr_link eq 1}--><!--{if $attr.url}--><a href="{$attr.url}">{$attr.attr_value}</a><!--{else}-->{$attr.attr_value}<!--{/if}--><!--{else}--><a href="{$attr.url}">{$attr.attr_value}</a><!--{/if}-->
+      </li>
+ 
+      <!-- {/foreach} --> 
+    </ul>
+    <!--当总数大于7时，才显示【展开更多】--> 
+    <span class="list_more">More</span>
+    <div class="clear"> </div>
+  </div>
+  {/if}
+  <!--{/foreach}--> 
+  
+  <!--{if $price_grade.1}-->
+  <div style="height: auto; overflow:hidden" class="tm_infor_list"> <span class="list_tit">{$lang.price}</span>
+    <ul id="brandselect" class="list_con">
+      <!--{foreach from=$price_grade item=grade}--> 
+      <li <!-- {if $grade.selected} -->class="select"<!-- {/if} -->> <a href="{$grade.url}">{$grade.price_range}</a>
+      <!-- {/foreach} -->
+    </ul>
+    <!--当总数大于7时，才显示【展开更多】--> 
+    <span class="list_more">More</span>
+    <div class="clear"> </div>
+  </div>
+  <!--{/if}--> 
+  
+</div>
+<div style="display: block;" class="material_icon">
+  <div class="attr-extra">
+    <div>SEE ALL<b class="material_more"></b></div>
+  </div>
+</div>
+<!-- {/if} -->

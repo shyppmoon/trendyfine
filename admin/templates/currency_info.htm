@@ -1,0 +1,88 @@
+<!-- $Id: category_info.htm 16752 2009-10-20 09:59:38Z wangleisvn $ -->
+{include file="pageheader.htm"}
+<!-- start add new category form -->
+<div class="main-div">
+  <form action="currency.php" method="post" name="theForm" enctype="multipart/form-data" onsubmit="return validate()">
+  <table width="100%" id="general-table">
+      <tr>
+        <td class="label">{$lang.currency_name}:</td>
+        <td><input type='text' name='currency_name' maxlength="20" value='{$currency.currency_name|escape:html}' size='27' /></td>
+      </tr>
+      <tr>
+        <td class="label">{$lang.currency_icon}:</td>
+        <td><input type="file" name="currency_icon" id="currency_icon" size="45"></td>
+      </tr>
+      <tr>
+        <td class="label">{$lang.currency_to}:</td>
+        <td>
+          <input type='text' name='currency_to' maxlength="20" value='{$currency.currency_to|escape:html}' size='27' /> <font color="red">*</font>
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="label">{$lang.currency_format}:</td>
+        <td>
+          <input type='text' name='currency_format' maxlength="20" value='{$currency.currency_format|escape:html}' size='27' /> <font color="red">*</font>
+          <br />
+          <span style="display:block">显示商品价格的格式，%s将被替换为相应的价格数字。</span>
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="label">{$lang.rate}:</td>
+        <td>
+          <input type='text' name='rate' maxlength="20" value='{$currency.rate|escape:html}' size='27' /> <font color="red">*</font>
+          <br />
+          <span style="display:block">由基本货币转换成新添加货币的比例</span>
+        </td>
+     </tr>
+
+    
+      <tr>
+        <td class="label">{$lang.is_show}:</td>
+        <td>
+          <input type="radio" name="is_show" value="1" {if $currency.is_show neq 0} checked="true"{/if}/> {$lang.yes}
+          <input type="radio" name="is_show" value="0" {if $currency.is_show eq 0} checked="true"{/if} /> {$lang.no}
+        </td>
+      </tr>
+
+
+      
+    
+      </table>
+      <div class="button-div">
+        <input type="submit" value="{$lang.button_submit}" />
+        <input type="reset" value="{$lang.button_reset}" />
+   </div>
+     <input type="hidden" name="old_currency_to" value="{$currency.currency_to}" /> 
+      
+    <input type="hidden" name="act" value="{$form_action}" />
+    <input type="hidden" name="id" value="{$currency.currency_id}" />
+  </form>
+</div>
+{insert_scripts files="../js/utils.js,validator.js"}
+{literal}
+<script language="JavaScript">
+<!--
+document.forms['theForm'].elements['currency_to'].focus();
+/**
+ * 检查表单输入的数据
+ */
+function validate()
+{
+  validator = new Validator("theForm");
+  validator.required("currency_to",      no_currency_to);
+   validator.required("currency_name",      no_currency_name);
+  validator.required("currency_format",  no_currency_format);
+  return validator.passed();
+}
+onload = function()
+{
+  // 开始检查订单
+  startCheckOrder();
+}
+
+//-->
+</script>
+{/literal}
+{include file="pagefooter.htm"}

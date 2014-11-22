@@ -1,0 +1,77 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<style>
+#focus {display: block;   width:742px;  float:right; height:272px; overflow:hidden}
+#focus A IMG {display: none; width:742px; height:272px}
+#focus A IMG#pc_0 {display: block}
+#focus SPAN.text {display: block; width:742px; height: 30px; position:relative; top:-30px;}
+#focus SPAN.text A {margin-left:1px; font-size: 13px;background: #000;float: left;width: 148px;cursor: pointer;color: #fff;line-height: 30px;height: 30px;text-align: center;text-decoration: none;FILTER: alpha(opacity=70); opacity: 0.7}
+
+#focus SPAN.text A.act {background: #fff; color: #000;FILTER: alpha(opacity=70); opacity: 0.7}
+#focus SPAN.text A b{  font-weight:normal;  }
+ 
+
+#focus SPAN.text A#a4 {border:0; margin-right:0px;}
+</style>
+
+  
+<DIV id=focus>
+    <A href="#1" target=_blank><IMG id=pc_0 src="images/a1.jpg"></A>
+    <A href="#2" target=_blank><IMG id=pc_1 src="images/a2.jpg"></A>
+    <A href="#3" target=_blank><IMG id=pc_2 src="images/a3.jpg"></A>
+    <A href="#4" target=_blank><IMG id=pc_3 src="images/a4.jpg"></A> 
+    <A href="#5" target=_blank><IMG id=pc_4 src="images/a5.jpg"></A> 
+    <SPAN class=text>
+        <A style="margin:0;"  href="#1" target=_blank class=act id=a0 onclick=Mea(0) onmouseover=Mea(0) onmouseout=clearAuto();setAuto()><b>HALLOWEEN 2012</b></A>
+        <A href="#2" target=_blank class=nor id=a1 onclick=Mea(1) onmouseover=Mea(1) onmouseout=clearAuto();setAuto()><b>HAPPY SAVINGS</b></A>
+        <A href="#3" target=_blank class=nor id=a2 onclick=Mea(2) onmouseover=Mea(2) onmouseout=clearAuto();setAuto()><b>SAVE 30%!</b></A> 
+        <A href="#4" target=_blank class=nor id=a3 onclick=Mea(3) onmouseover=Mea(3) onmouseout=clearAuto();setAuto()><b>NEW BAGS</b></A>
+        <A style="width:146px;" href="#5" target=_blank class=nor id=a4 onclick=Mea(4) onmouseover=Mea(4) onmouseout=clearAuto();setAuto()><b style=" width:143px;">SHOP HOMECOMING</b></A>
+        <SPAN class=clear></SPAN>
+    </SPAN>
+</DIV>
+ 
+  
+  
+  <script>
+  //首页焦点图切换JS
+var n=0;
+var showNum = document.getElementById("num");
+function Mea(value){
+	n=value;
+	setBg(value);
+	plays(value);
+	}
+function setBg(value){
+	for(var i=0;i<5;i++){
+	   if(value==i){
+	     document.getElementById("a"+value).className='act';      
+			}	else{	
+			 document.getElementById("a"+i).className='nor';
+			}  
+	} 
+}
+function plays(value){ 
+		 for(i=0;i<5;i++){
+			  if(i==value){			  
+			  	document.getElementById("pc_"+value).style.display="block";
+			  }else{
+			    document.getElementById("pc_"+i).style.display="none";			    
+			  }			
+		}	
+}
+
+function clearAuto(){clearInterval(autoStart)}
+function setAuto(){autoStart=setInterval("auto(n)", 3000)}
+function auto(){
+	n++;
+	if(n>4)n=0;
+	Mea(n);
+} 
+function sub(){
+	n--;
+	if(n<0)n=4;
+	Mea(n);
+} 
+setAuto(); 
+</script>

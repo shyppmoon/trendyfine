@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="TrendyFine Fashion Blogger Program" />
+<meta name="Description" content="TrendyFine Fashion Blogger Program" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>TrendyFine Fashion Blogger Program</title>
+<!-- TemplateEndEditable --><!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+<link href="read_policy.css" rel="stylesheet" type="text/css" />
+{* 包含脚本文件 *}
+</head>
+<body>
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div class="block">
+<div class="ez1">
+		<img src="images/read_policy2.jpg"><br>
+        <h3 style="text-indent: 13px;color: #666666;font-weight: normal;margin-bottom:0px;" class="ez1_head2">2.Choose your favorite TrendyFine Promotion Icon,add the code to your blog. Then contact us via email(<a style="color:orange;" href="mailto:fashion@trendyfine.com">fashion@trendyfine.com</a>).</h3>
+        
+		<h2 class="ez1_head1" style="margin-top: 30px;width: 145px;">Promotion Icon </h2>
+
+        <div style="text-align: center;width:100%" class="">
+	<h2 style=" font-size: 16px;  line-height: 26px;text-align: center;color:#000;">Recommended: </h2>
+	<h2 style=" font-size: 14px;  line-height: 26px;text-align: center;color:#000;">click the Get this widget to get code</h2>
+
+	<iframe frameborder="0" style="width:280px;height:480px;" src="http://www.trendyfine.com/promotion_goods_app.php" scrolling="no"></iframe>
+	</div>
+
+        <div style="margin: 0pt auto; text-align: center;">
+	Image Icon Tips: click the image to get the code
+	<br><br>
+            
+            <a href="#" class="example1 cboxElement"><img style="margin-right: 10px;" src="images/one_1.jpg"></a>
+            <a href="#" class="example2 cboxElement"><img style="margin-right: 10px;" src="images/one_2.jpg"></a>
+            <a href="#" class="example3 cboxElement"><img src="images/one_3.jpg"></a>
+            
+            <div style="width:100%;height:10px;"> </div>
+            <a href="#" class="example4 cboxElement"><img style="margin-bottom: 5px;" src="images/two_1.jpg"></a>
+            <a href="#" class="example5 cboxElement"><img style="margin-bottom: 5px;" src="images/two_2.jpg"></a>
+            <a href="#" class="example6 cboxElement"><img src="images/two_3.jpg"></a>
+            <div style="width:100%;height:10px;"> </div>
+            
+            <a href="#" class="example7 cboxElement"><img style="margin-right: 10px;" src="images/three_1.jpg"></a>
+            <a href="#" class="example8 cboxElement"><img style="margin-right: 10px;" src="images/three_2.jpg"></a>
+            <a href="#" class="example9 cboxElement"><img src="images/three_3.jpg"></a>
+        
+		</div>
+		
+		</div>
+</div>
+<script src="js/jquery.colorbox-min.js" type="text/javascript"></script>
+<script>
+		
+		$(document).ready(function(){
+			//Examples of how to assign the ColorBox event to elements
+			$(".example1").colorbox({width:"35%", inline:true, href:"#inline_example1"});
+			$(".example2").colorbox({width:"35%", inline:true, href:"#inline_example2"});
+			$(".example3").colorbox({width:"35%", inline:true, href:"#inline_example3"});
+			$(".example4").colorbox({width:"35%", inline:true, href:"#inline_example4"});
+			$(".example5").colorbox({width:"35%", inline:true, href:"#inline_example5"});
+			$(".example6").colorbox({width:"35%", inline:true, href:"#inline_example6"});
+			$(".example7").colorbox({width:"35%", inline:true, href:"#inline_example7"});
+			$(".example8").colorbox({width:"35%", inline:true, href:"#inline_example8"});
+			$(".example9").colorbox({width:"35%", inline:true,href:"#inline_example9"});
+			$(".example10").colorbox({width:"35%", inline:true,close:'', href:"#inline_example10"});
+		});
+		
+		</script>
+        
+        
+		<div style="display:none">
+		<div id='inline_example1' style='padding:10px; background:#fff;'>
+		<textarea name="" rows="" cols="" style="width:400px;height:200px" onmousemove=this.select(),this.focus();><a href="{$shop_url}"><img src="{$shop_url}images/one_1.jpg" alt="TrendyFine - Your Online Fashion Wardrobe"></a></textarea>
+		</div>
+		</div>
+		<div style="display:none">
+		<div id='inline_example2' style='padding:10px; background:#fff;'>
+		<textarea name="" rows="" cols="" style="width:400px;height:200px" onmousemove=this.select(),this.focus();><a href="{$shop_url}"><img src="{$shop_url}images/one_2.jpg" alt="TrendyFine - Your Online Fashion Wardrobe"></a></textarea>
+		</div>
+		</div>
+		<div style="display:none">
+		<div id='inline_example3' style='padding:10px; background:#fff;'>
+		<textarea name="" rows="" cols="" style="width:400px;height:200px" onmousemove=this.select(),this.focus();><a href="{$shop_url}"><img src="{$shop_url}images/one_3.jpg" alt="TrendyFine - Your Online Fashion Wardrobe"></a></textarea>
+		</div>
+		</div>
+		<div style="display:none">
+		<div id='inline_example4' style='padding:10px; background:#fff;'>
+		<textarea name="" rows="" cols="" style="width:400px;height:200px" onmousemove=this.select(),this.focus();><a href="{$shop_url}"><img src="{$shop_url}images/two_1.jpg" alt="TrendyFine - Your Online Fashion Wardrobe"></a></textarea>
+		</div>
+		</div>
+		<div style="display:none">
+		<div id='inline_example5' style='padding:10px; background:#fff;'>
+		<textarea name="" rows="" cols="" style="width:400px;height:200px" onmousemove=this.select(),this.focus();><a href="{$shop_url}"><img src="{$shop_url}images/two_2.jpg" alt="TrendyFine - Your Online Fashion Wardrobe"></a></textarea>
+		</div>
+		</div>
+        <div style="display:none">
+		<div id='inline_example6' style='padding:10px; background:#fff;'>
+		<textarea name="" rows="" cols="" style="width:400px;height:200px" onmousemove=this.select(),this.focus();><a href="{$shop_url}"><img src="{$shop_url}images/two_3.jpg" alt="TrendyFine - Your Online Fashion Wardrobe"></a></textarea>
+		</div>
+		</div>
+        <div style="display:none">
+		<div id='inline_example7' style='padding:10px; background:#fff;'>
+		<textarea name="" rows="" cols="" style="width:400px;height:200px" onmousemove=this.select(),this.focus();><a href="{$shop_url}"><img src="{$shop_url}images/three_1.jpg" alt="TrendyFine - Your Online Fashion Wardrobe"></a></textarea>
+		</div>
+		</div>
+        <div style="display:none">
+		<div id='inline_example8' style='padding:10px; background:#fff;'>
+		<textarea name="" rows="" cols="" style="width:400px;height:200px" onmousemove=this.select(),this.focus();><a href="{$shop_url}"><img src="{$shop_url}images/three_2.jpg" alt="TrendyFine - Your Online Fashion Wardrobe"></a></textarea>
+		</div>
+		</div>
+        <div style="display:none">
+		<div id='inline_example9' style='padding:10px; background:#fff;'>
+		<textarea name="" rows="" cols="" style="width:400px;height:200px" onmousemove=this.select(),this.focus();><a href="{$shop_url}"><img src="{$shop_url}images/three_3.jpg" alt="TrendyFine - Your Online Fashion Wardrobe"></a></textarea>
+		</div>
+		</div>
+
+
+	
+
+	<div class="block">
+	<div class="ez1">
+	
+        <h3 style="text-indent: 13px;color: #666666;font-weight: normal;margin-bottom:0px;" class="ez1_head2">3.Choose your favorite TrendyFine Promotion Icon,add the code to your blog. Then contact us via email(<a style="color:orange;" href="mailto:fashion@trendyfine.com">fashion@trendyfine.com</a>).</h3>
+        <br>
+		
+      
+	</div>
+	</div>
+
+		
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+</body>
+</html>

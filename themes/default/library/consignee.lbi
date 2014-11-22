@@ -1,0 +1,147 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<div class="flowBox">
+  <h6><span>{$lang.consignee_info}</span></h6>
+  <div class="flowBoxContent"> 
+  {insert_scripts files='utils.js,transport_1.js'}
+    <table width="100%" align="center" border="0" cellpadding="5" cellspacing="1">
+      <tr>
+        <td colspan="2"><div style="padding:10px; font-weight:bold"> Personal Information&nbsp;&nbsp;&nbsp;* Required Field </div></td>
+      </tr>
+      <tr>
+        <th bgcolor="#ffffff">First Name:</th>
+        <td bgcolor="#ffffff"><input name="firstname" type="text" class="inputBg" id="firstname_{$sn}" value="{$consignee.firstname|escape}" />
+          {$lang.require_field} </td>
+      </tr>
+      <tr>
+        <th bgcolor="#ffffff">Last Name:</th>
+        <td bgcolor="#ffffff"><input name="lastname" type="text" class="inputBg" id="lastname_{$sn}" value="{$consignee.lastname|escape}" />
+          {$lang.require_field} </td>
+      </tr>
+      <tr>
+        <th bgcolor="#ffffff">Country:</th>
+        <td bgcolor="#ffffff"><select name="country" id="selCountries_{$sn}" onchange="getProvince(this.value, 1, 'selProvinces_{$sn}','province')" style="border:1px solid #ccc;">
+            <option value="0">{$lang.please_select}Country</option>
+            <!-- {foreach from=$country_list item=country} -->
+            <option value="{$country.region_id}" {if $consignee.country eq $country.region_id}selected{/if}>{$country.region_name}</option>
+            <!-- {/foreach} -->
+          </select>
+          {$lang.require_field} </td>
+      </tr>
+      <tr>
+        <th bgcolor="#ffffff">State/Province:</th>
+        <td bgcolor="#ffffff">
+        
+        <div class="guest_province_input" id="selProvinces_{$sn}">
+           {if $province_list.$sn}
+           <select name="province" style="border:1px solid #ccc;">
+            <option value="">{$lang.please_select}Province/State</option>
+            <!-- {foreach from=$province_list.$sn item=province} -->
+            <option value="{$province.region_name}" {if $consignee.province eq $province.region_name}selected{/if}>{$province.region_name}</option>
+            <!-- {/foreach} -->
+          </select>
+          {$lang.require_field}
+           {else}
+           <input value="{$consignee.province}" id="province_{$sn}" class="inputBg" name="province"> {$lang.require_field} 
+           {/if}
+        </div>
+       
+          
+          </td>
+      </tr>
+      <tr>
+        <th bgcolor="#ffffff">City:</th>
+        <td bgcolor="#ffffff"><input name="city" type="text" class="inputBg"  id="city_{$sn}" value="{$consignee.city|escape}" size="50"/>
+          {$lang.require_field}</td>
+      </tr>
+      <tr>
+        <th bgcolor="#ffffff">Address Line 1:</th>
+        <td bgcolor="#ffffff"><input name="address" type="text" class="inputBg"  id="address_{$sn}" value="{$consignee.address|escape}" size="50"/>
+          {$lang.require_field}</td>
+      </tr>
+      
+        <th bgcolor="#ffffff">Address Line 2:</th>
+        <td bgcolor="#ffffff"><input name="address_2" type="text" class="inputBg"  id="address_2_{$sn}" value="{$consignee.address_2|escape}" /></td>
+      </tr>
+      <tr>
+        <th bgcolor="#ffffff">Post/Zip Code:</th>
+        <td bgcolor="#ffffff"><input name="zipcode" type="text" class="inputBg"  id="zipcode_{$sn}" value="{$consignee.zipcode|escape}" />
+          {$lang.require_field} </td>
+      <tr>
+        <th bgcolor="#ffffff">Telephone:</th>
+        <td bgcolor="#ffffff"><input name="tel" type="text" class="inputBg"  id="tel_{$sn}" value="{$consignee.tel|escape}" />
+          {$lang.require_field}</td>
+      </tr>
+      <tr>
+        <th bgcolor="#ffffff">Email Address:</th>
+        <td bgcolor="#ffffff"><input name="email" type="text" class="inputBg"  id="email_{$sn}" value="{$consignee.email|escape}" />
+          {$lang.require_field}</td>
+      </tr>
+     
+    </table>
+    
+    {if $smarty.session.user_id==0}
+    <div class="guest_create">
+     <table width="100%" align="center" border="0" cellpadding="5" cellspacing="1">
+      <tr>
+        <th><div style="padding:10px; font-weight:bold"> Create an account </div></th>
+        <td>
+      <input type="radio" value="1" onclick="create_account(1);" name="is_create_account">
+      Yes
+      <input type="radio" value="0" onclick="create_account(0);" checked="checked" name="is_create_account">
+      No
+      <p>
+      <a target="_blank" href="article-58-Why-Register.html" class="why-register" target="_blank"> Why Register? </a> ( Get <strong>20%</strong> off coupon and <a style="margin:0;font-size: 12px;" target="_blank" href="article-58-Why-Register.html" class="why-register">more</a>).</p>
+      </td>
+             </tr>
+
+      <tr>
+                    <th bgcolor="#ffffff" align="left"><strong>Email Address</strong></th>
+                    <td bgcolor="#ffffff"><input name="email_register" type="text" class="inputBg" id="email_1" onblur="checkEmail(this.value);"/><br />
+		    <span id="email_notice" style="color:#FF0000"></span></td>
+                  </tr>
+                  <tr>
+                    <th bgcolor="#ffffff" align="left"><strong>{$lang.password}</strong></th>
+                    <td bgcolor="#ffffff"><input name="password" class="inputBg" type="password" id="password1"/><br />
+		    <span style="color:#FF0000" id="password_notice"></span></td>
+                  </tr>
+                  <tr>
+                    <th bgcolor="#ffffff" align="left"><strong>{$lang.confirm_password}</strong></th>
+                    <td bgcolor="#ffffff"><input name="confirm_password" class="inputBg" type="password" id="confirm_password" /><br />
+		    <span style="color:#FF0000" id="conform_password_notice"></span></td>
+                  </tr>
+                 
+                  <tr style="display:none">
+         <th bgcolor="#ffffff" align="left">&nbsp;</th>
+         <td bgcolor="#ffffff"><label>
+            <input name="agreement" type="checkbox" value="1" checked="checked" />
+            {$lang.agreement}</label></td>
+        </tr>
+                  
+      </table>
+      
+      
+   
+    </div>
+    {/if}
+    
+     <table width="100%" align="center" border="0" cellpadding="5" cellspacing="1">
+      <tr>
+        <th bgcolor="#ffffff">&nbsp;</th>
+        <td align="left" bgcolor="#ffffff"><input type="submit" name="Submit" class="bnt_blue_2" value="Submit" />
+          
+          <!-- {if $smarty.session.user_id gt 0 and $consignee.address_id gt 0} --> 
+          <!-- 如果登录了，显示删除按钮 -->
+          
+          <input name="Submit" type="button" onclick="if (confirm('{$lang.drop_consignee_confirm}')) location.href='flow.php?step=drop_consignee&amp;id={$consignee.address_id}'"  class="bnt_blue" value="{$lang.drop}" />
+          
+          <!-- {/if} -->
+          
+          <input type="hidden" name="step" value="consignee" />
+          <input type="hidden" name="act" value="checkout" />
+          <input name="address_id" type="hidden" value="{$consignee.address_id}" /></td>
+      </tr>
+    </table>
+    
+    
+  </div>
+</div>

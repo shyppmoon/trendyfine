@@ -1,0 +1,8 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<select name="province" id="selProvinces_{$sn}" style="border:1px solid #ccc;">
+  <option value="">{$lang.please_select}Province/State</option>
+  <!-- {foreach from=$province_list.$sn item=province} -->
+  <option value="{$province.region_id}" {if $consignee.province eq $province.region_id}selected{/if}>{$province.region_name}</option>
+  <!-- {/foreach} -->
+</select>
+{$lang.require_field}

@@ -1,0 +1,1491 @@
+
+
+ 开始执行一个新Respond函数
+ $_POST = Array
+(
+)
+
+ $_GET =Array
+(
+    [code] => paypal
+    [payok] => payok
+    [tf_order_amount] => 0.10
+    [tf_curr_rate] => 40.798
+    [tf_order_sn] => 2014101687842
+    [tf_curr_to] => RUB
+    [tx] => 78466786S9799770A
+    [st] => Completed
+    [amt] => 4.08
+    [cc] => RUB
+    [cm] => 
+    [item_number] => 
+)
+
+ $_POST = cmd=_notify-validateres = HTTP/1.0 200 OK
+res = Server: Apache
+res = X-Frame-Options: SAMEORIGIN
+res = Content-Type: text/html; charset=UTF-8
+res = DC: slc-b-origin-www-1.paypal.com
+res = Date: Thu, 16 Oct 2014 08:54:58 GMT
+res = Content-Length: 7
+res = Connection: close
+res = 
+res = INVALID
+  fail at  = 332
+
+ 开始执行一个新Respond函数
+ $_POST = Array
+(
+    [mc_gross] => 4.08
+    [invoice] => 199
+    [protection_eligibility] => Ineligible
+    [payer_id] => Q8H79D9EQTJUY
+    [tax] => 0.00
+    [payment_date] => 01:54:49 Oct 16, 2014 PDT
+    [payment_status] => Completed
+    [charset] => gb2312
+    [first_name] => Jun
+    [mc_fee] => 4.08
+    [notify_version] => 3.8
+    [custom] => 
+    [payer_status] => verified
+    [business] => payment@trendyfine.com
+    [quantity] => 1
+    [verify_sign] => AuZT8KMcAsZMjM3gvSg07NRkQJlCA77fo4qt0ijwIGXaDLmzRQLBU0xI
+    [payer_email] => susanenvystore@outlook.com
+    [txn_id] => 78466786S9799770A
+    [payment_type] => instant
+    [last_name] => Xue
+    [receiver_email] => payment@trendyfine.com
+    [payment_fee] => 
+    [receiver_id] => TDM9D5TRLDA6A
+    [txn_type] => web_accept
+    [item_name] => 2014101687842
+    [mc_currency] => RUB
+    [item_number] => 
+    [residence_country] => CN
+    [handling_amount] => 0.00
+    [transaction_subject] => 
+    [payment_gross] => 
+    [shipping] => 0.00
+    [ipn_track_id] => 49c962883f838
+)
+
+ $_GET =Array
+(
+    [code] => paypal
+)
+
+ $_POST = cmd=_notify-validate&mc_gross=4.08&invoice=199&protection_eligibility=Ineligible&payer_id=Q8H79D9EQTJUY&tax=0.00&payment_date=01%3A54%3A49+Oct+16%2C+2014+PDT&payment_status=Completed&charset=gb2312&first_name=Jun&mc_fee=4.08&notify_version=3.8&custom=&payer_status=verified&business=payment%40trendyfine.com&quantity=1&verify_sign=AuZT8KMcAsZMjM3gvSg07NRkQJlCA77fo4qt0ijwIGXaDLmzRQLBU0xI&payer_email=susanenvystore%40outlook.com&txn_id=78466786S9799770A&payment_type=instant&last_name=Xue&receiver_email=payment%40trendyfine.com&payment_fee=&receiver_id=TDM9D5TRLDA6A&txn_type=web_accept&item_name=2014101687842&mc_currency=RUB&item_number=&residence_country=CN&handling_amount=0.00&transaction_subject=&payment_gross=&shipping=0.00&ipn_track_id=49c962883f838res = HTTP/1.0 200 OK
+res = Server: Apache
+res = X-Frame-Options: SAMEORIGIN
+res = Content-Type: text/html; charset=UTF-8
+res = DC: slc-a-origin-www-1.paypal.com
+res = Date: Thu, 16 Oct 2014 08:55:04 GMT
+res = Content-Length: 8
+res = Connection: close
+res = 
+res = VERIFIED
+ Change Order Status, now at  = 301
+  done  = 199
+
+ 开始执行一个新Respond函数
+ $_POST = Array
+(
+)
+
+ $_GET =Array
+(
+    [code] => paypal
+    [payok] => payok
+    [tf_order_amount] => 0.10
+    [tf_curr_rate] => 40.798
+    [tf_order_sn] => 2014101634658
+    [tf_curr_to] => RUB
+    [tx] => 6SJ15014F84733746
+    [st] => Completed
+    [amt] => 4.08
+    [cc] => RUB
+    [cm] => 
+    [item_number] => 
+)
+
+ $_POST = cmd=_notify-validateres = HTTP/1.0 200 OK
+res = Server: Apache
+res = X-Frame-Options: SAMEORIGIN
+res = Content-Type: text/html; charset=UTF-8
+res = DC: slc-b-origin-www-2.paypal.com
+res = Date: Thu, 16 Oct 2014 09:26:48 GMT
+res = Content-Length: 7
+res = Connection: close
+res = 
+res = INVALID
+  fail at  = 354
+
+ 开始执行一个新Respond函数
+ $_POST = Array
+(
+    [mc_gross] => 4.08
+    [invoice] => 200
+    [protection_eligibility] => Ineligible
+    [payer_id] => Q8H79D9EQTJUY
+    [tax] => 0.00
+    [payment_date] => 02:26:37 Oct 16, 2014 PDT
+    [payment_status] => Completed
+    [charset] => gb2312
+    [first_name] => Jun
+    [mc_fee] => 4.08
+    [notify_version] => 3.8
+    [custom] => 
+    [payer_status] => verified
+    [business] => payment@trendyfine.com
+    [quantity] => 1
+    [verify_sign] => AxcMFSB32JIHwoK-TwCLBIYw4DhlAeQM8QMiMUmIs3g6H3L8BWbaxRGJ
+    [payer_email] => susanenvystore@outlook.com
+    [txn_id] => 6SJ15014F84733746
+    [payment_type] => instant
+    [last_name] => Xue
+    [receiver_email] => payment@trendyfine.com
+    [payment_fee] => 
+    [receiver_id] => TDM9D5TRLDA6A
+    [txn_type] => web_accept
+    [item_name] => 2014101634658
+    [mc_currency] => RUB
+    [item_number] => 
+    [residence_country] => CN
+    [handling_amount] => 0.00
+    [transaction_subject] => 
+    [payment_gross] => 
+    [shipping] => 0.00
+    [ipn_track_id] => 3fced83583a0
+)
+
+ $_GET =Array
+(
+    [code] => paypal
+)
+
+ $_POST = cmd=_notify-validate&mc_gross=4.08&invoice=200&protection_eligibility=Ineligible&payer_id=Q8H79D9EQTJUY&tax=0.00&payment_date=02%3A26%3A37+Oct+16%2C+2014+PDT&payment_status=Completed&charset=gb2312&first_name=Jun&mc_fee=4.08&notify_version=3.8&custom=&payer_status=verified&business=payment%40trendyfine.com&quantity=1&verify_sign=AxcMFSB32JIHwoK-TwCLBIYw4DhlAeQM8QMiMUmIs3g6H3L8BWbaxRGJ&payer_email=susanenvystore%40outlook.com&txn_id=6SJ15014F84733746&payment_type=instant&last_name=Xue&receiver_email=payment%40trendyfine.com&payment_fee=&receiver_id=TDM9D5TRLDA6A&txn_type=web_accept&item_name=2014101634658&mc_currency=RUB&item_number=&residence_country=CN&handling_amount=0.00&transaction_subject=&payment_gross=&shipping=0.00&ipn_track_id=3fced83583a0res = HTTP/1.0 200 OK
+res = Server: Apache
+res = X-Frame-Options: SAMEORIGIN
+res = Content-Type: text/html; charset=UTF-8
+res = DC: slc-b-origin-www-2.paypal.com
+res = Date: Thu, 16 Oct 2014 09:26:48 GMT
+res = Content-Length: 8
+res = Connection: close
+res = 
+res = VERIFIED
+ Change Order Status, now at  = 301
+ Shareasale:https://shareasale.com/sale.cfm?amount=166.45584&tracking=2014101634658&transtype=sale&merchantID=51383, now at  = 335
+  done  = 200
+
+ 开始执行一个新Respond函数
+ $_POST = Array
+(
+)
+
+ $_GET =Array
+(
+    [code] => paypal
+    [payok] => payok
+    [tf_order_amount] => 0.10
+    [tf_curr_rate] => 40.798
+    [tf_order_sn] => 2014101690091
+    [tf_curr_to] => RUB
+    [tx] => 04R911808D063650L
+    [st] => Completed
+    [amt] => 4.08
+    [cc] => RUB
+    [cm] => 
+    [item_number] => 
+)
+
+ $_POST = cmd=_notify-validateres = HTTP/1.0 200 OK
+res = Server: Apache
+res = X-Frame-Options: SAMEORIGIN
+res = Content-Type: text/html; charset=UTF-8
+res = DC: slc-b-origin-www-1.paypal.com
+res = Date: Thu, 16 Oct 2014 12:26:20 GMT
+res = Content-Length: 7
+res = Connection: close
+res = 
+res = INVALID
+
+ 开始执行一个新Respond函数
+ $_POST = Array
+(
+    [mc_gross] => 4.08
+    [invoice] => 202
+    [protection_eligibility] => Ineligible
+    [payer_id] => Q8H79D9EQTJUY
+    [tax] => 0.00
+    [payment_date] => 05:26:11 Oct 16, 2014 PDT
+    [payment_status] => Completed
+    [charset] => gb2312
+    [first_name] => Jun
+    [mc_fee] => 4.08
+    [notify_version] => 3.8
+    [custom] => 
+    [payer_status] => verified
+    [business] => payment@trendyfine.com
+    [quantity] => 1
+    [verify_sign] => AvR6Ca3EcXgBf35MmqT2dOy3GfjeA1l8Rc1DdTjwWhjI3wx2Y-GKIZci
+    [payer_email] => susanenvystore@outlook.com
+    [txn_id] => 04R911808D063650L
+    [payment_type] => instant
+    [last_name] => Xue
+    [receiver_email] => payment@trendyfine.com
+    [payment_fee] => 
+    [receiver_id] => TDM9D5TRLDA6A
+    [txn_type] => web_accept
+    [item_name] => 2014101690091
+    [mc_currency] => RUB
+    [item_number] => 
+    [residence_country] => CN
+    [handling_amount] => 0.00
+    [transaction_subject] => 
+    [payment_gross] => 
+    [shipping] => 0.00
+    [ipn_track_id] => 8854fa2d933f3
+)
+
+ $_GET =Array
+(
+    [code] => paypal
+)
+
+ $_POST = cmd=_notify-validate&mc_gross=4.08&invoice=202&protection_eligibility=Ineligible&payer_id=Q8H79D9EQTJUY&tax=0.00&payment_date=05%3A26%3A11+Oct+16%2C+2014+PDT&payment_status=Completed&charset=gb2312&first_name=Jun&mc_fee=4.08&notify_version=3.8&custom=&payer_status=verified&business=payment%40trendyfine.com&quantity=1&verify_sign=AvR6Ca3EcXgBf35MmqT2dOy3GfjeA1l8Rc1DdTjwWhjI3wx2Y-GKIZci&payer_email=susanenvystore%40outlook.com&txn_id=04R911808D063650L&payment_type=instant&last_name=Xue&receiver_email=payment%40trendyfine.com&payment_fee=&receiver_id=TDM9D5TRLDA6A&txn_type=web_accept&item_name=2014101690091&mc_currency=RUB&item_number=&residence_country=CN&handling_amount=0.00&transaction_subject=&payment_gross=&shipping=0.00&ipn_track_id=8854fa2d933f3res = HTTP/1.0 200 OK
+res = Server: Apache
+res = X-Frame-Options: SAMEORIGIN
+res = Content-Type: text/html; charset=UTF-8
+res = DC: slc-b-origin-www-1.paypal.com
+res = Date: Thu, 16 Oct 2014 12:26:21 GMT
+res = Content-Length: 8
+res = Connection: close
+res = 
+res = VERIFIED
+ Change Order Status, now at  = 301
+ Shareasale:https://shareasale.com/sale.cfm?amount=0.10000490220109&tracking=2014101690091&transtype=sale&merchantID=51383, now at  = 335
+  done  = 202
+
+ 开始执行一个新Respond函数
+ $_POST = Array
+(
+    [mc_gross] => 4.08
+    [invoice] => 204
+    [protection_eligibility] => Ineligible
+    [payer_id] => Q8H79D9EQTJUY
+    [tax] => 0.00
+    [payment_date] => 05:53:05 Oct 16, 2014 PDT
+    [payment_status] => Completed
+    [charset] => gb2312
+    [first_name] => Jun
+    [mc_fee] => 4.08
+    [notify_version] => 3.8
+    [custom] => 
+    [payer_status] => verified
+    [business] => payment@trendyfine.com
+    [quantity] => 1
+    [verify_sign] => AjQJhGVWn4S82g6.bU7nHcGknHaoAQbxTLQyztazuc8LpnnWDXB8Z4ce
+    [payer_email] => susanenvystore@outlook.com
+    [txn_id] => 5F576694RX8877727
+    [payment_type] => instant
+    [last_name] => Xue
+    [receiver_email] => payment@trendyfine.com
+    [payment_fee] => 
+    [receiver_id] => TDM9D5TRLDA6A
+    [txn_type] => web_accept
+    [item_name] => 2014101636708
+    [mc_currency] => RUB
+    [item_number] => 
+    [residence_country] => CN
+    [handling_amount] => 0.00
+    [transaction_subject] => 
+    [payment_gross] => 
+    [shipping] => 0.00
+    [ipn_track_id] => 8fade43544992
+)
+
+ $_GET =Array
+(
+    [code] => paypal
+)
+
+ $_POST = cmd=_notify-validate&mc_gross=4.08&invoice=204&protection_eligibility=Ineligible&payer_id=Q8H79D9EQTJUY&tax=0.00&payment_date=05%3A53%3A05+Oct+16%2C+2014+PDT&payment_status=Completed&charset=gb2312&first_name=Jun&mc_fee=4.08&notify_version=3.8&custom=&payer_status=verified&business=payment%40trendyfine.com&quantity=1&verify_sign=AjQJhGVWn4S82g6.bU7nHcGknHaoAQbxTLQyztazuc8LpnnWDXB8Z4ce&payer_email=susanenvystore%40outlook.com&txn_id=5F576694RX8877727&payment_type=instant&last_name=Xue&receiver_email=payment%40trendyfine.com&payment_fee=&receiver_id=TDM9D5TRLDA6A&txn_type=web_accept&item_name=2014101636708&mc_currency=RUB&item_number=&residence_country=CN&handling_amount=0.00&transaction_subject=&payment_gross=&shipping=0.00&ipn_track_id=8fade43544992res = HTTP/1.0 200 OK
+res = Server: Apache
+res = X-Frame-Options: SAMEORIGIN
+res = Content-Type: text/html; charset=UTF-8
+res = DC: slc-a-origin-www-1.paypal.com
+res = Date: Thu, 16 Oct 2014 12:53:18 GMT
+res = Content-Length: 8
+res = Connection: close
+res = 
+res = VERIFIED
+ Change Order Status, now at  = 301
+
+ 开始执行一个新Respond函数
+ $_POST = Array
+(
+)
+
+ $_GET =Array
+(
+    [code] => paypal
+    [payok] => payok
+    [tf_order_amount] => 0.10
+    [tf_curr_rate] => 40.798
+    [tf_order_sn] => 2014101636708
+    [tf_curr_to] => RUB
+    [tx] => 5F576694RX8877727
+    [st] => Completed
+    [amt] => 4.08
+    [cc] => RUB
+    [cm] => 
+    [item_number] => 
+)
+
+ $_POST = cmd=_notify-validateres = HTTP/1.0 200 OK
+res = Server: Apache
+res = X-Frame-Options: SAMEORIGIN
+res = Content-Type: text/html; charset=UTF-8
+res = DC: slc-a-origin-www-1.paypal.com
+res = Date: Thu, 16 Oct 2014 12:53:20 GMT
+res = Content-Length: 7
+res = Connection: close
+res = 
+res = INVALID
+ Shareasale:https://shareasale.com/sale.cfm?amount=0.10000490220109&tracking=2014101636708&transtype=sale&merchantID=51383, now at  = 335
+  done  = 204
+
+ 开始执行一个新Respond函数
+ $_POST = Array
+(
+)
+
+ $_GET =Array
+(
+    [code] => paypal
+    [payok] => payok
+    [tf_order_amount] => 0.10
+    [tf_curr_rate] => 40.798
+    [tf_order_sn] => 2014101636708
+    [tf_curr_to] => RUB
+    [tx] => 5F576694RX8877727
+    [st] => Completed
+    [amt] => 4.08
+    [cc] => RUB
+    [cm] => 
+    [item_number] => 
+)
+
+ $_POST = cmd=_notify-validate
+
+ 开始执行一个新Respond函数
+ $_POST = Array
+(
+)
+
+ $_GET =Array
+(
+    [code] => paypal
+    [payok] => payok
+    [tf_order_amount] => 0.10
+    [tf_curr_rate] => 40.798
+    [tf_order_sn] => 2014101636708
+    [tf_curr_to] => RUB
+    [tx] => 5F576694RX8877727
+    [st] => Completed
+    [amt] => 4.08
+    [cc] => RUB
+    [cm] => 
+    [item_number] => 
+)
+
+ $_POST = cmd=_notify-validateres = HTTP/1.0 200 OK
+res = Server: Apache
+res = X-Frame-Options: SAMEORIGIN
+res = Content-Type: text/html; charset=UTF-8
+res = DC: slc-b-origin-www-2.paypal.com
+res = Date: Thu, 16 Oct 2014 12:59:26 GMT
+res = Content-Length: 7
+res = Connection: close
+res = 
+res = INVALIDres = HTTP/1.0 200 OK
+res = Server: Apache
+res = X-Frame-Options: SAMEORIGIN
+res = Content-Type: text/html; charset=UTF-8
+res = DC: slc-b-origin-www-1.paypal.com
+res = Date: Thu, 16 Oct 2014 12:59:26 GMT
+res = Content-Length: 7
+res = Connection: close
+res = 
+res = INVALID
+
+ 开始执行一个新Respond函数
+ $_POST = Array
+(
+)
+
+ $_GET =Array
+(
+    [code] => paypal
+    [payok] => payok
+    [tf_order_amount] => 0.10
+    [tf_curr_rate] => 40.798
+    [tf_order_sn] => 2014101636708
+    [tf_curr_to] => RUB
+    [tx] => 5F576694RX8877727
+    [st] => Completed
+    [amt] => 4.08
+    [cc] => RUB
+    [cm] => 
+    [item_number] => 
+)
+
+ $_POST = cmd=_notify-validateres = HTTP/1.0 200 OK
+res = Server: Apache
+res = X-Frame-Options: SAMEORIGIN
+res = Content-Type: text/html; charset=UTF-8
+res = DC: slc-b-origin-www-2.paypal.com
+res = Date: Thu, 16 Oct 2014 12:59:31 GMT
+res = Content-Length: 7
+res = Connection: close
+res = 
+res = INVALID
+
+ 开始执行一个新Respond函数
+ $_POST = Array
+(
+)
+
+ $_GET =Array
+(
+    [code] => paypal
+    [payok] => payok
+    [tf_order_amount] => 0.10
+    [tf_curr_rate] => 40.798
+    [tf_order_sn] => 2014101636708
+    [tf_curr_to] => RUB
+    [tx] => 5F576694RX8877727
+    [st] => Completed
+    [amt] => 4.08
+    [cc] => RUB
+    [cm] => 
+    [item_number] => 
+)
+
+ $_POST = cmd=_notify-validateres = HTTP/1.0 200 OK
+res = Server: Apache
+res = X-Frame-Options: SAMEORIGIN
+res = Content-Type: text/html; charset=UTF-8
+res = DC: slc-b-origin-www-2.paypal.com
+res = Date: Thu, 16 Oct 2014 12:59:41 GMT
+res = Content-Length: 7
+res = Connection: close
+res = 
+res = INVALID
+
+ 开始执行一个新Respond函数
+ $_POST = Array
+(
+)
+
+ $_GET =Array
+(
+    [code] => paypal
+    [payok] => payok
+    [tf_order_amount] => 0.10
+    [tf_curr_rate] => 40.798
+    [tf_order_sn] => 2014101636708
+    [tf_curr_to] => RUB
+    [tx] => 5F576694RX8877727
+    [st] => Completed
+    [amt] => 4.08
+    [cc] => RUB
+    [cm] => 
+    [item_number] => 
+)
+
+ $_POST = cmd=_notify-validateres = HTTP/1.0 200 OK
+res = Server: Apache
+res = X-Frame-Options: SAMEORIGIN
+res = Content-Type: text/html; charset=UTF-8
+res = DC: slc-b-origin-www-2.paypal.com
+res = Date: Thu, 16 Oct 2014 13:00:06 GMT
+res = Content-Length: 7
+res = Connection: close
+res = 
+res = INVALID
+
+ 开始执行一个新Respond函数
+ $_POST = Array
+(
+)
+
+ $_GET =Array
+(
+    [code] => paypal
+    [payok] => payok
+    [tf_order_amount] => 0.10
+    [tf_curr_rate] => 1
+    [tf_order_sn] => 2014101686919
+    [tf_curr_to] => USD
+    [tx] => 03737454WM4525058
+    [st] => Completed
+    [amt] => 0.10
+    [cc] => USD
+    [cm] => 
+    [item_number] => 
+)
+
+ $_POST = cmd=_notify-validateres = HTTP/1.0 200 OK
+res = Server: Apache
+res = X-Frame-Options: SAMEORIGIN
+res = Content-Type: text/html; charset=UTF-8
+res = DC: slc-a-origin-www-1.paypal.com
+res = Date: Thu, 16 Oct 2014 13:06:31 GMT
+res = Content-Length: 7
+res = Connection: close
+res = 
+res = INVALID
+
+ 开始执行一个新Respond函数
+ $_POST = Array
+(
+    [mc_gross] => 0.10
+    [invoice] => 205
+    [protection_eligibility] => Ineligible
+    [payer_id] => Q8H79D9EQTJUY
+    [tax] => 0.00
+    [payment_date] => 06:06:21 Oct 16, 2014 PDT
+    [payment_status] => Completed
+    [charset] => gb2312
+    [first_name] => Jun
+    [mc_fee] => 0.10
+    [notify_version] => 3.8
+    [custom] => 
+    [payer_status] => verified
+    [business] => payment@trendyfine.com
+    [quantity] => 1
+    [verify_sign] => A-9Hyj5.n664jOr3Cfh7xTTqeqE-ACYuFbqKfBi-17vpWkDXib5D9JRM
+    [payer_email] => susanenvystore@outlook.com
+    [txn_id] => 03737454WM4525058
+    [payment_type] => instant
+    [last_name] => Xue
+    [receiver_email] => payment@trendyfine.com
+    [payment_fee] => 0.10
+    [receiver_id] => TDM9D5TRLDA6A
+    [txn_type] => web_accept
+    [item_name] => 2014101686919
+    [mc_currency] => USD
+    [item_number] => 
+    [residence_country] => CN
+    [handling_amount] => 0.00
+    [transaction_subject] => 
+    [payment_gross] => 0.10
+    [shipping] => 0.00
+    [ipn_track_id] => 6ace7073b17ce
+)
+
+ $_GET =Array
+(
+    [code] => paypal
+)
+
+ $_POST = cmd=_notify-validate&mc_gross=0.10&invoice=205&protection_eligibility=Ineligible&payer_id=Q8H79D9EQTJUY&tax=0.00&payment_date=06%3A06%3A21+Oct+16%2C+2014+PDT&payment_status=Completed&charset=gb2312&first_name=Jun&mc_fee=0.10&notify_version=3.8&custom=&payer_status=verified&business=payment%40trendyfine.com&quantity=1&verify_sign=A-9Hyj5.n664jOr3Cfh7xTTqeqE-ACYuFbqKfBi-17vpWkDXib5D9JRM&payer_email=susanenvystore%40outlook.com&txn_id=03737454WM4525058&payment_type=instant&last_name=Xue&receiver_email=payment%40trendyfine.com&payment_fee=0.10&receiver_id=TDM9D5TRLDA6A&txn_type=web_accept&item_name=2014101686919&mc_currency=USD&item_number=&residence_country=CN&handling_amount=0.00&transaction_subject=&payment_gross=0.10&shipping=0.00&ipn_track_id=6ace7073b17ceres = HTTP/1.0 200 OK
+res = Server: Apache
+res = X-Frame-Options: SAMEORIGIN
+res = Content-Type: text/html; charset=UTF-8
+res = DC: slc-a-origin-www-1.paypal.com
+res = Date: Thu, 16 Oct 2014 13:06:44 GMT
+res = Content-Length: 8
+res = Connection: close
+res = 
+res = VERIFIED
+ Change Order Status, now at  = 301
+
+ 开始执行一个新Respond函数
+ $_POST = Array
+(
+)
+
+ $_GET =Array
+(
+    [code] => paypal
+    [payok] => payok
+    [tf_order_amount] => 0.10
+    [tf_curr_rate] => 40.798
+    [tf_order_sn] => 2014101636708
+    [tf_curr_to] => RUB
+    [tx] => 5F576694RX8877727
+    [st] => Completed
+    [amt] => 4.08
+    [cc] => RUB
+    [cm] => 
+    [item_number] => 
+)
+
+ $_POST = cmd=_notify-validateres = HTTP/1.0 200 OK
+res = Server: Apache
+res = X-Frame-Options: SAMEORIGIN
+res = Content-Type: text/html; charset=UTF-8
+res = DC: slc-a-origin-www-1.paypal.com
+res = Date: Thu, 16 Oct 2014 13:06:48 GMT
+res = Content-Length: 7
+res = Connection: close
+res = 
+res = INVALID
+ Shareasale:https://shareasale.com/sale.cfm?amount=0.10&tracking=2014101686919&transtype=sale&merchantID=51383, now at  = 335
+  done  = 205
+
+ 开始执行一个新Respond函数
+ $_POST = Array
+(
+)
+
+ $_GET =Array
+(
+    [code] => paypal
+    [payok] => payok
+    [tf_order_amount] => 0.10
+    [tf_curr_rate] => 1
+    [tf_order_sn] => 2014101686919
+    [tf_curr_to] => USD
+    [tx] => 03737454WM4525058
+    [st] => Completed
+    [amt] => 0.10
+    [cc] => USD
+    [cm] => 
+    [item_number] => 
+)
+
+ $_POST = cmd=_notify-validate
+
+ 开始执行一个新Respond函数
+ $_POST = Array
+(
+)
+
+ $_GET =Array
+(
+    [code] => paypal
+    [payok] => payok
+    [tf_order_amount] => 0.10
+    [tf_curr_rate] => 1
+    [tf_order_sn] => 2014101686919
+    [tf_curr_to] => USD
+    [tx] => 03737454WM4525058
+    [st] => Completed
+    [amt] => 0.10
+    [cc] => USD
+    [cm] => 
+    [item_number] => 
+)
+
+ $_POST = cmd=_notify-validateres = HTTP/1.0 200 OK
+res = Server: Apache
+res = X-Frame-Options: SAMEORIGIN
+res = Content-Type: text/html; charset=UTF-8
+res = DC: slc-b-origin-www-1.paypal.com
+res = Date: Thu, 16 Oct 2014 13:07:05 GMT
+res = Content-Length: 7
+res = Connection: close
+res = 
+res = INVALIDres = HTTP/1.0 200 OK
+res = Server: Apache
+res = X-Frame-Options: SAMEORIGIN
+res = Content-Type: text/html; charset=UTF-8
+res = DC: slc-a-origin-www-1.paypal.com
+res = Date: Thu, 16 Oct 2014 13:07:05 GMT
+res = Content-Length: 7
+res = Connection: close
+res = 
+res = INVALID
+
+ 开始执行一个新Respond函数
+ $_POST = Array
+(
+)
+
+ $_GET =Array
+(
+    [code] => paypal
+    [payok] => payok
+    [tf_order_amount] => 0.10
+    [tf_curr_rate] => 1
+    [tf_order_sn] => 2014101686919
+    [tf_curr_to] => USD
+    [tx] => 03737454WM4525058
+    [st] => Completed
+    [amt] => 0.10
+    [cc] => USD
+    [cm] => 
+    [item_number] => 
+)
+
+ $_POST = cmd=_notify-validateres = HTTP/1.0 200 OK
+res = Server: Apache
+res = X-Frame-Options: SAMEORIGIN
+res = Content-Type: text/html; charset=UTF-8
+res = DC: slc-a-origin-www-2.paypal.com
+res = Date: Thu, 16 Oct 2014 13:07:08 GMT
+res = Content-Length: 7
+res = Connection: close
+res = 
+res = INVALID
+
+ 开始执行一个新Respond函数
+ $_POST = Array
+(
+)
+
+ $_GET =Array
+(
+    [code] => paypal
+    [payok] => payok
+    [tf_order_amount] => 0.10
+    [tf_curr_rate] => 1
+    [tf_order_sn] => 2014101698050
+    [tf_curr_to] => USD
+    [tx] => 03737454WM4525058
+    [st] => Completed
+    [amt] => 0.10
+    [cc] => USD
+    [cm] => 
+    [item_number] => 
+)
+
+ $_POST = cmd=_notify-validateres = HTTP/1.0 200 OK
+res = Server: Apache
+res = X-Frame-Options: SAMEORIGIN
+res = Content-Type: text/html; charset=UTF-8
+res = DC: slc-a-origin-www-2.paypal.com
+res = Date: Thu, 16 Oct 2014 13:11:12 GMT
+res = Content-Length: 7
+res = Connection: close
+res = 
+res = INVALID
+
+ 开始执行一个新Respond函数
+ $_POST = Array
+(
+)
+
+ $_GET =Array
+(
+    [code] => paypal
+    [payok] => payok
+    [tf_order_amount] => 0.10
+    [tf_curr_rate] => 1
+    [tf_order_sn] => 2014101698050
+    [tf_curr_to] => USD
+    [tx] => 03737454WM4525058
+    [st] => Completed
+    [amt] => 0.10
+    [cc] => USD
+    [cm] => 
+    [item_number] => 
+)
+
+ $_POST = cmd=_notify-validateres = HTTP/1.0 200 OK
+res = Server: Apache
+res = X-Frame-Options: SAMEORIGIN
+res = Content-Type: text/html; charset=UTF-8
+res = DC: slc-a-origin-www-1.paypal.com
+res = Date: Thu, 16 Oct 2014 13:16:49 GMT
+res = Content-Length: 7
+res = Connection: close
+res = 
+res = INVALID
+
+ 开始执行一个新Respond函数
+ $_POST = Array
+(
+)
+
+ $_GET =Array
+(
+    [code] => paypal
+    [payok] => payok
+    [tf_order_amount] => 0.10
+    [tf_curr_rate] => 1
+    [tf_order_sn] => 2014101698050
+    [tf_curr_to] => USD
+    [tx] => 03737454WM4525058
+    [st] => Completed
+    [amt] => 0.10
+    [cc] => USD
+    [cm] => 
+    [item_number] => 
+)
+
+ $_POST = cmd=_notify-validateres = HTTP/1.0 200 OK
+res = Server: Apache
+res = X-Frame-Options: SAMEORIGIN
+res = Content-Type: text/html; charset=UTF-8
+res = DC: slc-a-origin-www-1.paypal.com
+res = Date: Thu, 16 Oct 2014 13:17:31 GMT
+res = Content-Length: 7
+res = Connection: close
+res = 
+res = INVALID
+
+ 开始执行一个新Respond函数
+ $_POST = Array
+(
+)
+
+ $_GET =Array
+(
+    [code] => paypal
+    [payok] => payok
+    [tf_order_amount] => 0.10
+    [tf_curr_rate] => 1
+    [tf_order_sn] => 2014101698050
+    [tf_curr_to] => USD
+    [tx] => 03737454WM4525058
+    [st] => Completed
+    [amt] => 0.10
+    [cc] => USD
+    [cm] => 
+    [item_number] => 
+)
+
+ $_POST = cmd=_notify-validateres = HTTP/1.0 200 OK
+res = Server: Apache
+res = X-Frame-Options: SAMEORIGIN
+res = Content-Type: text/html; charset=UTF-8
+res = DC: slc-b-origin-www-1.paypal.com
+res = Date: Thu, 16 Oct 2014 13:18:46 GMT
+res = Content-Length: 7
+res = Connection: close
+res = 
+res = INVALID
+
+ 开始执行一个新Respond函数
+ $_POST = Array
+(
+)
+
+ $_GET =Array
+(
+    [code] => paypal
+    [payok] => payok
+    [tf_order_amount] => 0.10
+    [tf_curr_rate] => 1
+    [tf_order_sn] => 2014101698050
+    [tf_curr_to] => USD
+    [tx] => 03737454WM4525058
+    [st] => Completed
+    [amt] => 0.10
+    [cc] => USD
+    [cm] => 
+    [item_number] => 
+)
+
+ $_POST = cmd=_notify-validateres = HTTP/1.0 200 OK
+res = Server: Apache
+res = X-Frame-Options: SAMEORIGIN
+res = Content-Type: text/html; charset=UTF-8
+res = DC: slc-a-origin-www-1.paypal.com
+res = Date: Thu, 16 Oct 2014 13:23:47 GMT
+res = Content-Length: 7
+res = Connection: close
+res = 
+res = INVALID
+
+ 开始执行一个新Respond函数
+ $_POST = Array
+(
+)
+
+ $_GET =Array
+(
+    [code] => paypal
+    [payok] => payok
+    [tf_order_amount] => 0.10
+    [tf_curr_rate] => 1
+    [tf_order_sn] => 2014101686919
+    [tf_curr_to] => USD
+    [tx] => 03737454WM4525058
+    [st] => Completed
+    [amt] => 0.10
+    [cc] => USD
+    [cm] => 
+    [item_number] => 
+)
+
+ $_POST = cmd=_notify-validateres = HTTP/1.0 200 OK
+res = Server: Apache
+res = X-Frame-Options: SAMEORIGIN
+res = Content-Type: text/html; charset=UTF-8
+res = DC: slc-a-origin-www-1.paypal.com
+res = Date: Thu, 16 Oct 2014 13:26:32 GMT
+res = Content-Length: 7
+res = Connection: close
+res = 
+res = INVALID
+
+ 开始执行一个新Respond函数
+ $_POST = Array
+(
+)
+
+ $_GET =Array
+(
+    [code] => paypal
+    [payok] => payok
+    [tf_order_amount] => 0.10
+    [tf_curr_rate] => 1
+    [tf_order_sn] => 2014101686919
+    [tf_curr_to] => USD
+    [tx] => 03737454WM4525058
+    [st] => Completed
+    [amt] => 0.10
+    [cc] => USD
+    [cm] => 
+    [item_number] => 
+)
+
+ $_POST = cmd=_notify-validateres = HTTP/1.0 200 OK
+res = Server: Apache
+res = X-Frame-Options: SAMEORIGIN
+res = Content-Type: text/html; charset=UTF-8
+res = DC: slc-a-origin-www-2.paypal.com
+res = Date: Thu, 16 Oct 2014 13:26:40 GMT
+res = Content-Length: 7
+res = Connection: close
+res = 
+res = INVALID
+
+ 开始执行一个新Respond函数
+ $_POST = Array
+(
+)
+
+ $_GET =Array
+(
+    [code] => paypal
+    [payok] => payok
+    [tf_order_amount] => 2.00
+    [tf_curr_rate] => 0.626
+    [tf_order_sn] => 2014101807318
+    [tf_curr_to] => GBP
+    [tx] => 1AK377583L955800B
+    [st] => Completed
+    [amt] => 1.25
+    [cc] => GBP
+    [cm] => 
+    [item_number] => 
+)
+
+ $_POST = cmd=_notify-validateres = HTTP/1.0 200 OK
+res = Server: Apache
+res = X-Frame-Options: SAMEORIGIN
+res = Content-Type: text/html; charset=UTF-8
+res = DC: slc-a-origin-www-1.paypal.com
+res = Date: Sat, 18 Oct 2014 09:38:14 GMT
+res = Content-Length: 7
+res = Connection: close
+res = 
+res = INVALID
+
+ 开始执行一个新Respond函数
+ $_POST = Array
+(
+    [mc_gross] => 1.25
+    [invoice] => 231
+    [protection_eligibility] => Ineligible
+    [payer_id] => Q8H79D9EQTJUY
+    [tax] => 0.00
+    [payment_date] => 02:38:05 Oct 18, 2014 PDT
+    [payment_status] => Completed
+    [charset] => gb2312
+    [first_name] => Jun
+    [mc_fee] => 0.25
+    [notify_version] => 3.8
+    [custom] => 
+    [payer_status] => verified
+    [business] => payment@trendyfine.com
+    [quantity] => 1
+    [verify_sign] => AIFh-1k-U5zD-1Fply0eqtX1NZHYAtuX0kTT1Hla2DqXW1iBUsMLRvU1
+    [payer_email] => susanenvystore@outlook.com
+    [txn_id] => 1AK377583L955800B
+    [payment_type] => instant
+    [last_name] => Xue
+    [receiver_email] => payment@trendyfine.com
+    [payment_fee] => 
+    [receiver_id] => TDM9D5TRLDA6A
+    [txn_type] => web_accept
+    [item_name] => 2014101807318
+    [mc_currency] => GBP
+    [item_number] => 
+    [residence_country] => CN
+    [handling_amount] => 0.00
+    [transaction_subject] => 
+    [payment_gross] => 
+    [shipping] => 0.00
+    [ipn_track_id] => 420dc00edfb87
+)
+
+ $_GET =Array
+(
+    [code] => paypal
+)
+
+ $_POST = cmd=_notify-validate&mc_gross=1.25&invoice=231&protection_eligibility=Ineligible&payer_id=Q8H79D9EQTJUY&tax=0.00&payment_date=02%3A38%3A05+Oct+18%2C+2014+PDT&payment_status=Completed&charset=gb2312&first_name=Jun&mc_fee=0.25&notify_version=3.8&custom=&payer_status=verified&business=payment%40trendyfine.com&quantity=1&verify_sign=AIFh-1k-U5zD-1Fply0eqtX1NZHYAtuX0kTT1Hla2DqXW1iBUsMLRvU1&payer_email=susanenvystore%40outlook.com&txn_id=1AK377583L955800B&payment_type=instant&last_name=Xue&receiver_email=payment%40trendyfine.com&payment_fee=&receiver_id=TDM9D5TRLDA6A&txn_type=web_accept&item_name=2014101807318&mc_currency=GBP&item_number=&residence_country=CN&handling_amount=0.00&transaction_subject=&payment_gross=&shipping=0.00&ipn_track_id=420dc00edfb87res = HTTP/1.0 200 OK
+res = Server: Apache
+res = X-Frame-Options: SAMEORIGIN
+res = Content-Type: text/html; charset=UTF-8
+res = DC: slc-b-origin-www-2.paypal.com
+res = Date: Sat, 18 Oct 2014 09:38:15 GMT
+res = Content-Length: 8
+res = Connection: close
+res = 
+res = VERIFIED
+ Change Order Status, now at  = 283
+ << File_get_contents >> line=311�PNG
+
+   IHDR         �wS�   sBIT��O�   	pHYs    ��~�   tEXtSoftware Adobe Fireworks CS4�Ӡ   tEXtCreation Time 08/26/10k���   IDAT�c���? ��X�k    IEND�B`�
+ Shareasale:https://shareasale.com/sale.cfm?amount=1.9968051118211&tracking=2014101807318&transtype=sale&merchantID=55809, now at  = 345
+  done  = 231
+
+ 开始执行一个新Respond函数
+ $_POST = Array
+(
+)
+
+ $_GET =Array
+(
+    [code] => paypal
+    [payok] => payok
+    [tf_order_amount] => 2.00
+    [tf_curr_rate] => 0.626
+    [tf_order_sn] => 2014101845326
+    [tf_curr_to] => GBP
+    [tx] => 1BS444064J101860L
+    [st] => Completed
+    [amt] => 1.25
+    [cc] => GBP
+    [cm] => 
+    [item_number] => 
+)
+
+ $_POST = cmd=_notify-validateres = HTTP/1.0 200 OK
+res = Server: Apache
+res = X-Frame-Options: SAMEORIGIN
+res = Content-Type: text/html; charset=UTF-8
+res = DC: slc-a-origin-www-1.paypal.com
+res = Date: Sat, 18 Oct 2014 10:03:38 GMT
+res = Content-Length: 7
+res = Connection: close
+res = 
+res = INVALID
+
+ 开始执行一个新Respond函数
+ $_POST = Array
+(
+    [mc_gross] => 1.25
+    [invoice] => 232
+    [protection_eligibility] => Ineligible
+    [payer_id] => Q8H79D9EQTJUY
+    [tax] => 0.00
+    [payment_date] => 03:03:30 Oct 18, 2014 PDT
+    [payment_status] => Completed
+    [charset] => gb2312
+    [first_name] => Jun
+    [mc_fee] => 0.25
+    [notify_version] => 3.8
+    [custom] => 
+    [payer_status] => verified
+    [business] => payment@trendyfine.com
+    [quantity] => 1
+    [verify_sign] => AzaPqPnGssovaJ1Pdf2waNDc8cIPANhluicqQt8.UI3sVJ7udUjp-yPS
+    [payer_email] => susanenvystore@outlook.com
+    [txn_id] => 1BS444064J101860L
+    [payment_type] => instant
+    [last_name] => Xue
+    [receiver_email] => payment@trendyfine.com
+    [payment_fee] => 
+    [receiver_id] => TDM9D5TRLDA6A
+    [txn_type] => web_accept
+    [item_name] => 2014101845326
+    [mc_currency] => GBP
+    [item_number] => 
+    [residence_country] => CN
+    [handling_amount] => 0.00
+    [transaction_subject] => 
+    [payment_gross] => 
+    [shipping] => 0.00
+    [ipn_track_id] => dbdf4abd3432f
+)
+
+ $_GET =Array
+(
+    [code] => paypal
+)
+
+ $_POST = cmd=_notify-validate&mc_gross=1.25&invoice=232&protection_eligibility=Ineligible&payer_id=Q8H79D9EQTJUY&tax=0.00&payment_date=03%3A03%3A30+Oct+18%2C+2014+PDT&payment_status=Completed&charset=gb2312&first_name=Jun&mc_fee=0.25&notify_version=3.8&custom=&payer_status=verified&business=payment%40trendyfine.com&quantity=1&verify_sign=AzaPqPnGssovaJ1Pdf2waNDc8cIPANhluicqQt8.UI3sVJ7udUjp-yPS&payer_email=susanenvystore%40outlook.com&txn_id=1BS444064J101860L&payment_type=instant&last_name=Xue&receiver_email=payment%40trendyfine.com&payment_fee=&receiver_id=TDM9D5TRLDA6A&txn_type=web_accept&item_name=2014101845326&mc_currency=GBP&item_number=&residence_country=CN&handling_amount=0.00&transaction_subject=&payment_gross=&shipping=0.00&ipn_track_id=dbdf4abd3432fres = HTTP/1.0 200 OK
+res = Server: Apache
+res = X-Frame-Options: SAMEORIGIN
+res = Content-Type: text/html; charset=UTF-8
+res = DC: slc-b-origin-www-1.paypal.com
+res = Date: Sat, 18 Oct 2014 10:03:40 GMT
+res = Content-Length: 8
+res = Connection: close
+res = 
+res = VERIFIED
+ Change Order Status, now at  = 283
+ << CURL_init_EXEC >> line=326
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+ 
+
+	
+	
+	
+		
+		
+		
+		
+		
+		
+	
+	
+	
+		
+ Shareasale:https://shareasale.com/sale.cfm?amount=1.9968051118211&tracking=2014101845326&transtype=sale&merchantID=55809, now at  = 345
+  done  = 232
+
+ 开始执行一个新Respond函数
+ $_POST = Array
+(
+)
+
+ $_GET =Array
+(
+    [code] => paypal
+    [payok] => payok
+    [tf_order_amount] => 0.10
+    [tf_curr_rate] => 40.798
+    [tf_order_sn] => 201410163
+)
+
+ $_POST = cmd=_notify-validateres = HTTP/1.0 200 OK
+res = Server: Apache
+res = X-Frame-Options: SAMEORIGIN
+res = Content-Type: text/html; charset=UTF-8
+res = DC: slc-b-origin-www-1.paypal.com
+res = Date: Sun, 19 Oct 2014 05:16:44 GMT
+res = Content-Length: 7
+res = Connection: close
+res = 
+res = INVALID
+
+ 开始执行一个新Respond函数
+ $_POST = Array
+(
+)
+
+ $_GET =Array
+(
+    [code] => paypal
+    [payok] => payok
+    [tx] => 3XY02824LV415913S
+    [st] => Completed
+    [amt] => 0.10
+    [cc] => USD
+    [cm] => 
+    [item_number] => 
+)
+
+ $_POST = cmd=_notify-validateres = HTTP/1.0 200 OK
+res = Server: Apache
+res = X-Frame-Options: SAMEORIGIN
+res = Content-Type: text/html; charset=UTF-8
+res = DC: slc-b-origin-www-2.paypal.com
+res = Date: Sun, 19 Oct 2014 05:46:16 GMT
+res = Content-Length: 7
+res = Connection: close
+res = 
+res = INVALID
+
+ 开始执行一个新Respond函数
+ $_POST = Array
+(
+)
+
+ $_GET =Array
+(
+    [code] => paypal
+    [payok] => payok
+    [tf_order_amount] => 0.10
+    [tf_curr_rate] => 1
+    [tf_order_sn] => 2014101698050
+    [tf_curr_to] => USD
+    [tx] => 03737454WM4525058
+    [st] => Completed
+    [amt] => 0.10
+    [cc] => USD
+    [cm] => 
+    [item_number] => 
+)
+
+ $_POST = cmd=_notify-validateres = HTTP/1.0 200 OK
+res = Server: Apache
+res = X-Frame-Options: SAMEORIGIN
+res = Content-Type: text/html; charset=UTF-8
+res = DC: slc-a-origin-www-1.paypal.com
+res = Date: Fri, 24 Oct 2014 15:37:18 GMT
+res = Content-Length: 7
+res = Connection: close
+res = 
+res = INVALID
+
+ 开始执行一个新Respond函数
+ $_POST = Array
+(
+)
+
+ $_GET =Array
+(
+    [code] => paypal
+    [payok] => payok
+    [tf_order_amount] => 0.10
+    [tf_curr_rate] => 1
+    [tf_order_sn] => 2014101686919
+    [tf_curr_to] => USD
+    [tx] => 03737454WM4525058
+    [st] => Completed
+    [amt] => 0.10
+    [cc] => USD
+    [cm] => 
+    [item_number] => 
+)
+
+ $_POST = cmd=_notify-validateres = HTTP/1.0 200 OK
+res = Server: Apache
+res = X-Frame-Options: SAMEORIGIN
+res = Content-Type: text/html; charset=UTF-8
+res = DC: slc-b-origin-www-1.paypal.com
+res = Date: Sat, 25 Oct 2014 14:54:11 GMT
+res = Content-Length: 7
+res = Connection: close
+res = 
+res = INVALID
+
+ 开始执行一个新Respond函数
+ $_POST = Array
+(
+)
+
+ $_GET =Array
+(
+    [code] => paypal
+    [payok] => payok
+    [tf_order_amount] => 0.10
+    [tf_curr_rate] => 40.798
+    [tf_order_sn] => 2014101636708
+    [tf_curr_to] => RUB
+    [tx] => 5F576694RX8877727
+    [st] => Completed
+    [amt] => 4.08
+    [cc] => RUB
+    [cm] => 
+    [item_number] => 
+)
+
+ $_POST = cmd=_notify-validateres = HTTP/1.0 200 OK
+res = Server: Apache
+res = X-Frame-Options: SAMEORIGIN
+res = Content-Type: text/html; charset=UTF-8
+res = DC: slc-a-origin-www-1.paypal.com
+res = Date: Sat, 25 Oct 2014 14:54:14 GMT
+res = Content-Length: 7
+res = Connection: close
+res = 
+res = INVALID
+
+ 开始执行一个新Respond函数
+ $_POST = Array
+(
+)
+
+ $_GET =Array
+(
+    [code] => paypal
+    [payok] => payok
+    [tf_order_amount] => 0.10
+    [tf_curr_rate] => 1
+    [tf_order_sn] => 2014101686919
+    [tf] => 
+)
+
+ $_POST = cmd=_notify-validateres = HTTP/1.0 200 OK
+res = Server: Apache
+res = X-Frame-Options: SAMEORIGIN
+res = Content-Type: text/html; charset=UTF-8
+res = DC: slc-origin-www.paypal.com
+res = Date: Tue, 28 Oct 2014 05:20:44 GMT
+res = Content-Length: 7
+res = Connection: close
+res = 
+res = INVALID
+
+ 开始执行一个新Respond函数
+ $_POST = Array
+(
+)
+
+ $_GET =Array
+(
+    [code] => paypal
+    [payok] => payok
+    [tf_order_amount] => 0.10
+    [tf_curr_rate] => 40.798
+    [tf_order_sn] => 201410163
+)
+
+ $_POST = cmd=_notify-validateres = HTTP/1.0 200 OK
+res = Server: Apache
+res = X-Frame-Options: SAMEORIGIN
+res = Content-Type: text/html; charset=UTF-8
+res = DC: slc-a-origin-www-1.paypal.com
+res = Date: Tue, 28 Oct 2014 05:21:14 GMT
+res = Content-Length: 7
+res = Connection: close
+res = 
+res = INVALID
+
+ 开始执行一个新Respond函数
+ $_POST = Array
+(
+)
+
+ $_GET =Array
+(
+    [code] => paypal
+    [payok] => payok
+    [tf_order_amount] => 0.20
+    [tf_curr_rate] => 1.00
+    [tf_order_sn] => 2014110627839
+    [tf_curr_to] => USD
+    [tx] => 0NN86299C0013945Y
+    [st] => Completed
+    [amt] => 0.20
+    [cc] => USD
+    [cm] => 
+    [item_number] => 
+)
+
+ $_POST = cmd=_notify-validateres = HTTP/1.0 200 OK
+res = Server: Apache
+res = X-Frame-Options: SAMEORIGIN
+res = Content-Type: text/html; charset=UTF-8
+res = DC: slc-b-origin-www-1.paypal.com
+res = Date: Thu, 06 Nov 2014 06:28:59 GMT
+res = Content-Length: 7
+res = Connection: close
+res = 
+res = INVALID
+
+ 开始执行一个新Respond函数
+ $_POST = Array
+(
+    [mc_gross] => 0.20
+    [invoice] => 307
+    [protection_eligibility] => Ineligible
+    [payer_id] => Q8H79D9EQTJUY
+    [tax] => 0.00
+    [payment_date] => 22:28:49 Nov 05, 2014 PST
+    [payment_status] => Completed
+    [charset] => gb2312
+    [first_name] => Jun
+    [mc_fee] => 0.20
+    [notify_version] => 3.8
+    [custom] => 
+    [payer_status] => verified
+    [business] => payment@trendyfine.com
+    [quantity] => 1
+    [verify_sign] => AyUELZyDKs-LmJktSsX.Qre6fBZAARU3lM-kxPcBREsmdqszqrwdFAAs
+    [payer_email] => susanenvystore@outlook.com
+    [txn_id] => 0NN86299C0013945Y
+    [payment_type] => instant
+    [last_name] => Xue
+    [receiver_email] => payment@trendyfine.com
+    [payment_fee] => 0.20
+    [receiver_id] => TDM9D5TRLDA6A
+    [txn_type] => web_accept
+    [item_name] => 2014110627839
+    [mc_currency] => USD
+    [item_number] => 
+    [residence_country] => CN
+    [handling_amount] => 0.00
+    [transaction_subject] => 
+    [payment_gross] => 0.20
+    [shipping] => 0.00
+    [ipn_track_id] => 382cb4f260fee
+)
+
+ $_GET =Array
+(
+    [code] => paypal
+)
+
+ $_POST = cmd=_notify-validate&mc_gross=0.20&invoice=307&protection_eligibility=Ineligible&payer_id=Q8H79D9EQTJUY&tax=0.00&payment_date=22%3A28%3A49+Nov+05%2C+2014+PST&payment_status=Completed&charset=gb2312&first_name=Jun&mc_fee=0.20&notify_version=3.8&custom=&payer_status=verified&business=payment%40trendyfine.com&quantity=1&verify_sign=AyUELZyDKs-LmJktSsX.Qre6fBZAARU3lM-kxPcBREsmdqszqrwdFAAs&payer_email=susanenvystore%40outlook.com&txn_id=0NN86299C0013945Y&payment_type=instant&last_name=Xue&receiver_email=payment%40trendyfine.com&payment_fee=0.20&receiver_id=TDM9D5TRLDA6A&txn_type=web_accept&item_name=2014110627839&mc_currency=USD&item_number=&residence_country=CN&handling_amount=0.00&transaction_subject=&payment_gross=0.20&shipping=0.00&ipn_track_id=382cb4f260feeres = HTTP/1.0 200 OK
+res = Server: Apache
+res = X-Frame-Options: SAMEORIGIN
+res = Content-Type: text/html; charset=UTF-8
+res = DC: slc-a-origin-www-2.paypal.com
+res = Date: Thu, 06 Nov 2014 06:29:03 GMT
+res = Content-Length: 8
+res = Connection: close
+res = 
+res = VERIFIED
+ Change Order Status, now at  = 283
+ << CURL_init_EXEC >> line=326
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+ 
+
+	
+	
+	
+		
+		
+		
+		
+		
+		
+	
+	
+	
+		
+ Shareasale:https://shareasale.com/sale.cfm?amount=0.20&tracking=2014110627839&transtype=sale&merchantID=55809, now at  = 345
+  done  = 307

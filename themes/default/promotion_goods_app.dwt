@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="Keywords" content="{$keywords}" />
+		<meta name="Description" content="{$description}" />
+		<!-- TemplateBeginEditable name="doctitle" -->
+        <title>{$page_title}</title>
+        <!-- TemplateEndEditable -->
+		<!-- TemplateBeginEditable name="head" -->
+        <!-- TemplateEndEditable -->
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+		<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+		<link href="public_widget.css" rel="stylesheet" type="text/css" />
+		<script src="js/jquery.js" type="text/javascript"></script>
+		<script src="js/jquery.json.js" type="text/javascript"></script>
+		<script src="js/jquery_widge.js" type="text/javascript"></script>
+		<script src="js/public_widget.js" type="text/javascript"></script>
+		<script src="js/jquery.colorbox-min.js" type="text/javascript"></script>
+		<script src="js/jquery_packed.js" type="text/javascript"></script>
+		<script>
+		
+		SWJquery(document).ready(function(){
+			//Examples of how to assign the ColorBox event to elements
+			SWJquery(".example11").colorbox({width:"100%", inline:true, href:"#inline_example11"});
+		});
+		
+		</script>
+		{* 包含脚本文件 *}
+		</head>
+		<body>
+        <div class="ez1">
+          <aside role="widgets">
+          <div class="group">
+            <div class="sheinside-core-widget" style="width: auto; max-width: 350px">
+              <div class="sheinside--widget-wrapper sheinside-widget-theme-light">
+                <div class="sheinside-widget-header">
+                  <div class="sheinside-widget-marketing-message">
+                    <p style=" font-size: 14px;">Free Shipping Worldwide</p>
+                  </div>
+                  <a href="http://www.trendyfine.com" target="_blank">
+                  <p class="sheinside-widget-logo"><img alt="TrendyFine Shop" src="http://www.trendyfine.com/themes/default/images/logo.gif" width="160" height="32"></p>
+                  </a> </div>
+                <div class="sheinside-widget-heading"> <a href="#">JUST ARRIVED</a> </div>   
+                <div class="sheinside-widget-panel sheinside-widget-carousel">
+                  <ul>
+                   
+                    <!--{foreach name=goods_list_1 from=$goods_list_1 item=goods}-->
+                    <li> <a href="{$goods.url}" target="_blank"> <img src="{$goods.goods_thumb}" alt="" width="65" height="128" /> <span class="sheinside-widget-carousel-mask"></span> </a>
+                      <div class="sheinside-widget-carousel-description">
+                        <div class="sheinside-widget-carousel-description-inside sheinside-clearfix">
+                          <h3> <a href="{$goods.url}" target="_blank">{$goods.goods_name}</a></h3>
+                          <div style="width:200px;height:20px;">
+                            <div class="index-price" id="special_price" price=""><span id="spanSubTotal_">US {$goods.shop_price}</span></div>
+                            <div class="index-price" id="shop_price" price=""><span id="spanSubTotal_"><strike>US {$goods.market_price}</strike></span></div>
+                          </div>
+                          <a href="{$goods.url}" target="_blank" class="sheinside-widget-carousel-description-button-anchor"> <span class="sheinside-widget-carousel-button">View</span> </a> </div>
+                      </div>
+                    </li>
+		    <!--{/foreach}-->
+                  </ul>
+                  <a class="sheinside-widget-carousel-arrow sheinside-widget-carousel-prev" href="#">&lt;</a> <a class="sheinside-widget-carousel-arrow sheinside-widget-carousel-next" href="#">&gt;</a> <a class="sheinside-widget-carousel-info" target="_blank"></a>
+                  <div class="sheinside-widget-carousel-pager"></div>
+                </div>
+                
+                <div class="sheinside-widget-heading"> <a href="#">SHOP DRESSES & SUIT</a> </div>
+                <div class="sheinside-widget-panel sheinside-widget-carousel">
+                  <ul>
+                   
+		    <!--{foreach name=goods_list_2 from=$goods_list_2 item=goods}-->
+		    <li> <a href="{$goods.url}" target="_blank"> <img src="{$goods.goods_thumb}" alt="" width="65" height="128" /> <span class="sheinside-widget-carousel-mask"></span> </a>
+                      <div class="sheinside-widget-carousel-description">
+                        <div class="sheinside-widget-carousel-description-inside sheinside-clearfix">
+                          <h3> <a href="{$goods.url}" target="_blank" >{$goods.goods_name}</a> </h3>
+                          <div style="width:200px;height:20px;">
+                            <div class="index-price" id="special_price" price=""><span id="spanSubTotal_">US {$goods.shop_price}</span></div>
+                            <div class="index-price" id="shop_price" price=""><span id="spanSubTotal_"><strike>US {$goods.market_price}</strike></span></div>
+                          </div>
+                          <a href="{$goods.url}" target="_blank" class="sheinside-widget-carousel-description-button-anchor"> <span class="sheinside-widget-carousel-button">View</span> </a> </div>
+                      </div>
+                    </li>
+		    <!--{/foreach}-->
+                  </ul>
+                  <a class="sheinside-widget-carousel-arrow sheinside-widget-carousel-prev" href="#">&lt;</a> <a class="sheinside-widget-carousel-arrow sheinside-widget-carousel-next" href="#">&gt;</a> <a class="sheinside-widget-carousel-info" target="_blank"></a>
+                  <div class="sheinside-widget-carousel-pager"></div>
+                </div>
+                <div class="sheinside-widget-heading"> <a href="#">flash_sale</a> </div>
+                <div class="sheinside-widget-panel sheinside-widget-carousel">
+                  <ul>
+                    
+		    <!--{foreach name=goods_list_3 from=$goods_list_3 item=goods}-->
+		    <li> <a href="{$goods.url}" target="_blank"> <img src="{$goods.goods_thumb}" alt="" width="65" height="128" /> <span class="sheinside-widget-carousel-mask"></span> </a>
+                      <div class="sheinside-widget-carousel-description">
+                        <div class="sheinside-widget-carousel-description-inside sheinside-clearfix">
+                          <h3> <a href="{$goods.url}" target="_blank" >{$goods.goods_name}</a> </h3>
+                          <div style="width:200px;height:20px;">
+                            <div class="index-price" id="special_price" price=""><span id="spanSubTotal_">US {$goods.shop_price}</span></div>
+                            <div class="index-price" id="shop_price" price=""><span id="spanSubTotal_"><strike>US {$goods.market_price}</strike></span></div>
+                          </div>
+                          <a href="{$goods.url}" target="_blank" class="sheinside-widget-carousel-description-button-anchor"> <span class="sheinside-widget-carousel-button">View</span> </a> </div>
+                      </div>
+                    </li>
+		    <!--{/foreach}-->
+                  </ul>
+                  <a class="sheinside-widget-carousel-arrow sheinside-widget-carousel-prev" href="#">&lt;</a> <a class="sheinside-widget-carousel-arrow sheinside-widget-carousel-next" href="#">&gt;</a> <a class="sheinside-widget-carousel-info" target="_blank"></a>
+                  <div class="sheinside-widget-carousel-pager"></div>
+                </div>
+                <div class="sheinside-widget-footer"> <a class='example11' href="#">Get this widget</a> </div>
+              </div>
+              <div style="display:none">
+                <div id='inline_example11' style='padding:4px; background:#fff;'>
+                  <textarea name="" rows="" cols="" style="width:250px;height:200px" onmousemove=this.select(),this.focus();><iframe scrolling="no" frameborder="0" src="{$shop_url}promotion_goods_app.php" style="width:280px;height:450px;"></iframe>
+</textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+</body>
+</html>

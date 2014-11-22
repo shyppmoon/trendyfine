@@ -1,0 +1,21 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- {if $related_goods} -->
+ <div class="tit3">We Recommend</div> 
+ <div class="goods_list2 clearfix ie6" style=" padding:0">
+      <!--{foreach from=$related_goods item=releated_goods_data}-->
+       <div class="goodsItem" >
+          <a href="{$releated_goods_data.url}"><img src="{$releated_goods_data.goods_thumb}" alt="{$releated_goods_data.goods_name}" class="goodsimg" /></a>
+        
+       
+        <!-- {if $releated_goods_data.promote_price neq 0} -->
+        <font class="shop_s">{$releated_goods_data.formated_promote_price}</font>
+        <!-- {else} -->
+        <font class="shop_s">{$releated_goods_data.shop_price}</font>
+        <!-- {/if} -->
+
+        </div> 
+        <!--{/foreach}-->
+      </div>
+    <div class="blank"></div>   
+ 
+<!-- {/if} -->

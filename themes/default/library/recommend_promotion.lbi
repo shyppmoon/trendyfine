@@ -1,0 +1,43 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- {if $promotion_goods} -->
+ <div style="border:1px solid #d0d0d0;" class="clearfix">
+      
+      
+  <div class="tit_3"  >
+  <span><a href="../search.php?intro=promotion" class="f6">Sale product</a></span>   <em>Time Left:</em>  </div>
+  <div class="blank"></div>
+  <div class="tab_body" >
+      
+         <!--{foreach from=$promotion_goods item=goods name="no"}-->
+        
+       
+    
+    <div class="goodsItem " style=" padding:5px;  border:none; background:#fff; position:relative" >
+    
+    
+    
+    <img src="../images/sale_biao.gif" style="position:absolute; right:5px; top:5px;">
+    
+    
+    
+    
+           <a href="{$goods.url}"><img src="{$goods.thumb}" alt="{$goods.name|escape:html}" class="goodsimg" /></a><br />
+           <p><a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.short_name|escape:html}</a></p>
+         
+          <font class="shop_s">{$goods.promote_price}</font>
+        
+            <font class="market">{$goods.market_price}</font> 
+   
+          
+          
+        </div>
+    
+         <!--{/foreach}-->
+      </div>
+    
+     
+  </div>
+<div class="blank"></div>
+
+<!-- {/if} -->
+

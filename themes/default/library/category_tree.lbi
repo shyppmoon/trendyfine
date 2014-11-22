@@ -1,0 +1,33 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<div class="box">
+ 
+<h3 style="border-bottom:1px solid #e2e2e2; padding-bottom:7px;"><span>CATEGORYS</span></h3>
+   <div id="category_tree">
+ <div class="blank"></div>
+   <div class="box1 cate" id="cate">
+    <!--{foreach from=$categories item=cat name=cat}-->
+    <h1 class="clearfix" onclick="tab({$smarty.foreach.cat.index})">
+       
+		<a href="{$cat.url}">{$cat.name|escape:html}</a>
+		 
+		</h1>
+		<ul style="display:block">
+    
+    
+      
+     <!--{foreach from=$cat.cat_id item=child}-->
+		<li><a href="{$child.url}">{$child.name|escape:html}</a></li>
+		<!--{/foreach}-->
+		</ul>
+		  <!-- {if !$smarty.foreach.cat.last} -->
+         	<div style="clear:both" class="line"></div>
+        <!-- {/if} -->
+    
+    <!--{/foreach}--> 
+</div>
+  </div>
+
+</div>
+<div class="blank5"></div>
+

@@ -1,0 +1,68 @@
+<!-- $Id: article_list.htm 16783 2009-11-09 09:59:06Z liuhui $ -->
+
+{if $full_page}
+{include file="pageheader.htm"}
+{insert_scripts files="../js/utils.js,listtable.js"}
+<form method="POST" action="currency.php?act=batch_remove" name="listForm">
+<!-- start cat list -->
+<div class="list-div" id="listDiv">
+{/if}
+<input type="button" value="生成货币列表以便前台显示" class="button" onclick="window.location.href='currency.php?act=generate'" />
+<table width="100%" cellspacing="1" cellpadding="2" id="list-table">
+  <tr>
+    <th width="10%">{$lang.currency_name}</th>
+    <th width="13%">{$lang.currency_to}</th>
+    <th width="18%">{$lang.currency_format}</th>
+    <th width="9%">{$lang.rate}</th>
+    <th>{$lang.sort_order}</th>
+    <th>{$lang.is_show}</th>
+    <th>{$lang.handler}</th>
+  </tr>
+  {foreach from=$currency_list item=list}
+  <tr align="center">
+    <td align="center" class="first-cell nowrap" valign="top" ><span>{$list.currency_icon}&nbsp;{$list.currency_name|escape}</span></td>
+    <td align="center" class="first-cell nowrap" valign="top" >
+      <span>{$list.currency_to|escape}</span>
+    </td>
+    <td align="center" valign="top" class="nowrap">
+      {$list.currency_format|escape}
+    </td>
+    <td align="center" valign="top">
+      {$list.rate|escape}
+    </td>
+    <td width="10%" align="center" class="nowrap" valign="top"><span onclick="listTable.edit(this, 'edit_sort_order', {$list.currency_id})">{$list.sort_order}</span></td>
+    <td width="24%" align="center" class="nowrap" valign="top"><img src="images/{if $list.is_show eq '1'}yes{else}no{/if}.gif" onclick="listTable.toggle(this, 'toggle_is_show', {$list.currency_id})" /></td>
+    <td width="24%" align="center" class="nowrap" valign="top">
+      <a href="?act=edit&amp;id={$list.currency_id}">{$lang.edit}</a>
+      <a href="javascript:;" onclick="listTable.remove({$list.currency_id}, '{$lang.drop_confirm}')" title="{$lang.remove}">{$lang.remove}</a>
+    </td>
+  </tr>
+  {/foreach}
+</table>
+
+{if $full_page}
+</div>
+
+
+</form>
+<!-- end cat list -->
+<script type="text/javascript" language="JavaScript">
+  listTable.recordCount = {$record_count};
+  listTable.pageCount = {$page_count};
+
+  {foreach from=$filter item=item key=key}
+  listTable.filter.{$key} = '{$item}';
+  {/foreach}
+  {literal}
+
+  onload = function()
+  {
+    // 开始检查订单
+    startCheckOrder();
+  }
+
+
+ {/literal}
+</script>
+{include file="pagefooter.htm"}
+{/if}

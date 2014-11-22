@@ -1,0 +1,34 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- {if $bought_goods} -->
+     <div class="box">
+ 
+      <h3><span class="text">Also Bought</span></h3> <div style="clear:both"></div>
+      <div  >
+     <div class="blank"></div>
+       <!--{foreach from=$bought_goods item=bought_goods_data}-->
+        
+        
+         
+        
+        
+		
+		<div class="goodsItem goodsItem2 goodsItem3" style="padding: 10px 5px">
+        
+           <a href="{$bought_goods_data.url}"><img src="{$bought_goods_data.goods_thumb}" alt="{$bought_goods_data.goods_name}" class="goodsimg" /></a><br />
+           <p><a href="{$bought_goods_data.url}" title="{$bought_goods_data.goods_name}">{$bought_goods_data.goods_name}</a></p>
+           <font class="shop_s">
+        <!-- {if $bought_goods_data.promote_price neq 0} -->
+         {$bought_goods_data.formated_promote_price}
+          <!-- {else}-->
+         {$bought_goods_data.shop_price}
+          <!--{/if}-->
+           </font>      
+        </div>
+		
+        
+        <!-- {/foreach} -->
+ 
+     </div>
+    </div>
+    <div class="blank"></div>
+    <!-- {/if} -->

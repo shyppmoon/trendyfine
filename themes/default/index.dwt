@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>{$page_title}</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+<link rel="alternate" type="application/rss+xml" title="RSS|{$page_title}" href="{$feed_url}" />
+{* 包含脚本文件 *}
+{insert_scripts files='common.js,index.js'}
+ 
+ 
+</head>
+<body class="index_body">
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+ 
+
+
+         
+<script type="text/javascript" src="themes/default/js/jcarousellite.js.pagespeed.jm.6tnh1jRImp.js"></script> 
+ 
+<div class="block">
+
+<div class="blank"></div>
+   
+
+<div class="m-banner">
+<div class="banner-list" style="visibility: visible; overflow: hidden; position: relative; z-index: 2; left: 0px; width: 960px; ">
+<ul class="fix" style="margin: 0px; padding: 0px; position: relative; z-index: 1; width: 4800px; left: -1920px; ">
+
+<li style="overflow: hidden; float: left; width: 960px; height: 570px; ">
+
+<!-- TemplateBeginEditable name="首页轮播广告1" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ 
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable -->
+ 
+</li>
+<li style="overflow: hidden; float: left; width: 960px; height: 570px; ">
+<!-- TemplateBeginEditable name="首页轮播广告2" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ 
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable -->                              
+</li>
+<li style="overflow: hidden; float: left; width: 960px; height: 570px; ">
+<!-- TemplateBeginEditable name="首页轮播广告3" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ 
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable -->
+</li>
+ 
+ </ul>
+</div>
+<span class="in-btn1"><a></a></span><span class="in-btn2"><a></a></span></div>
+<script type="text/javascript">$(function(){$(".m-banner .banner-list").jCarouselLite({btnPrev:".m-banner .in-btn1",btnNext:".m-banner .in-btn2",auto:10000,visible:1});})</script>
+
+<div class="blank"></div>
+ 
+ <a class="animated_banner" href="" style="background-position: 632.826px center;"><div class="header">FREE SHIPPING TO ALL COUNTRIES  WORLDWIDE</div><div class="subHeader">SHIPPING To WORLDWIDE NOW NO MINIMUM PURCHASE REQUIRED</div></a>
+ <div class="blank"></div>
+<script type="text/javascript">
+			$(function(){
+			var documentHeight,windowHeight,banner,bannerBottom;
+			windowHeight = $(window).height();
+			banner = $('.animated_banner');
+			bannerBottom = banner.offset().top + banner.height();
+			$(window).scroll(function(event) {
+				$this = $(this);
+				percentScrolled = $this.scrollTop()/bannerBottom;
+				banner.css({'backgroundPosition': (percentScrolled*banner.width()) - 96});
+				});
+			});
+		</script>
+<div class="f_l">
+<!-- TemplateBeginEditable name="首页中部广告1" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ 
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable -->
+</div>
+<div class="f_l" style=" padding-left:15px;">
+<!-- TemplateBeginEditable name="首页中部广告2" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ 
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable -->
+</div>
+<div class="f_r">
+<!-- TemplateBeginEditable name="首页中部广告3" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ 
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable -->
+</div>
+<div class="blank"></div>
+<div class="f_l">
+<!-- TemplateBeginEditable name="首页中部广告4" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ 
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable -->
+</div>
+<div class="f_l" style="padding:0 5px;">
+<!-- TemplateBeginEditable name="首页中部广告5" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ 
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable -->
+</div>
+<div class="f_l" style=" padding-right:5px;">
+<!-- TemplateBeginEditable name="首页中部广告6" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ 
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable -->
+</div>
+ <div class="f_l">
+<!-- TemplateBeginEditable name="首页中部广告7" -->
+<!-- #BeginLibraryItem "/library/ad_position.lbi" -->
+
+{insert name='ads' id=$ads_id num=$ads_num}
+ 
+ <!-- #EndLibraryItem -->
+<!-- TemplateEndEditable -->
+</div>
+
+
+
+</div>  
+
+
+
+
+
+
+
+
+
+               
+                
+ 
+
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+</body>
+</html>

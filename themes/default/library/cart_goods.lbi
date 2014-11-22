@@ -1,0 +1,49 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<table width="100%" align="center" border="0" cellpadding="5" cellspacing="1" bgcolor="#dddddd">
+            <tr>
+              <th bgcolor="#ffffff">{$lang.goods_name}</th>
+              <th bgcolor="#ffffff">{$lang.goods_attr}</th>
+              <!-- {if $show_marketprice} -->
+              <th bgcolor="#ffffff">{$lang.market_prices}</th>
+              <!-- {/if} -->
+              <th bgcolor="#ffffff">{if $gb_deposit}{$lang.deposit}{else}{$lang.shop_prices}{/if}</th>
+              <th bgcolor="#ffffff">{$lang.number}</th>
+              <th bgcolor="#ffffff">{$lang.subtotal}</th>
+            </tr>
+            <!-- {foreach from=$goods_list item=goods} -->
+
+            <tr>
+              <td bgcolor="#ffffff">
+              <!-- {if $goods.goods_id gt 0 && $goods.extension_code eq 'package_buy'} -->
+	      <a href="javascript:void(0)" onclick="setSuitShow({$goods.goods_id})" class="f6">{$goods.goods_name}<span style="color:#FF0000;">（{$lang.remark_package}）</span></a>
+	      <div id="suit_{$goods.goods_id}" style="display:none">
+	          <!-- {foreach from=$goods.package_goods_list item=package_goods_list} -->
+		    <a href="goods.php?id={$package_goods_list.goods_id}" target="_blank" class="f6">{$package_goods_list.goods_name}</a><br />
+	          <!-- {/foreach} -->
+	      </div>
+	      <!-- { else } -->
+	      <img src="{$goods.goods_thumb}" style="width:85px; height:85px;" align="top"> <a href="goods.php?id={$goods.goods_id}" target="_blank" class="f6">{$goods.goods_name}</a> 
+                <!-- {if $goods.parent_id > 0} -->
+                <span style="color:#FF0000">（{$lang.accessories}）</span>
+               <!-- {elseif $goods.is_gift} -->
+                <span style="color:#FF0000">（{$lang.largess}）</span>
+                <!-- {/if} -->
+          <!-- {/if} -->
+          <!-- {if $goods.is_shipping} -->(<span style="color:#FF0000">{$lang.free_goods}</span>)<!-- {/if} -->
+              </td>
+
+              <td bgcolor="#ffffff">{$goods.goods_attr|nl2br}</td>
+              <!-- {if $show_marketprice} -->
+              <td align="center" bgcolor="#ffffff">{$goods.formated_market_price}</td>
+              <!-- {/if} -->
+              <td bgcolor="#ffffff" align="center">
+              <div>{$goods.formated_goods_price}</div>
+              <span class="discount_val">
+                    {$goods.save_rate} off</span>
+              </td>
+              <td bgcolor="#ffffff" align="center">{$goods.goods_number}</td>
+              <td bgcolor="#ffffff" align="center">{$goods.formated_subtotal}</td>
+            </tr>
+            <!-- {/foreach} -->
+           
+          </table>

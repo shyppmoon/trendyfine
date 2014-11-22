@@ -1,0 +1,37 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.currency{position:relative;float:left;height:20px;z-index:9999999;}
+.currency a.act{ background:#efefef url(images/btn_bg.jpg) repeat-x;border:1px solid #ccc;padding:0px 8px;border-radius:3px; text-shadow:1px 1px 0px #fff;border-bottom:1px solid #ccc;border-right:1px solid #ddd;display:block;}
+.currency a.act .arrow{width:9px;height:7px;display:inline-block;position:relative;top:-2px;}
+.currency:hover a.act{background:#ddd url(images/btn_bg_1.jpg) repeat-x;border:1px solid #ccc;}
+.currency dl{margin:0px;position:absolute;top:20px;left:0px;background:#fff;left:0px;width:130px;border:1px solid #999;display:none;box-shadow:1px 1px 3px #ccc;padding:5px;border-radius:3px;z-index:9999999; z-index:9999}
+.currency:hover dl{display:block;}
+.currency dd {padding:3px 0;margin:0px;text-align:left; display:block; float:none}
+.currency dd:hover, .currency dd:hover a{background-color:#FDD;}
+.currency dd a{line-height:15px;line-height:1.2em;padding-right:10px;display:block;padding-left:19px;text-align:left;}
+.currency dd a:hover{background-color:#FDD;}
+</style>
+<div class="change_money fl">
+    <p class="money" style="float:left">Currency:</p> 
+    <div class="currency">
+    <form action="" method="post" id="currency-view-form" name="currency_view_form">
+     <input type="hidden" name="currency" value=""/>  
+    <a href="#" class="act"> {$currency_to} <em class="arrow"></em></a> 
+    <dl>
+    <!-- {foreach from=$currency_list item=currency} -->
+    <dd><a title="{$currency.currency_to}" href="javascript:jumpCurrency('{$currency.currency_to}')" style="background:url(data/currency_icon/{$currency.currency_icon}) left center no-repeat">{$currency.currency_name}</a></dd>
+    <!-- {/foreach} -->
+    <script language="javascript">
+    <!--
+    function jumpCurrency(currency_to)
+    {
+        document.currency_view_form.currency.value = currency_to;
+        document.currency_view_form.action=window.location;
+        document.currency_view_form.submit();
+    }
+    -->
+    </script>
+    </dl>
+    </form>
+    </div>
+</div>

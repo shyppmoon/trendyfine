@@ -1,0 +1,21 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- {if $best_goods} -->
+ 
+ 
+  <!--{foreach from=$best_goods item=goods name=no}-->
+    <div class="goodsItem <!-- {if $smarty.foreach.no.iteration<5}-->goodsItem_yipai<!--{/if}-->"   <!--{if $smarty.foreach.no.index mod 4 eq 0}-->id=""<!--{else}-->id="jianju"<!--{/if}-->>
+        
+           <a href="{$goods.url}"><img src="{$goods.thumb}" alt="{$goods.name|escape:html}" class="goodsimg" /></a><br />
+           <p><a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.short_style_name}</a></p>
+           <font class="shop_s">
+           <!-- {if $goods.promote_price neq ""} -->
+          {$goods.promote_price}
+          <!-- {else}-->
+          {$goods.shop_price}
+          <!--{/if}-->
+           </font>  <font class="market">{$goods.market_price}</font> 
+        </div>
+  <!--{/foreach}-->
+ 
+<div class="blank5"></div>
+<!-- {/if} -->

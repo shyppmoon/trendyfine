@@ -1,0 +1,57 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+{insert_scripts files='transport_1.js'}
+<a  href="flow.php">{$str}</a>
+
+  <!-- {if $goods} -->
+<ul class="car_ul">
+<div style="position:relative">
+<div class="dang"></div>
+ {foreach from=$goods item=goods name=goods}
+ <li class="cart_item clearfix">
+  <div class="pic"><a href="{$goods.url}"><img src="{$goods.goods_thumb}" width="50" alt="{$goods.goods_name}"></a></div>
+  <div class="goods_name"><a class="name" href="{$goods.url}" >{$goods.short_name}</a><div>{$goods.goods_attr}</div></div>
+  <div class="goods_price"><b>{$goods.goods_price}×{$goods.goods_number}</b><br /><a class="del" href="javascript:" onClick="deleteCartGoods({$goods.rec_id})">Delete</a></div>
+</li>
+ {/foreach}
+ 
+</div> 
+<div class="cart_handel">
+<input type="button" onclick="location.href='flow.php?step=cart'" class="bnt_blue_1" value="VIEW CART">
+<input type="button" onclick="location.href='flow.php?step=checkout'" class="bnt_blue_1" value="PAY NOW" style="width:130px; background:#000">
+</div>
+</ul>
+
+<!-- {else} -->
+<ul class="car_ul">
+<div  style=" position:relative">
+<div class="dang dang2"></div>
+<a href="#" style="color:#999; padding-left:30px;">Your shopping cart is empty.</a>
+</div> 
+</ul>
+
+
+<!-- {/if} -->
+
+
+
+<script type="text/javascript">
+function deleteCartGoods(rec_id)
+{
+Ajax.call('delete_cart_goods.php', 'id='+rec_id, deleteCartGoodsResponse, 'POST', 'JSON');
+}
+
+/**
+ * 接收返回的信息
+ */
+function deleteCartGoodsResponse(res)
+{
+  if (res.error)
+  {
+    alert(res.err_msg);
+  }
+  else
+  {
+      document.getElementById('ECS_CARTINFO').innerHTML = res.content;
+  }
+}
+</script>

@@ -1,0 +1,40 @@
+/* CSS Document */
+.ez1 {margin:17px 0;width:100%;font-family: Arial; font-size: 12px;}
+.ez1_head2 { font-size: 12px;line-height: 1; margin-bottom: 1em; /* text-transform: none;*/}
+.ez1_head1 {
+    background: none repeat scroll 0 0 #000000;
+    color: #FFFFFF;font-size: 16px; line-height:26px;
+    text-align: center;margin-bottom: 0.75em;
+}
+.duiqi1 {
+    font-family: Arial;
+    font-size: 12px; letter-spacing: 0.04em;
+    text-align: justify;margin: 0 0 1.5em;
+}
+.duiqi1 a, .duiqi1 a:link, .duiqi1 a:visited {
+    color: #FD7E07;  text-decoration: none;
+}
+.duiqi1 a:hover {
+    color: #000000; text-decoration:underline;
+}
+.tableborder1{ margin-bottom: 1.4em;
+    width: 100%;}
+.tableborder1 tr td {/*padding: 4px 10px 4px 5px;*/}
+.biaoge table {margin-bottom: 1.4em;}
+.biaoge td {
+    border-bottom: 1px solid #888888;
+    border-right: 1px solid #888888;
+}
+.biaoge div {
+    font-family: Arial; font-size: 12px; letter-spacing: 0.04em;
+}
+.biaoge div span {
+   font-weight: bold;color:#000000;
+}
+.agree {background: url("images/agree.jpg") no-repeat scroll 0 0 transparent;
+    border: medium none;  height: 26px;
+    width: 76px;}
+.no_agree {background: url("images/no_agree.jpg") no-repeat scroll 0 0 transparent;
+    border: medium none; height: 26px;
+    width: 101px;}
+		

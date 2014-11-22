@@ -1,0 +1,108 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+   
+<div class="box shuomin">
+<div class="ff_1" style=" position:relative; z-index:999999999">
+<h2 id="ECS_tree1" class=" tabFront">Description</h2>
+<h2 id="ECS_tree2" class=" tabBack" >Delivery</h2>
+<h2 id="ECS_tree3" class=" tabBack" >Return Policy</h2>
+
+</div>   
+<div style="clear:both"></div>
+<div class="box_1    " style="border:1px solid  #AAA; margin-top:-1px; padding:10px;">
+<div id="ECS_tree1_BODY">
+<dl>
+<ul>
+{$goods.goods_desc}
+<!-- {foreach from=$properties item=property_group key=key} -->
+       <!-- {foreach from=$property_group item=property} -->
+<li><span>{$property.name|escape:html}:</span><i style="font-style:normal">{$property.value}</i></li>
+ <!-- {/foreach}-->
+        <!-- {/foreach}-->
+
+</ul>
+</dl>
+</div>
+<div id="ECS_tree2_BODY" style="display:none;">
+<dl>
+<ul>
+<u style="color:red;font-weight:bold;">Free Shipping Worldwide</u>
+<br>
+<br>
+Standard Shipping: 5-28 Days,Free Shipping Worldwide.
+<br>
+Express Shipping: 3-10 Days,  US$15
+<br>
+<br>
+Receiving time = Processing time +Shipping time
+<br>
+<br>
+<a style="color:blue;" href="article-46-Shipping-Info.html" rel="nofollow" target="_blank">Learn More</a>
+<br>
+</ul>
+</dl>
+
+</div>
+<div id="ECS_tree3_BODY" style="display:none;">
+<dl>
+<ul>
+<u style="color:red;font-weight:bold;">TrendyFine Guarantee</u>
+<br>
+<br>
+Return or exchange <u style="color:red;font-weight:bold;">within 30 days</u> from the delivered date.
+<br>
+Request:
+<br>
+1. Items received within 30 days from the delivered date.
+<br>
+2. Items received unused, undamaged and in original package.
+<br>
+3. Return shipping fee is paid by buyer.
+<br>
+<br>   
+<a style="color:blue;" href="article-47-Returns-Exchange.html" rel="nofollow" target="_blank">Learn More</a>
+
+</ul>
+</dl>
+</div>
+
+</div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+{literal}
+var cycleList = ['ECS_tree1','ECS_tree2','ECS_tree3','ECS_tree4'];
+var tabFront = 'tabFront';
+var tabBack = 'tabBack';
+function cycleShow(obj)
+{
+var curObj;
+var curBody;
+for (i=0; i < cycleList.length; i++)
+{
+curObj = document.getElementById(cycleList[i]);
+curBody = document.getElementById(cycleList[i] + '_BODY');
+if (obj.id == curObj.id)
+{
+curObj.className = tabFront;
+curBody.style.display = "";
+}
+else
+{
+curObj.className = tabBack;
+curBody.style.display = "none";
+}
+}
+}
+
+// 添加事件
+for (i=0; i< cycleList.length; i++)
+{
+document.getElementById(cycleList[i]).onmousemove = function()
+{
+cycleShow(this);
+};
+}
+{/literal}
+//]]>
+</script>

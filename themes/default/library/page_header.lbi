@@ -1,0 +1,155 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script type="text/javascript" src="js/jquery.js"></script> 
+<script type="text/javascript" src="js/jquery.json.js"></script>
+<script type="text/javascript" src="js/transport_1.js"></script>
+<script type="text/javascript">
+var process_request = "{$lang.process_request}";
+</script>
+<a name=header></a>
+<div class="block clearfix " style=" z-index:9;   position:relative" >
+  <div class="f_l"> <a id="logo" href="/"  title="Women's Street Fashion Online - TrendyFine"> <img alt="TrendyFine" src="../images/logo.gif" /></a>
+    <form  id="searchForm" name="searchForm" method="get" action="search.php" onSubmit="return checkSearchForm()"    >
+      <input name="keywords" type="text" id="keyword" class="searchArea" maxlength="120" value="" onclick="javascript:this.value='';"    />
+      <button class="searchBtn"   type="submit"></button>
+    </form>
+  </div>
+  <div style=" float:right">
+    <div class="f_r log">
+      <div style="float:right;">
+        <div class="t"> 
+        {insert_scripts files='utils.js'} 
+        <font id="ECS_MEMBERZONE">{* ECSHOP 提醒您：根据用户id来调用member_info.lbi显示不同的界面  *}{insert name='member_info'} </font> 
+          <!--{if $navigator_list.top}--> 
+          <!-- {foreach name=nav_top_list from=$navigator_list.top item=nav} --> 
+          <a href="{$nav.url}" <!-- {if $nav.opennew eq 1} --> target="_blank" <!-- {/if} -->>{$nav.name}</a> 
+          <!-- {/foreach} --> 
+          <!-- {/if} --> 
+        </div>
+        <div style=" clear:both"></div>
+        <div class="b" style=" position:relative;">
+          <div class="buy_car_bg_box" style="float:right; padding-top:5px; padding-left:0;  ">
+            <div class="buy_car_bg" onmouseover="this.className='buy_car_bg ul1_on'" onmouseout="this.className='buy_car_bg'">
+              <div id="ECS_CARTINFO"> <a  href="flow.php">{insert name='cart_info'}</a> </div>
+            </div>
+          </div>
+           <div class="fr" style="position:absolute; left:-40px; top:10px;">
+            <!--Begin Comm100 Live Chat Code-->
+<div id="comm100-button-265"></div>  
+<script type="text/javascript">
+    var Comm100API = Comm100API || new Object;
+    Comm100API.chat_buttons = Comm100API.chat_buttons || [];
+    var comm100_chatButton = new Object;
+    comm100_chatButton.code_plan = 265;
+    comm100_chatButton.div_id = 'comm100-button-265';
+    Comm100API.chat_buttons.push(comm100_chatButton);
+    Comm100API.site_id = 202762;
+    Comm100API.main_code_plan = 265;
+    var comm100_lc = document.createElement('script');
+    comm100_lc.type = 'text/javascript';
+    comm100_lc.async = true;
+    comm100_lc.src = 'https://chatserver.comm100.com/livechat.ashx?siteId=' + Comm100API.site_id;
+    var comm100_s = document.getElementsByTagName('script')[0];
+    comm100_s.parentNode.insertBefore(comm100_lc, comm100_s);
+</script>
+<!--End Comm100 Live Chat Code-->
+          </div>
+          
+          
+          <div class="fr" style="position:absolute; left:50px; top:10px;">
+<div class="change_money fl">
+    <p class="money" style="float:left">Currency:</p> 
+    <div class="currency">
+    <form action="" method="post" id="currency-view-form" name="currency_view_form">
+     <input type="hidden" name="currency" value=""/>  
+    <a href="#" class="act"><img src="data/currency_icon/{$currency_icon}" style="float:left; margin-top:5px; margin-right:2px;"/>{$currency_to}<em class="arrow"></em></a> 
+    <dl>
+    <!-- {foreach from=$currency_list item=currency} -->
+    <dd><a rel="nofollow" title="{$currency.currency_to}" href="javascript:jumpCurrency('{$currency.currency_to}')" style="background:url(data/currency_icon/{$currency.currency_icon}) left center no-repeat">{$currency.currency_name}</a></dd>
+    <!-- {/foreach} -->
+    <script language="javascript">
+    <!--
+    function jumpCurrency(currency_to)
+    {
+        document.currency_view_form.currency.value = currency_to;
+        document.currency_view_form.action=window.location;
+        document.currency_view_form.submit();
+    }
+    -->
+    </script>
+    </dl>
+    </form>
+    </div>
+</div>     
+    </div>
+    
+    
+          
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+  <div  class="blank"></div>
+</div>
+<div class="blank5"></div>
+<div id="mainNav" class="clearfix block"  >
+  <!-- {foreach name=nav_middle_list from=$navigator_list.middle item=nav } -->
+  <ul class="u1" onmouseover="this.className='u1 u1_over'" onmouseout="this.className='u1'" >
+    <a  class="a1" href="{$nav.url}" {if $nav.opennew eq 1}target="_blank" {/if} {if $nav.active eq 1} id="cur"{/if}>{$nav.name}</a> 
+      {if $nav.cid eq 73}
+	<dl class="dl_yan1">
+		<div class="dd"> <a class="t" href="/category-73-attr0-0-0-0-0-0-1280-0-0-0-0-Women-Dresses.html">Print Dresses</a></div>
+		<br>
+		<div class="dd"> <a class="t" href="/category-73-attr0-0-0-0-0-3017-0-0-0-0-0-Women-Dresses.html">Maxi Dresses</a></div>
+		<br>
+		<div class="dd"> <a class="t" href="/category-73-attr0-2665-0-0-0-0-0-0-0-0-0-Women-Dresses.html">Vintage Dresses</a></div>
+		<br>
+		<div class="dd"> <a class="t" href="/category-73-attr0-1436-0-0-0-0-0-0-0-0-0-Women-Dresses.html">Sexy Dresses</a></div>
+		<br>
+		<div class="dd"> <a class="t" href="/category-73-attr0-0-0-0-0-0-0-0-0-1419-0-Women-Dresses.html">Chiffon Dresses</a></div>
+		<br>
+		<div class="dd"> <a class="t" href="/category-73-attr0-0-0-0-0-0-0-3194-0-0-0-Women-Dresses.html">Lace Dresses</a></div>
+		<br>
+		<div class="dd"> <a class="t" href="/category-73-attr0-0-1275-0-0-0-0-0-0-0-0-Women-Dresses.html">Sleeveless Dresses</a></div>
+		<br>
+		<div class="dd"> <a class="t" href="/category-73-attr0-0-3191-0-0-0-0-0-0-0-0-Women-Dresses.html">Long Sleeve Dresses</a></div>
+
+		<div class="dd"> <a class="t" href="/category-73-attr0-4961-0-0-0-0-0-0-0-0-0-Women-Dresses.html">Club Dresses</a></div>
+		<br>
+		<div class="dd"> <a class="t" href="/category-73-attr0-0-0-1320-0-0-0-0-0-0-0-Women-Dresses.html">Bodycon Dresses</a></div>
+		<br>
+		<div class="dd"> <a class="t" href="/category-73-attr1348-0-0-0-0-0-0-0-0-0-0-Women-Dresses.html">Little Black Dresses</a></div>
+		<br>
+		<div class="dd"> <a class="t" href="/category-73-attr0-0-0-0-0-2067-0-0-0-0-0-Women-Dresses.html">Mini Dresses</a></div>
+		<br>
+		<div class="dd"> <a class="t" href="/category-73-attr1481-0-0-0-0-0-0-0-0-0-0-Women-Dresses.html">Black & White Dresses</a></div>
+		<br>
+	</dl>
+      {/if}
+    <!-- {if $nav.cat_list}-->
+    <dl class="dl{$smarty.foreach.nav_middle_list.iteration}">
+      <!--{foreach from=$nav.cat_list item=cat}-->
+      <div class="dd"><a class="t" href="{$cat.url}">{$cat.name|escape:html}</a> 
+        <!--{foreach from=$cat.cat_id item=child name=no}-->
+        <!-- {if $smarty.foreach.no.iteration<11}--> 
+        <a class="b" href="{$child.url}">{$child.name|escape:html}</a> 
+        <!-- {/if} --> 
+        <!--{/foreach}--> 
+      </div>
+      <!--{/foreach}-->
+      
+      
+    </dl>
+    <!-- {/if} -->
+    
+  </ul>
+  <!-- {/foreach} --> 
+</div>
+<div class="header_banner">
+	<ul>
+		<li><a title="Shipping Info" href="article-46-Shipping-Info.html" rel="nofollow"><span></span>Free Shipping Worldwide</a></li>
+		<li class="header_ban_li"><a title="20% off for the first order" href="article-57-20-off-for-the-1st-order.html" rel="nofollow"><span></span><b style="color:red;">20% Off</b> for the 1st order</a></li> 
+		<li class="header_ban_right"><a title="Invite friends and get Free Gift" href="#" rel="nofollow"><span></span>Invite friends and get Free Gift</a></li>
+	</ul>
+</div>

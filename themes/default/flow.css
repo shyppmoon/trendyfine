@@ -1,0 +1,90 @@
+/* CSS Document */
+
+.check_all{width:960px;float:left;display:block}
+.check_left{float:left;width:290px;padding:0 60px 0 40px;line-height:20px;display:inline;margin:15px 0}
+.check_right{}
+.check_right ul li{float:left;margin-bottom:6px}
+.check_all h3{border-bottom:1px dashed #000;padding-bottom:2px;margin:6px 0;font-size:12px;font-weight:bold;text-indent:4px}
+.check_inp{float:left;width:170px}
+.checkOut_head{background:#eee url("images/opc_off_head_bg.gif") repeat-x 0 100%;border-color:#fff #d9dde3 #d9dde3;border-style:solid;border-width:1px 1px 0;margin-bottom:0;padding:4px 8px 6px}
+.check_all li{line-height:15px;margin-bottom:15px}
+.step-count{color:#999;background:#fff;margin-right:5px;padding:0 5px}
+.BaCK{background:url("images/back.gif") no-repeat;width:79px;height:25px;border:0}
+.uPdAte{background:url("images/update.jpg") no-repeat;width:77px;height:26px;border:0}
+.checkout_title{background:url("images/Checkout-method.gif") no-repeat;width:910px;height:22px;border-bottom:1px solid #ddd;font-size:16px;margin:10px 0 2px 25px}
+.checkout_title{background:none;border-bottom:1px solid #a1a1a1;font-size:18px;font-weight:bold;height:35px;margin:30px 0;text-transform:uppercase;width:100%}
+.regLoginItem{float:left;font-size:13px;font-weight:bold;margin-bottom:10px;padding-left:6px;padding-top:4px}
+.check_all li {
+  line-height: 15px;
+  margin-bottom: 5px;
+}
+.check_left li {
+  line-height: 20px;
+}
+.check_left li strong {
+  color: #464646;
+  font-size: 13px;
+  font-weight:bold
+}
+.sign-chec{background-color:#000;border:1px solid #c9c9c9;color:#fff!important;cursor:pointer;display:block;float:right;font-family:Arial,Helvetica;font-size:13px;font-weight:bold;height:26px;line-height:25px;margin-bottom:10px;margin-top:10px;text-align:center;width:181px}
+
+.sign-chec{border:medium none;color:#fff!important;float:left;font-family:Tahoma,Arial,Helvetica;font-size:15px;font-weight:bold;height:30px;line-height:30px;margin-top:0;padding:0 25px;text-transform:uppercase;width:auto}
+
+.check_right .logoin_list_bg{height:290px;margin:15px 0 30px 60px}
+.check_right .logoin_list{height:280px;padding:10px 0 0}
+.check_right h3{border:medium none;font-size:20px;line-height:35px;padding-bottom:10px;text-align:center;text-indent:0}
+fieldset {
+  border: 0 none;
+}
+.logoin_list_bg{background:none repeat scroll 0 0 #e1e1e1;float:left;height:270px;margin:30px 0 30px 100px;position:relative;width:410px}
+.check_right .logoin_list_bg{height:290px;margin:15px 0 30px 60px}
+.check_right .logoin_list{height:300px;padding:10px 0 0}
+.logoin_list{background:none repeat scroll 0 0 #fff;border:1px solid #c0c0c0;display:block;height:200px;left:-5px;padding:30px 0 40px;position:absolute;top:-5px;width:410px}
+.check_all h3{border-bottom:1px dashed #000;font-size:12px;font-weight:bold;margin:6px 0;padding-bottom:2px;text-indent:4px}
+.check_right h3{border:medium none;font-size:20px;line-height:35px;padding-bottom:10px;text-align:center;text-indent:0}
+.register_list,.login_list{position:relative}
+.register_list,.login_list{display:inline;float:left;font-size:12px;line-height:25px;margin-left:50px;padding-bottom:4px;padding-top:10px;text-align:left;width:600px}
+.logoin_list_bg .login_list{color:#000;font-family:Tahoma,Geneva,sans-serif;font-size:14px;line-height:34px;margin-bottom:25px;margin-left:0;padding:0}
+.register_li,.login_li{float:left;margin-right:4px;text-align:right;width:125px}
+.logoin_list_bg .login_li{margin-right:4px;text-align:left;text-indent:15px;width:100px}
+.login_li_right,.register_li_right{float:left;width:380px}
+.login_li_right,.register_li_right,.register_title .register_sinIput,.register_list-guest .register_sinIput{border:1px solid #a5a5a5;font-size:16px;height:34px;line-height:34px;width:250px}
+
+.flowBoxContent{ border:#ddd solid 1px;}
+.flowBoxContent th{ font-weight:normal; text-align:right; width:150px;}
+
+.guest_create{border-top:1px dashed #c7c7c7;font-size:12px;text-align:left;width:100%}
+.guest_create h4{color:#000;float:left;font-size:14px;text-indent:10px;width:325px}
+.guest_create p{display:inline-block;margin-left:35px}
+a.why-register{color:#000;font-size:14px;font-weight:bold;margin-left:90px;text-decoration:none}
+a.why-register strong{color:#f00}
+
+
+.discount_val {
+  color: #ff0000;
+  float: right;
+  margin-right: 5px;
+}
+
+.check_comment, .check_again_comment {
+  border: 1px solid #ccc;
+  height: 130px;
+  width: 99%;
+}
+
+
+.check_payment_bg{padding: 0 10px 10px;}
+.check_payment{border-bottom: 1px dashed #cccccc; line-height: 18px;}
+.check_payment input{}
+.check_payment label{display: inline-block; padding: 10px 0; vertical-align: middle; width: 850px;}
+.check_payment label img{}
+.check_payment_pay{}
+.check_payment_card{}
+.check_payment_money{}
+.check_payment_money label img{margin-left: 8px;}
+.check_payment_yandex label img{margin-left: 5px;}
+
+.shipping_options_check{border-bottom: 1px dashed #cccccc; line-height: 18px; background:#f5f5f5}
+.shipping_options_check h4{line-height: 25px;}
+.shipping_options_check input{margin: 0 10px;}
+.shipping_options_check label{display: inline-block; padding: 10px 0; vertical-align: middle; width: 850px;}

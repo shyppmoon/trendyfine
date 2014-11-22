@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="TrendyFine Fashion Blogger Program" />
+<meta name="Description" content="Want to get beautiful dress for free? welcome to be one of our fashion blogger - TrendyFine Fashion Blogger Program" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>TrendyFine Fashion Blogger Program</title>
+<!-- TemplateEndEditable --><!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+<link href="read_policy.css" rel="stylesheet" type="text/css" />
+{* 包含脚本文件 *}
+</head>
+<body>
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div class="block">
+<div class="ez1">
+		<img src="images/read_policy1.jpg"><br>
+		<h3 style="text-indent: 13px;color: #666666;font-weight: normal;margin-bottom:0px;" class="ez1_head2">1.Read fashion blogger policy,continue with "I agree" button.</h3>
+		
+		<h2 class="ez1_head1" style="width: 230px;margin-top:30px;">Are you a fashion blogger?</h2>
+		<p class="duiqi1">
+		Do you want clothings absolutely for FREE?<br>
+        Then don't hesitate to send us an email(<a href="mailto:fashion@trendyfine.com">fashion@trendyfine.com</a>)about yourself. You may get free clothings that are worthy of US$40 to US$200 every month.</p>
+		
+		<table align="center" cellspacing="1" cellpadding="3" class="tableborder1"> 
+		<form name="agree" method="post" action="get_vip_icon.html"></form>
+		<input type="hidden" value="1" name="agree"> 
+		<tbody><tr><td><h2 class="ez1_head1" style="width: 200px;">Fashion Blogger Policy</h2></td></tr> 
+		<tr><td align="left" class="tablebody1"> 
+		
+        <h3 class="ez1_head2">1.Requirement.</h3>
+		<p class="duiqi1">
+		Your blog must have over 1,000 followers(via bloglovin or google friend).<br>
+		You have at least 3,000 followers with one of your social networking accounts. </p> 
+        
+        
+		<h3 class="ez1_head2">2.Please put our Promotion Icon on the frontpage of your blog.</h3>
+		<p class="duiqi1">
+		You become our fashion reviewer once you join our program. We will call you our "fashion Expert". We need you to put our promotion Icon on the frontpage of your blog, and this icon links to the front page of our site (www.trendyfine.com).</p> 
+		
+		
+		<h3 class="ez1_head2">3.Please share your thoughts on our clothing through your social networks.</h3>
+		<p class="duiqi1">
+		You should take photos of you sporting our clothings within 7-15 days of you receiving the items, and publish them to your blog, lookbook, facebook and twitter,etc. When you publish the photos, review and comments, please add the the link of the product page or the link of home page (www.trendyfine.com)</p>
+		
+		
+		<h3 class="ez1_head2">4. Please send us an email once you publish your photos and comments.</h3>
+		<p class="duiqi1">
+		Note: As different countries may have different custom duty policies, we can't estimate your import duty.</p>
+		
+		
+		<h3 class="ez1_head2">5. TrendyFine reserves the right to use the information of your post.</h3>
+        <p class="duiqi1">We may collect photos of your post and related comments.<br><br>
+		At times, we may use the content. E.g, we may put it on facebook or use your photos on our website. If you do not agree, please inform us in advance.</p>
+		
+		
+		
+		<p class="duiqi1">
+		That's all! It's easy, right? If you want to join our program, please click "I Agree" to continue the process.</p>
+		
+		</td></tr> 
+		<tr><td align="center" class="tablebody2"><input type="submit" name="button" value="" class="agree" onclick="window.location.href='get_vip_icon.php'">&#12288;&#12288;
+		    <input type="reset" value="" onclick="history.back(-1)" class="no_agree"> 
+		    </td></tr> 
+		 
+		</tbody></table> 
+		
+		</div>
+</div>
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+</body>
+</html>

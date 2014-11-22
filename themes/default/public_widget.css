@@ -1,0 +1,576 @@
+@CHARSET "ISO-8859-1";
+
+/*----------------------------------------------------------------
+
+	*Filename:
+ 
+	*Description:
+
+	*Version:
+	
+	*Website:
+	
+	*Author:
+	
+	
+	==== STRUCTURE: ==============================================
+	
+	* widget-width: 			variable width between 200px to 350 px or fluid
+	
+	* Number of rows:  			6
+	
+	$__marketing_message: 	 	Displays the Marketing message.
+	
+	$__logo						Displays the logo.
+	
+	$__Pannel one				Displays the products in pannel one
+	
+	$__Pannel two				Displays the products in pannel two
+	
+	$__Promotion_area			Displays the promotion information.
+	
+	$__footer					Displays the footer information.
+	
+	===================================================================	
+*/
+
+.sheinside-core-widget
+{	
+	/*This is Reset or prefix*/	
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    color: inherit;
+    float: none;
+    font-size: 100%;
+    font-style: normal;
+    height: auto;
+    left: auto;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+    text-decoration: none;
+    text-transform: none;
+    top: auto;
+    vertical-align: baseline;
+    
+    font:  12px/28px arial !important;
+	clear: both;
+	margin-bottom: 16px;
+	background: #FFF;
+}
+
+/*==========================================================
+	sheinside CoreWidget
+============================================================*/
+
+.sheinside-core-widget .sheinside-widget
+{
+	font-size: 16px;
+	font-family: Arial, sans-serif;
+} 
+
+/*==========================================================
+	sheinside Widget Header 
+============================================================*/
+
+.sheinside-core-widget .sheinside-widget-header 
+{
+	padding-bottom: 4px;
+}
+
+.sheinside-core-widget .sheinside-widget-theme-dark
+{
+	background: #3C3C3C;
+}
+
+.sheinside-core-widget .sheinside-widget-theme-dark .sheinside-widget-header
+{
+	 /* background: url(images/dark/gap.png) no-repeat left bottom; */
+	
+}
+
+/*==========================================================
+	sheinside Widget Header Marketing Message
+============================================================*/
+
+.sheinside-core-widget .sheinside-widget-header .sheinside-widget-marketing-message 
+{
+	display: block;
+	background: #7A7A7A;
+	margin: 0;
+	max-height: 64px;
+	text-align: center;
+	color: #fff;
+	font-size: 12.5px;
+	line-height: 16px;
+	padding: 8px;
+	overflow: hidden; text-transform: uppercase;
+}
+
+.sheinside-core-widget .sheinside-widget-header .sheinside-widget-marketing-message p 
+{
+	margin: 0;
+}
+
+.sheinside-core-widget .sheinside-widget-header .sheinside-widget-marketing-message a, .sheinside-core-widget .sheinside-widget-header .sheinside-widget-marketing-message a:visited
+{
+	color: #FD7E07;
+}
+
+.sheinside-core-widget .sheinside-widget-header .sheinside-widget-marketing-message-anchor, .sheinside-widget-marketing-message-anchor:visited
+{
+	color: #fff !important;
+}
+
+.sheinside-core-widget .sheinside-widget-header .sheinside-widget-marketing-message-anchor span
+{
+	color: #FD7E07;
+}
+
+
+/*==========================================================
+	sheinside Widget Header Logo
+============================================================*/
+
+.sheinside-core-widget .sheinside-widget-header a
+{
+	display: block !important;
+}
+
+.sheinside-core-widget .sheinside-widget-header .sheinside-widget-logo
+{
+	margin: 0;
+	height: 48px;text-align:center;
+	/*background: url(images/logo.jpg) #ffffff no-repeat 0 0;text-indent: -9999px;*/
+	overflow: hidden;
+}
+.sheinside-core-widget .sheinside-widget-header .sheinside-widget-logo img {
+margin-top:10px;
+}	
+.sheinside-core-widget .sheinside-widget-heading
+{
+	margin-bottom: 4px;
+}
+
+.sheinside-core-widget .sheinside-widget-heading a
+{
+    display: block !important;
+    font-size: 13px;
+    line-height: 15px;
+    color: #fff;
+    font-weight: 500;
+    overflow: hidden;
+    padding: 8px 0px 8px 13px;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    margin-right:30px;text-transform: uppercase;
+}
+.sheinside-core-widget .sheinside-widget-heading a:hover
+{
+    text-decoration: underline;
+}
+.sheinside-core-widget .sheinside-widget-heading a p
+{
+	width:80%; 
+	margin-left:13px; 
+	margin-bottom:0px;  
+	text-indent: 0px; 
+	overflow: hidden; 
+	padding-bottom: 6px;
+	padding-top: 6px;
+	max-height: 32px;
+}
+.sheinside-core-widget .sheinside-pane2-title
+{
+	line-height: 1.25;	
+}
+
+
+.sheinside-core-widget .sheinside-widget-theme-light .sheinside-widget-heading
+{
+   background: #4C4C4C url(images/dropdown-icon.gif) no-repeat right top;
+}
+
+.sheinside-core-widget .sheinside-widget-theme-dark .sheinside-widget-heading
+{
+    background: #000 url(images/dark/dropdown-icon.png) no-repeat right top;
+}
+
+.sheinside-core-widget .sheinside-widgettheme-dark .sheinside-widget-heading
+{	
+	background: url(images/dark/gap.png) no-repeat left bottom;
+}
+
+.sheinside-core-widget .sheinside-widget-theme-dark .sheinside-widget-carousel-pager
+{
+	background:url("images/dark/pager-bg.png") #3C3C3C repeat-y center ;
+}
+
+
+
+/*==========================================================
+	sheinside Widget Panel
+============================================================*/
+
+.sheinside-core-widget .sheinside-widget-panel
+{
+	
+	width:100%;
+	overflow: hidden;
+	/*background: url(images/carousel-bg.png) repeat-x 0 0;*/
+}
+
+/*==========================================================
+	sheinside Widget Carousel
+============================================================*/
+
+.caroufredsel_wrapper
+{	border:none;
+	margin: 0px !important;
+}
+.sheinside-core-widget .sheinside-widget-carousel
+{
+	position: relative;
+	
+}
+
+.sheinside-core-widget .sheinside-widget-carousel-arrow
+{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 15px;
+	height: 128px;
+	background: url(images/carousel-arrows.png) no-repeat 0 0;
+	text-indent: -9999px;
+	overflow: hidden;
+	margin: 0px !important;
+	padding: 0px !important;
+}
+
+.sheinside-core-widget .sheinside-widgetcarousel-prev
+{
+	left: 0;
+	display: none;
+}
+
+.sheinside-core-widget .sheinside-widget-carousel-next
+{
+	right: 0;
+	background-position: -15px 0;
+}
+
+.sheinside-core-widget .sheinside-widget-carousel-pager
+{
+	display: block;
+	padding: 5px 0;
+	text-align: center;
+	vertical-align: top;
+	height: 10px;
+	overflow: hidden;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	-o-box-sizing: content-box;
+	box-sizing: content-box;	
+}
+
+.sheinside-core-widget .sheinside-widget-carousel-pager a
+{
+	display: -moz-inline-stack;
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	vertical-align: top;
+	margin-right: 12px;
+	width: 10px;
+	height: 10px;
+	background: url(images/carousel-unselected.png) no-repeat 0 0;
+	font-size: 0px;
+	overflow: hidden;
+}
+
+.sheinside-core-widget .sheinside-widget-carousel-pager a:last-child
+{
+	margin-right: 0;
+}
+
+.sheinside-core-widget .sheinside-widget-carousel-pager a.selected
+{
+	background: url(images/carousel-selected.png) no-repeat 0 0;
+}
+
+.sheinside-core-widget .sheinside-widget-carousel ul
+{
+	display: block;
+	margin: 0px; !important;
+	height: 108px;
+	position: relative;
+	list-style: none;
+	overflow: hidden;
+	background: none !important;
+	border: none !important;
+	padding: 0px !important;	
+	
+}
+
+.sheinside-core-widget .sheinside-widget-carousel ul li
+{
+	float: left;
+	position: relative;
+	width: 65px;
+	height: 128px;
+	margin-right: 4px;
+	margin-left: 4px !important;
+	padding: 0px;	
+}
+
+.sheinside-core-widget .sheinside-widget-carousel ul li a
+{
+	margin: 0px !important;	
+	padding: 0px !important;	
+	position: absolute;	
+}
+/*
+.sheinside-core-widget .sheinside-widget-carousel ul li:nth-of-type(odd)
+{
+	margin-left: 3px;
+}*/
+
+.sheinside-core-widget .sheinside-widget-carousel ul li.not-hovered
+{
+	background: #000;
+}
+
+.sheinside-core-widget .sheinside-widget-carousel ul li.hovered .sheinside-widget-carousel-mask
+{
+	display: block;
+}
+
+.sheinside-core-widget .sheinside-widget-carousel ul li .sheinside-widget-carousel-mask
+{
+	display: none;
+	position:absolute;
+	left: 0;
+	top: 0;
+	width: 65px;
+	height: 128px;border: 1px solid #DDDDDD;
+}
+
+.sheinside-core-widget .sheinside-widget-carousel ul li img
+{
+	width: 65px;
+	/*max-width: 100%;*/
+	height: 128px;
+	border: none !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	box-shadow: none !important;
+}
+
+.sheinside-core-widget .sheinside-widget-carousel ul li.not-hovered img
+{
+	opacity: 0.65;
+	filter: alpha(opacity=65);
+}
+
+.sheinside-core-widget .sheinside-widget-carousel ul li a
+{
+	display: block;
+}
+
+.sheinside-core-widget .sheinside-widget-carousel .sheinside-widget-carousel-info
+{
+	position: absolute;
+	display: none;
+	z-index: 4;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+	text-decoration: none;
+}
+
+.sheinside-core-widget .sheinside-widget-carousel .sheinside-widget-carousel-info a
+{
+	color:#001;	
+	text-decoration: none;
+}
+
+.sheinside-core-widget .sheinside-widget-carousel .sheinside-widget-carousel-info h3
+{
+	font-family: arial !important;
+	font-weight: bold;
+	margin: 2px 55px 0 0;
+	display:block;
+	background: none;
+	border: 0px;
+	padding: 0px;
+	text-shadow: none;
+	font-size: 12px;
+}
+
+.sheinside-core-widget .sheinside-widget-carousel .sheinside-widget-carousel-description h3
+{
+	font-weight: bold;
+	font-family: arial !important;
+	margin: 2px 65px 0 0;
+	text-decoration: none;
+	color: #3E3E3E !important;
+    line-height:28px !important;
+    font-size:100% !important;
+    text-decoration: none !important;
+}
+
+.sheinside-core-widget .sheinside-widget-carousel .sheinside-widget-carousel-description h3 a
+{
+    color: #3E3E3E !important;
+    line-height:28px !important;
+    font-size:100% !important;
+    text-decoration: none !important;
+}
+
+.sheinside-core-widget .sheinside-widget-carousel .sheinside-widget-carousel-description
+{
+	position: relative;
+	display: none;
+}
+
+.sheinside-core-widget .sheinside-widget-carousel .sheinside-widget-carousel-info .sheinside-widget-carousel-description-inside
+{
+	position: relative;
+	border: 1px solid #DDDDDD;
+	padding: 10px 8px 10px 7px !important;
+	font-size: 11px;
+	display: block;
+	line-height: 13px;
+	color: #565656;
+	background: #fff;
+}
+
+.sheinside-core-widget .sheinside-widget-carousel .sheinside-widget-carousel-info .sheinside-widget-carousel-description-inside h3
+{
+    text-align: left;
+}
+
+.sheinside-core-widget .sheinside-widget-carousel .sheinside-widget-carousel-info .sheinside-widget-carousel-description-inside h3 a
+{
+    font-family: arial !important;
+    font-variant: normal;
+    letter-spacing: normal;
+}
+
+.sheinside-core-widget .sheinside-widget-carousel .sheinside-widget-carousel-info p
+{
+	font-family: arial !important;
+	margin: 0 58px 0 0;
+	float: left;
+	font-weight: normal;
+	font-size: 11px;
+	display: block;
+}
+
+
+
+
+.sheinside-core-widget .sheinside-widget-carousel .sheinside-widget-carousel-info  .sheinside-widget-carousel-button
+{
+	position: absolute;
+	right: 7px;
+	margin-left: 10px;
+	width: 51px;
+	height: 20px;
+	text-indent: -9999px;
+	overflow: hidden;
+	background: url(images/carousel-button.png) no-repeat 0 0;
+	bottom: 7px;
+}
+
+.sheinside-core-widget .sheinside-widget-carousel .sheinside-widget-carousel-info .sheinside-widget-carousel-description-button-anchor
+{
+	position: static;
+	float: right;
+	padding: 0px !important;
+}
+
+/*==========================================================
+	sheinside Widget Promotion Area
+============================================================*/
+
+.sheinside-core-widget .sheinside-widget-promotion
+{
+	text-indent: -9999px;
+	background: url(images/promotion-non.jpg) #313131 no-repeat center 0;
+	height: 150px;	
+}
+
+.sheinside-core-widget .sheinside-widget-promotion-defined
+{
+	height: 148px;
+	background: #565656;
+	margin: 0;
+	text-align: center;	
+	color: #fff;
+	font-size: 12.5px;
+	line-height: 16px;
+	overflow: hidden;			
+}
+
+.sheinside-core-widget .sheinside-widget-promotion-defined a, .sheinside-core-widget .sheinside-widget-promotion-defined a:visited
+{
+	color: #FD7E07;
+}
+
+/*==========================================================
+	sheinside Widget footer
+============================================================*/
+
+.sheinside-core-widget .sheinside-widget-footer
+{
+	background: #FFF;	
+	display: block;
+	border: 1px solid #908885;
+	text-align: center;
+	height: 28px;
+}
+
+.sheinside-core-widget .sheinside-widget-theme-dark .sheinside-widget-footer
+{
+	background: #565656;
+	border: 1px solid #565656;
+}
+
+.sheinside-core-widget .sheinside-widget-footer a
+{
+	display: -moz-inline-stack;
+	display:block;
+	zoom: 1;
+	font: italic 14px/28px Georgia, serif;
+	color: #000 !important;/*color: #fd7e07 !important;*/
+	padding:0 !important;width:100$%;position: relative;
+}
+
+
+
+.sheinside-clearfix:after
+{
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.sheinside-clearfix
+{
+	display: inline-block;
+}
+ 
+html[xmlns] .sheinside-clearfix
+{
+	display: block;
+}
+ 
+* html .sheinside-clearfix {
+	height: 1%;
+}

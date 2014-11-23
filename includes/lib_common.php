@@ -2821,4 +2821,15 @@ function send_register_bonus($user_id,$bid)
 	$sql = "INSERT INTO " . $GLOBALS['ecs']->table('user_bonus') . "(bonus_type_id, bonus_sn, user_id, used_time, order_id, emailed,start_time,end_time) " . "VALUES ('$bid', 0, '$user_id', 0, 0, " .BONUS_MAIL_SUCCEED. ",'".gmtime()."','".(gmtime()+3600*24*30)."')";
 	$GLOBALS['db']->query($sql);
 }
+
+/**
+ * 自定义打印函数
+ * 
+ */
+
+function dump($arr){
+	echo "<pre>";
+	print_r($arr);
+	echo "</pre>";
+}
 ?>

@@ -72,21 +72,8 @@
 
 <div class="blank"></div>
  
- <a class="animated_banner" href="" style="background-position: 632.826px center;"><div class="header">FREE SHIPPING TO ALL COUNTRIES  WORLDWIDE</div><div class="subHeader">SHIPPING To WORLDWIDE NOW NO MINIMUM PURCHASE REQUIRED</div></a>
- <div class="blank"></div>
-<script type="text/javascript">
-			$(function(){
-			var documentHeight,windowHeight,banner,bannerBottom;
-			windowHeight = $(window).height();
-			banner = $('.animated_banner');
-			bannerBottom = banner.offset().top + banner.height();
-			$(window).scroll(function(event) {
-				$this = $(this);
-				percentScrolled = $this.scrollTop()/bannerBottom;
-				banner.css({'backgroundPosition': (percentScrolled*banner.width()) - 96});
-				});
-			});
-		</script>
+ <div class="animated_banner"></div>
+
 <div class="f_l">
 <!-- TemplateBeginEditable name="首页中部广告1" -->
 <!-- #BeginLibraryItem "/library/ad_position.lbi" -->

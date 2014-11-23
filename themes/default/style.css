@@ -1,14 +1,14 @@
 /* ====================
-     公共样式 
+     鍏叡鏍峰紡 
 ==================== */
-body{  margin:0 0 0 0; padding:0;font: 12px/1.8em Tahoma,Georgia,serif,Helvetica,"Trebuchet MS",sans-serif;	 /*原字体是font: 12px/1.8em Arial,Verdana,"Trebuchet MS",sans-serif;*/
+body{  margin:0 0 0 0; padding:0;font: 12px/1.8em Tahoma,Georgia,serif,Helvetica,"Trebuchet MS",sans-serif;	 /*鍘熷瓧浣撴槸font: 12px/1.8em Arial,Verdana,"Trebuchet MS",sans-serif;*/
 color: #1F1B19;}
 address, caption, cite, code, dfn, em, strong, th, abbr, var {
 font-style: normal;
 font-weight: normal;
 }
 html {
-	font: 12px/1.8em Tahoma,Georgia,serif,Helvetica,"Trebuchet MS",sans-serif;	  /*原字体是font: 11px/1.8em Arial,Verdana,"Trebuchet MS",sans-serif; */
+	font: 12px/1.8em Tahoma,Georgia,serif,Helvetica,"Trebuchet MS",sans-serif;	  /*鍘熷瓧浣撴槸font: 11px/1.8em Arial,Verdana,"Trebuchet MS",sans-serif; */
 color: #1F1B19;
 	background-color:#FFF;
 }
@@ -50,14 +50,14 @@ visibility:hidden;
 *+html .clearfix{
  height:1%;
 }
-/*英文强制换行*/
+/*鑻辨枃寮哄埗鎹㈣*/
 .word{word-break:break-all;}
 
-  /*边框*/
+  /*杈规*/
   .B_blue{border:1px solid #e2e2e2; background:}
   .B_input{border:1px solid #abadb3; height:14px; background:#fff; height:18px; line-height:18px; font-size:11px; color:#333333; padding:0 6px;}
   .inputBg{border:1px solid #b3b3b3; height:18px;}
-  /*字体颜色*/
+  /*瀛椾綋棰滆壊*/
   .f1{color:#900; }
   .f2{color:#900; font-weight:bold; margin-right:15px;}
   .f3{color:#900;}
@@ -69,7 +69,7 @@ visibility:hidden;
   .shop{color:#000; font-size:13px; font-weight:600;}
   .market_s{text-decoration:line-through;}
   .shop_s{color:#f00; font-weight:bold; font-size:12px;}
-  /*按钮部分*/
+  /*鎸夐挳閮ㄥ垎*/
    .bnt_blue{
   background:#000; width:58px; height:24px;
   text-align:center; line-height:24px; color:#fff; border:none; cursor:pointer;
@@ -90,7 +90,7 @@ visibility:hidden;
    background:#000; width:58px; height:24px;
   text-align:center; line-height:24px; color:#fff; border:none; cursor:pointer;
   }
-  /*模块容器*/
+  /*妯″潡瀹瑰櫒*/
   .box{overflow:hidden;}
   .box_1{border:1px solid #e2e2e2; background-color:#fff;}
   .box_2{border:1px solid #e2e2e2; background:url(images/box_2Bg.gif) repeat-x top left;
@@ -99,7 +99,7 @@ visibility:hidden;
   .boxCenterList{padding:8px;}
    
   
-  /*模块标题*/
+  /*妯″潡鏍囬*/
   .box h3{height:25px; line-height:25px; font-size:12px; background:#f7f7f7; text-align:right;
   padding:0 12px; font-weight:100;
   }
@@ -123,10 +123,10 @@ visibility:hidden;
   }
   h6 span{float:left; padding-left:15px;}
 
-  /*页面留白*/
+  /*椤甸潰鐣欑櫧*/
   .blank{height:8px; line-height:8px; clear:both; visibility:hidden;}
   .blank5{height:3px; line-height:5px;/* _margin:-3px 0;*/ clear:both; visibility:hidden;}
-  /*布局*/
+  /*甯冨眬*/
   .AreaL{width:180px; float:left; overflow:hidden; }
   .AreaR{width:770px; float:right;  overflow:hidden}
   
@@ -147,7 +147,7 @@ visibility:hidden;
  .AreaL3  .box{ border:1px solid #ccc}
 
 /* ====================
-     导航部分
+     瀵艰埅閮ㄥ垎
 ==================== */
 
 #logo {width:156px;margin-left:0; padding:20px 15px 10px 15px; display:block;position:relative; float:left}
@@ -160,10 +160,10 @@ a#logo:hover span {display:block;}
 #searchForm{ float:left; width:280px; height:26px; border:1px solid #999999; width:280px; height:26px; margin:22px 0 0 90px; }
 
 #searchForm input{ float: left; width:240px; height:18px; line-height:18px; border:1px solid #fff;color: #000;font: 12px/1.8em Tahoma,Georgia,serif,Helvetica,"Trebuchet MS",sans-serif;}
- /*原字体是   font: 11px/1.8em Arial,Verdana,"Trebuchet MS",sans-serif;*/
+ /*鍘熷瓧浣撴槸   font: 11px/1.8em Arial,Verdana,"Trebuchet MS",sans-serif;*/
 .searchBtn { float:right; width:31px; height:24px; background:url(images/search_go.gif) no-repeat; border:none; cursor:pointer}
 
-  /*顶部管理型导航*/
+  /*椤堕儴绠＄悊鍨嬪鑸�*/
  .log{ padding-top:6px; height:22px; line-height:22px;}
   .log .t a{ color:#333; padding:0 6px } 
   .log .t a:hover{ text-decoration:underline} 
@@ -173,7 +173,7 @@ a#logo:hover span {display:block;}
  .log .b{ color:#333; float:right; width:330px;  }
   #topNav{ height:22px;line-height:22px; color:#666;  position:relative;}
   #topNav a{color:#666; text-decoration:none;}
-  /*页面主导航*/
+  /*椤甸潰涓诲鑸�*/
    
  
 .buy_car_bg{ float:right;height:26px;line-height:26px; width:120px; background:url(images/bag.gif) 4px center no-repeat; position:relative; z-index:999; border:1px solid #fff; padding:2px 8px 2px 30px;     }
@@ -257,7 +257,7 @@ color: #fff; text-decoration:none}
 #mainNav .u1_over dl .dd_r{ float:right; width:140px;  }
 #mainNav .u1_over dl .dd_r a{display:block;  height:18px; line-height:18px;}
 #mainNav .u1_over dl .dd_r .tit{ background: #f7f7f7; padding:0 9px; margin-bottom:9px; font-weight:bold; color:#333}
-  /*当前位置*/
+  /*褰撳墠浣嶇疆*/
   #ur_here{
   height:30px; line-height:30px; padding:0px; border-bottom:1px solid #ddd;  
   }
@@ -277,7 +277,7 @@ color: #fff; text-decoration:none}
 
 
 /* ====================
-     模块
+     妯″潡
 ==================== */
  .left_txt{ border-top:1px dotted #cecece;  }
  .left_txt ul{ text-align:center; padding:37px 0 17px 0}
@@ -327,7 +327,7 @@ text-decoration: none; color:#004caa; font-size:13px; }
 	color:#de181f;}
  
 
-   /*销售排行*/
+   /*閿�鍞帓琛�*/
    .top10Tit{background:url(images/bg.gif) no-repeat 0px -85px; height:30px;}
    .top10List{border:1px solid #d7ecfd; background-color:#fff; margin:0px 4px 4px 4px;}
 	 .top10List ul{border-bottom:1px solid #e2f3fd; position:relative;}
@@ -340,8 +340,8 @@ text-decoration: none; color:#004caa; font-size:13px; }
    .top10List li a,#mallNews .NewsList li a,.boxCenterList li a{color:#666; text-decoration: underline;}
    .top10List li a:hover,#mallNews .NewsList li a:hover,.boxCenterList li a:hover{}
 
-/*首页焦点图*/  
-/*首页模块*/
+/*棣栭〉鐒︾偣鍥�*/  
+/*棣栭〉妯″潡*/
   
 .top_free{width:960px;margin:0 auto;position:relative}
 .m-banner{width:960px;margin:0 auto;position:relative;overflow:hidden;z-index:1}
@@ -361,7 +361,7 @@ text-decoration: none; color:#004caa; font-size:13px; }
 	
 	
 	
-	   /*精品推荐，新品上市，热卖商品*/
+	   /*绮惧搧鎺ㄨ崘锛屾柊鍝佷笂甯傦紝鐑崠鍟嗗搧*/
    .centerPadd{padding:5px 8px 8px 8px; overflow:hidden;}
    .itemTit{height:30px; background:url(images/bg.gif) no-repeat 0px -195px; padding-left:190px; text-align:right;
    /*margin-bottom:-3px; _margin-bottom:-2px;*/
@@ -382,7 +382,7 @@ text-decoration: none; color:#004caa; font-size:13px; }
    .centerPadd .goodsBox{ }
    .centerPadd .goodsBox .more{text-align:right; clear:both; margin:0 8px 8px 0;}
  
-     /*单个商品*/
+     /*鍗曚釜鍟嗗搧*/
        .goodsItem{width:220px; height:320px; float:left; position:relative; overflow:hidden; padding:0px 0; margin:2px }
        .goodsItem .goodsimg{width:220px; height:293px;   margin-bottom:4px;}
  
@@ -461,7 +461,7 @@ color: #262626;}
 	 #left_help dt a{ color:#de181f; font-weight:bold;background:url(images/biao3.gif) 0 center no-repeat; padding-left:10px;}
 	 #left_help dd{ padding-left:10px;  } 
  
-   /*帮助*/
+   /*甯姪*/
    .helpTitBg{ text-align:left; border:1px solid #ccc; background-color:#fff;
    padding:0 0 10px 15px;
    }
@@ -471,7 +471,7 @@ color: #262626;}
      .helpTitBg dt a{font-weight:bold; color:#666; text-decoration:none; font-size:12px;}
    .helpTitBg dd a{color:#333; text-decoration:none; background:url(images/bg.gif) no-repeat 0px -170px; padding:0px 0px 0px 10px;}
 
-   /*相关商品*/
+   /*鐩稿叧鍟嗗搧*/
      .AreaL  .boxCenterList, .AreaL3  .boxCenterList{padding:11px 0 11px 14px;}
  
 	 
@@ -491,10 +491,10 @@ color: #262626;}
    
    .boxCenterList li .name{ height:48px; line-height:16px; overflow:hidden; display:block; text-decoration:none;  font-size:11px;  }
    .boxCenterList li.goodsimg img{width:80px; height:80px; display:block;}
-   /*相关文章(其它带有小三角点的文字列表共用)*/
+   /*鐩稿叧鏂囩珷(鍏跺畠甯︽湁灏忎笁瑙掔偣鐨勬枃瀛楀垪琛ㄥ叡鐢�)*/
    .RelaArticle a,.alone{background:url(images/bg.gif) no-repeat 0px -170px; padding:0px 0px 0px 10px; color:#3f3f3f; text-decoration:none;}
    .RelaArticle a:hover{background:url(images/bg.gif) no-repeat 0px -170px; padding:0px 0px 0px 10px; color:#de181f; text-decoration:none;}
-   /*浏览历史，收藏*/
+   /*娴忚鍘嗗彶锛屾敹钘�*/
  .history { padding:0 10px;}
    .history h2{height:26px; line-height:26px; padding:0px 10px 0 10px; text-align:center; font-size:12px;
    background: url(images/biao1.gif)   0 center no-repeat;  float:left; color:#333;
@@ -510,7 +510,7 @@ color: #262626;}
    .colle a{background:none; padding:0px; color:#3f3f3f; text-decoration:none;}
    .colle a:hover{background:none; padding:0px; color:#de181f; text-decoration:none;}
    /* ====================
-     商品详情页面部分模块
+     鍟嗗搧璇︽儏椤甸潰閮ㄥ垎妯″潡
 ==================== */
    #goodsInfo{ padding:8px 0; _height:1%;}
    #goodsInfo .imgInfo{width:400px; float:left; position:relative; z-index:3}
@@ -585,7 +585,7 @@ color: #262626;}
 .goods_gallery .gcontent div.curr img{border:2px solid #316ead;}
 
   
-   /*文字信息*/
+   /*鏂囧瓧淇℃伅*/
    #goodsInfo .textInfo{background:#fff; width:540px; float:right; padding:0px; padding-top:0px ;position:relative; z-index:2}
    #goodsInfo .textInfo p{font-size:12px; padding:0 5px 5px 8px;}
    #goodsInfo .textInfo ul{ }
@@ -680,8 +680,8 @@ border-bottom: 0;
    
    
    
-   /*用户评论*/
-   .ie6{padding-left:25px; _padding-left:15px; height:1%;}/*购买此商品的人还购买的商品*/
+   /*鐢ㄦ埛璇勮*/
+   .ie6{padding-left:25px; _padding-left:15px; height:1%;}/*璐拱姝ゅ晢鍝佺殑浜鸿繕璐拱鐨勫晢鍝�*/
    .comments li{background:url(images/lineBg.gif) repeat-x left bottom; padding:3px 8px; width:97%; _height:1%; text-align:left; position:relative;
    margin-bottom:8px;
    }
@@ -691,9 +691,9 @@ border-bottom: 0;
    .commentsList .inputBorder{border:1px solid #ccc; background:#fff;}
      .captcha{margin-left:0px; position:relative; top:-1px; *margin-left:8px; *position:relative; top:3px; cursor:pointer;}
     /* ====================
-     品牌推荐
+     鍝佺墝鎺ㄨ崘
 ==================== */
-    /*品牌列表*/
+    /*鍝佺墝鍒楄〃*/
     #brandList{ margin-top:12px; height:1%;}
     #brandList .brandBox{width:215px; _width:211x; float:left; margin:0 5px 20px 5px; text-align:center; overflow:hidden; height:160px;}
         #brandList .brandBox .brandLogo{width:188px; height:52px; overflow:hidden;}
@@ -707,7 +707,7 @@ border-bottom: 0;
     .brandCategoryA a{ margin-right:15px;}
 
          /* ====================
-     用户中心
+     鐢ㄦ埛涓績
 ==================== */
 
 
@@ -748,7 +748,7 @@ margin: 20px 0;}
 	.usTxt ul{ width:461px; background:#fff;   float:left}
  
     
-    /*注册*/
+    /*娉ㄥ唽*/
     .usBox_2{background:#fff url(images/usBox_2bg.gif) 550px center no-repeat ; text-align:left; padding:0px 153px 60px 123px;}
     .usBox_2 .regtitle{height:30px; background:url(images/ur_bg.gif) no-repeat 0px -34px;}
     .actionSub a{color:#000; text-decoration:underline;
@@ -780,16 +780,16 @@ background: transpare; font-weight:bold; color:#ae302f
 
 #buy_pager a { color:#333}
 /* ====================
-     商品分类页面
+     鍟嗗搧鍒嗙被椤甸潰
 ==================== */
-    /*属性组合搜索*/
+    /*灞炴�х粍鍚堟悳绱�*/
 		.screeBox{padding:10px;}
 		.screeBox a{color:#404040;}
 		.screeBox span{background:#f7f7f7; padding:3px 5px; margin:0 3px; font-weight:bold}
 		
     .sort a{ position:relative; bottom:7px;}
     .sort input{position:relative; top:2px;}
-    /*商品列表显示方式*/
+    /*鍟嗗搧鍒楄〃鏄剧ず鏂瑰紡*/
     .goodsList{ padding:10px 10px 0 10px;}
     .goodsList ul{ margin-bottom:10px; padding-bottom:10px;}
     .goodsList ul#bgcolor{background:#fbfbfb; border-top:1px dashed #e8e8e8; border-bottom:1px dashed #e8e8e8;}
@@ -801,13 +801,13 @@ background: transpare; font-weight:bold; color:#ae302f
     .goodsList li.action a.abg{background:url(images/bg.gif) no-repeat 0px -735px; padding-left:18px; position:relative; bottom:5px;}
 
 /* ====================
-     团购
+     鍥㈣喘
 ==================== */
     .group{background:#f2f2f2; padding:8px;}
     .group li{float:left; background:#fff; width:175px; padding:8px;}
 
 /* ====================
-     购物流程
+     璐墿娴佺▼
 ==================== */
     .flowBox{  padding-bottom:5px;}
 	
@@ -823,7 +823,7 @@ color: #111;
 	
 	.tijiao{ background:url(images/tijiao.gif) ; width:217px; height:28px; border:none; cursor:pointer }
  
-		/*2.62在购物车里面显示相关配件*/
+		/*2.62鍦ㄨ喘鐗╄溅閲岄潰鏄剧ず鐩稿叧閰嶄欢*/
 		.flowGoodsFittings{padding:10px;}
 		.flowGoodsFittings ul{height:1%; margin:8px 4px; float:left;}
     .flowGoodsFittings li{float:left; width:78px; padding-left:6px}
@@ -837,19 +837,19 @@ color: #111;
 	.step .u1{ background:#000000; color:#FFF; font-weight:bold}
 	.step img{ float:left;}
 /* ====================
-     文章列表页-2009.6.8
+     鏂囩珷鍒楄〃椤�-2009.6.8
 ==================== */
     .article_search{margin:8px 0;}
 		.article_search .inputBg{width:300px;}
 /* ====================
-    打印报价单
+    鎵撳嵃鎶ヤ环鍗�
 ==================== */
     .quotation{ margin:20px auto 20px auto; text-align:center;}
 
 
 
 
-   /*翻页*/
+   /*缈婚〉*/
    #pager_box{ border-top:1px solid #d3d3d3; padding-top: 8px;}
    
    
@@ -868,13 +868,13 @@ border: 1px solid #262626;}
  .pagebar .no:hover{color:#ccc; border:1px solid #ccc;}
 
 
-   /*底部导航+友情链接*/
+   /*搴曢儴瀵艰埅+鍙嬫儏閾炬帴*/
    #bottomNav{width:958px;}
    .bNavList{  text-align:center; padding:4px 0;  }
  
    .bNavList a{color:#666; text-decoration:none; padding:0 10px; font-weight:bold }
  
-   /*版权*/
+   /*鐗堟潈*/
 #footer{color:#999;padding:10px 0px;font:12px/20px Arial; border-top:1px solid #ccc}
 .ifooter{width:960px;margin:0 auto}
 .footer_column1{width:720px}
@@ -894,7 +894,7 @@ border: 1px solid #262626;}
 .flr{float:right}
 
 
-/* ======商品比较浮动块 ====== */
+/* ======鍟嗗搧姣旇緝娴姩鍧� ====== */
 #compareBox {
  width:128px;
  background:url(images/compareBg.gif) no-repeat top center;
@@ -933,7 +933,7 @@ border: 1px solid #262626;}
  padding-top:4px;
 }
 
-/*购物车提示点击更新按钮式样2.6.2版本添加*/
+/*璐墿杞︽彁绀虹偣鍑绘洿鏂版寜閽紡鏍�2.6.2鐗堟湰娣诲姞*/
 .messageli {
  list-style-type:none;
  padding:5px;
@@ -951,12 +951,12 @@ border: 1px solid #262626;}
  opacity: 0.7;
 }
 
-/*  积分兑换样式修改 */
+/*  绉垎鍏戞崲鏍峰紡淇敼 */
 .point li{
  float:left;
  width:300px;
 }
-/*********************放大镜配置文件*******************************************************************************************/
+/*********************鏀惧ぇ闀滈厤缃枃浠�*******************************************************************************************/
 
 /* Copyright 2008 MagicToolBox.com. To use this code on your own site, visit http://magictoolbox.com */
 
@@ -997,7 +997,7 @@ border: 1px solid #262626;}
 .MagicZoomLoading img {
 	padding-top:	3px !important;
 }
-/* ©2008 MagicToolbox.com. To use this code on your own site, visit http://www.magictoolbox.com */
+/* 漏2008 MagicToolbox.com. To use this code on your own site, visit http://www.magictoolbox.com */
 
 /* CSS class for thumbnail link <A> */
 .MagicThumb {
@@ -1163,9 +1163,6 @@ border: 1px solid #262626;}
 .attrNav span{font-weight: bold;}
 
 .animated_banner {
-background-image: url("images/airplane_icon.png");
-background-position: -96px center;
-background-repeat: no-repeat;
 border-bottom: 1px solid #E5E3E3;
 border-top: 1px solid #E5E3E3;
 color: #000000;
@@ -1175,7 +1172,7 @@ font-family: 'ProximaNovaRgRegular',Arial,Tahoma,Verdana,sans-serif;
 letter-spacing: 3px;
 margin: 40px auto;
 opacity: 1;
-padding: 26px 0;
+padding: 16px 0;
 text-align: center;
 text-decoration: none;
 text-transform: uppercase;

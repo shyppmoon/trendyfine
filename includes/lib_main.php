@@ -1663,8 +1663,8 @@ function assign_template($ctype = '', $catlist = array())
     $smarty->assign('catalog_list',  cat_list(0, 0, false, 1, false));
 
 	//严学文debug
-	//$yan_navi = get_navigator($ctype, $catlist);
-	//print_r($yan_navi);
+// 	$yan_navi = get_navigator($ctype, $catlist);
+// 	dump($yan_navi);
     $smarty->assign('navigator_list',        get_navigator($ctype, $catlist));  //自定义导航栏
 
     if (!empty($GLOBALS['_CFG']['search_keywords']))
@@ -1958,7 +1958,7 @@ function get_library_number($library, $template = null)
 function get_navigator($ctype = '', $catlist = array())
 {
     $sql = 'SELECT * FROM '. $GLOBALS['ecs']->table('nav') . '
-            WHERE ifshow = \'1\' ORDER BY type, vieworder';
+            WHERE ifshow = \'1\' ORDER BY type, vieworder ';
     $res = $GLOBALS['db']->query($sql);
 
     $cur_url = substr(strrchr($_SERVER['REQUEST_URI'],'/'),1);
@@ -2009,6 +2009,7 @@ function get_navigator($ctype = '', $catlist = array())
 			$cat_id = $v['cid'];
 			$children = get_children($cat_id);
 			$cat_list = get_categories_tree_xaphp($cat_id);
+// 			dump($cat_list);
 			$navlist['middle'][$k]['cat'] =1;
 			$navlist['middle'][$k]['cat_list'] =$cat_list;
 		}		
@@ -2059,6 +2060,9 @@ function get_categories_tree_xaphp($cat_id = 0)
         $sql = 'SELECT cat_id,cat_name ,parent_id,is_show ' .
                 'FROM ' . $GLOBALS['ecs']->table('category') .
                 "WHERE parent_id = '$cat_id' AND is_show = 1 ORDER BY sort_order ASC, cat_id ASC";
+        
+        //modify  by lth 
+        $sql = $cat_id =='99'?$sql.' limit 0, 10 ':$sql;
         $res = $GLOBALS['db']->getAll($sql);
         foreach ($res AS $row)
         {

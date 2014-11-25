@@ -8,53 +8,44 @@ var process_request = "{$lang.process_request}";
 <a name=header></a>
  <!-- modify by lth  -->
   <div class="box_1" style="width:100%;height:28px;line-heigth:28px;">
-      <div style="background-color:#464646;height:28px;line-height:28px;z-index:1000;">
-             <div style="height:28px;color:#050505;width:960px;margin:0 auto;">
+      <div class="headT">
+             <div class="headBg">
                 <div style="font-family: Arial, Helvetica;font-size: 11px">
                     <div class="f_l" style="color:#c41230">
                 		Free Shipping Worldwide. No Minimum Purchase Required.
                 	</div>
                 	<div class="f_r" style="width:498px;height:28px;line-height:28px;">
                 	       
-                	  <ul id="insert_member_info" style="float: left;list-style: none;">
-                	    <li style="float: right;padding-right: 5px;padding-left: 5px;position: relative;background: url("images/gang.gif") no-repeat right 6px;
-						cursor: pointer;" id="user_menu3" style="z-index: 200;
-						padding: 0;"
-						>
-				<div class="change_money fl">
-    <div class="currency">
-    <form action="" method="post" id="currency-view-form" name="currency_view_form">
-     <input type="hidden" name="currency" value=""/>  
-    <a href="#" style="color: #FF7A23;text-decoration: none;"  style="color: #FF7A23;text-decoration: none;" id="currency_selector"  rel="nofollow">Currency:€ EUR</a>
-    <dl style="color: #050505;">
-    <!-- {foreach from=$currency_list item=currency} -->
-    <dd><a rel="nofollow" title="{$currency.currency_to}" href="javascript:jumpCurrency('{$currency.currency_to}')" style="background:url(data/currency_icon/{$currency.currency_icon}) left center no-repeat">{$currency.currency_name}</a></dd>
-    <!-- {/foreach} -->
-    <script language="javascript">
-    <!--
-    function jumpCurrency(currency_to)
-    {
-        document.currency_view_form.currency.value = currency_to;
-        document.currency_view_form.action=window.location;
-        document.currency_view_form.submit();
-    }
-    -->
-    </script>
-    </dl>
-    </form>
-    </div>
-</div>   
+                	  <ul id="insert_member_info" class="ulclass">
+                	    <li class="liclass_1">
+						<div class="change_money fl">
+						    <div class="currency">
+						    <form action="" method="post" id="currency-view-form" name="currency_view_form">
+								     <input type="hidden" name="currency" value=""/>  
+								    <a href="#" style="color: #FF7A23;text-decoration: none;"  style="color: #FF7A23;text-decoration: none;" id="currency_selector"  rel="nofollow">Currency:€ EUR</a>
+								    <dl style="background: #7f7b72";>
+									    <!-- {foreach from=$currency_list item=currency} -->
+									    <dd><a id="money_change_id"   rel="nofollow" title="{$currency.currency_to}" href="javascript:jumpCurrency('{$currency.currency_to}')" style="background:url(data/currency_icon/{$currency.currency_icon}) left center no-repeat; text-decoration:none;">{$currency.currency_name}</a></dd>
+									    <!-- {/foreach} -->
+									    <script language="javascript">
+									    <!--
+									    function jumpCurrency(currency_to)
+									    {
+									        document.currency_view_form.currency.value = currency_to;
+									        document.currency_view_form.action=window.location;
+									        document.currency_view_form.submit();
+									    }
+									    -->
+						               </script>
+					               </dl>
+			                  </form>
+				    	</div>
+					 </div>   
 					   </li>
-					   <li style="float: right;
-						padding-right: 5px;
-						padding-left: 5px;
-						position: relative;
-						background: url("images/gang.gif") no-repeat right 6px;
-						cursor: pointer;"
-					  >
+					   <li  class="liclass_2" >
 					   {insert_scripts files='utils.js'} 
-                      <font id="ECS_MEMBERZONE">{* ECSHOP 提醒您：根据用户id来调用member_info.lbi显示不同的界面  *}{insert name='member_info'} </font> 
-                      </li>
+                       <font id="ECS_MEMBERZONE">{* ECSHOP 提醒您：根据用户id来调用member_info.lbi显示不同的界面  *}{insert name='member_info'} </font> 
+                       </li>
 					   <!--{if $navigator_list.top}--> 
 			          <!-- {foreach name=nav_top_list from=$navigator_list.top item=nav} --> 
 			          <li style="float: right;position: relative;cursor: pointer;" >
@@ -62,40 +53,35 @@ var process_request = "{$lang.process_request}";
 			          </li>
 			          <!-- {/foreach} --> 
 			          <!-- {/if} --> 
-					   
-						
 					</ul>
-					
-	                        <div id="chat" style="float: left;width: 81px;margin: 5px 0 0 8px;display: inline;">
-							<div style="cursor: pointer;margin: 0;
-							padding: 0;
-							border: 0;
-							list-style: none outside none;" id="comm100-button-265"><img id="comm100-button-265img" src="https://chatserver.comm100.com/DBResource/DBImage.ashx?imgId=65&amp;type=2&amp;siteId=202762" style="border:none;" alt="">
-							</div>
-							
-							<div id="livechat_box" style="left: 927px; top: 26px; display: none;background-color: #FFFFFF;border: 1px solid #DDDDDD;display: none;height: 165px;overflow: hidden;padding: 10px;position: absolute;width: 300px;z-index: 8001;">
-							      <div class="fr" style="position:absolute; left:-40px; top:10px;">
-									            <!--Begin Comm100 Live Chat Code-->
-									<div id="comm100-button-265"></div>  
-									<script type="text/javascript">
-									    var Comm100API = Comm100API || new Object;
-									    Comm100API.chat_buttons = Comm100API.chat_buttons || [];
-									    var comm100_chatButton = new Object;
-									    comm100_chatButton.code_plan = 265;
-									    comm100_chatButton.div_id = 'comm100-button-265';
-									    Comm100API.chat_buttons.push(comm100_chatButton);
-									    Comm100API.site_id = 202762;
-									    Comm100API.main_code_plan = 265;
-									    var comm100_lc = document.createElement('script');
-									    comm100_lc.type = 'text/javascript';
-									    comm100_lc.async = true;
-									    comm100_lc.src = 'https://chatserver.comm100.com/livechat.ashx?siteId=' + Comm100API.site_id;
-									    var comm100_s = document.getElementsByTagName('script')[0];
-									    comm100_s.parentNode.insertBefore(comm100_lc, comm100_s);
-									</script>
-									<!--End Comm100 Live Chat Code-->
-         						 </div>
-	                         </div>
+					      <!-- offline help  -->
+	                        <div id="chat" class="chatmain">
+								<div class="chatimg" id="comm100-button-265"><img id="comm100-button-265img" src="https://chatserver.comm100.com/DBResource/DBImage.ashx?imgId=65&amp;type=2&amp;siteId=202762" style="border:none;" alt="">
+								</div>
+								
+								<div id="livechat_box" class="chatbox">
+								      <div class="fr" style="position:absolute; left:-40px; top:10px;">
+										            <!--Begin Comm100 Live Chat Code-->
+										<div id="comm100-button-265"></div>  
+										<script type="text/javascript">
+										    var Comm100API = Comm100API || new Object;
+										    Comm100API.chat_buttons = Comm100API.chat_buttons || [];
+										    var comm100_chatButton = new Object;
+										    comm100_chatButton.code_plan = 265;
+										    comm100_chatButton.div_id = 'comm100-button-265';
+										    Comm100API.chat_buttons.push(comm100_chatButton);
+										    Comm100API.site_id = 202762;
+										    Comm100API.main_code_plan = 265;
+										    var comm100_lc = document.createElement('script');
+										    comm100_lc.type = 'text/javascript';
+										    comm100_lc.async = true;
+										    comm100_lc.src = 'https://chatserver.comm100.com/livechat.ashx?siteId=' + Comm100API.site_id;
+										    var comm100_s = document.getElementsByTagName('script')[0];
+										    comm100_s.parentNode.insertBefore(comm100_lc, comm100_s);
+										</script>
+										<!--End Comm100 Live Chat Code-->
+	         						 </div>
+		                         </div>
 	                       </div>					
 				    </div>
                 </div>
@@ -114,11 +100,118 @@ var process_request = "{$lang.process_request}";
   <div  class="blank"></div>
 </div>
 <div class="blank5"></div>
+
+<!-- 此处为主导航模块，样式修改 -->
 <div id="mainNav" class="clearfix block" style="border-top:1px;" >
+  <script language="javascript">
+		    <!--
+		    function changnavdis(obj,cid)
+		    {
+		    	//此处只是例子
+		    	obj.className ="u1 u1_over";
+		    	if(cid =='73'){
+		    		$("#em_button_id").css("display","block");  
+			    	$("#Second_ca_id").css("display","block"); 
+		    	}
+		    	
+		    }
+		    
+		    function changnavnone(obj,cid)
+		    {
+		    		obj.className ="u1";
+		    		$("#em_button_id").css("display","none");  
+			    	$("#Second_ca_id").css("display","none"); 
+		    	
+		    	
+		    }
+		    
+		    
+		    -->
+ </script>
   <!-- {foreach name=nav_middle_list from=$navigator_list.middle item=nav } -->
-  <ul class="u1" onmouseover="this.className='u1 u1_over'" onmouseout="this.className='u1'" >
-    <a  class="a1" href="{$nav.url}" {if $nav.opennew eq 1}target="_blank" {/if} {if $nav.active eq 1} id="cur"{/if}>{$nav.name}</a> 
-      {if $nav.cid eq 73}
+  <ul class="u1" onmouseover="changnavdis(this,{$nav.cid})" onmouseout="changnavnone(this)" >
+    <li class="subCatName">
+    <a  class="a1" href="{$nav.url}" {if $nav.opennew eq 1} target="_blank" {/if} {if $nav.active eq 1} id="cur"{/if}>{$nav.name}</a>
+    </li> 
+      {if $nav.cid eq 73} 
+      <!-- 此处以women dress为例子 -->
+      <li>
+          <em id="em_button_id" class="header_arrow_top" style="display: none; no-repeat scroll 0 0 transparent;
+width: 12px;
+height: 9px;
+display: none;
+position: absolute;
+left: 50%;
+margin-left: -6px;
+bottom: -1px;
+z-index: 1001;"></em>
+          <div id="Second_ca_id"  class="Second_ca" >	
+		<ul class="loop_ul" style="width: 160px; float:left;">
+		   						<li style="height: 16px;
+line-height: 16px;list-style: none;">
+																		
+				<div class="box-HelpCentery" style="display: block;">
+					<div class="help_list_header">
+						<ul style="width: 160px; float:left;">
+													<li><a href="http://www.sheinside.com/attribute-279_27923-1727.html">Vintage Dresses</a></li>
+													<li><a href="http://www.sheinside.com/attribute-279_27973-1727.html">Sexy Dresses</a></li>
+												</ul>
+					</div>
+				</div>
+														
+				<div class="box-HelpCentery" style="display: block;">
+					<div class="help_list_header">
+						<ul style="width: 160px; float:left;">
+													<li><a href="http://www.sheinside.com/attribute-279_27923-1727.html">Vintage Dresses</a></li>
+													<li><a href="http://www.sheinside.com/attribute-279_27973-1727.html">Sexy Dresses</a></li>
+												</ul>
+					</div>
+				</div>
+														
+				<div class="box-HelpCentery" style="display: block;">
+					<div class="help_list_header">
+						<ul style="width: 160px; float:left;">
+													<li><a href="http://www.sheinside.com/attribute-279_27923-1727.html">Vintage Dresses</a></li>
+													<li><a href="http://www.sheinside.com/attribute-279_27973-1727.html">Sexy Dresses</a></li>
+												</ul>
+					</div>
+				</div>
+														
+				<div class="box-HelpCentery" style="display: block;">
+					<div class="help_list_header">
+						<ul style="width: 160px; float:left;">
+													<li><a href="http://www.sheinside.com/attribute-279_27923-1727.html">Vintage Dresses</a></li>
+													<li><a href="http://www.sheinside.com/attribute-279_27973-1727.html">Sexy Dresses</a></li>
+												</ul>
+					</div>
+				</div>
+														
+				<div class="box-HelpCentery" style="display: block;">
+					<div class="help_list_header">
+						<ul style="width: 160px; float:left;">
+													<li><a href="http://www.sheinside.com/attribute-279_27923-1727.html">Vintage Dresses</a></li>
+													<li><a href="http://www.sheinside.com/attribute-279_27973-1727.html">Sexy Dresses</a></li>
+												</ul>
+					</div>
+				</div>
+															</li>
+							   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   						</ul> 
+            
+                        
+                         <ul class="only_img  bor_left_dotted" style="float: left;">
+                   
+                   <a class="no_padding_img"  href="http://www.sheinside.com/SheInside-Basics-vc-491.html"><img  style="margin-left: 20px;width: 138px;height: 200px" src="http://img.sheinside.com/images/sheinside.com/1415162489007584845.jpg"></a>
+                    
+                   <a class="no_padding" href="http://www.sheinside.com/Party-Dresses-vc-76.html"><img  style="margin-left: 20px;width: 138px;height: 200px"  src="http://img.sheinside.com/images/sheinside.com/1415104122794099585.jpg"></a>
+                  
+            </ul>  
+                       
+                        
+                        
+                        
+                     	</div>
+      </li>
+     <!--  
 	<dl class="dl_yan1" style="width:600px;">
 	    <div style="float:left;border:1px;">
 		<div class="dd"> 
@@ -139,6 +232,7 @@ var process_request = "{$lang.process_request}";
             </ul>
         </div>
 	</dl>
+	-->
       {/if}
     <!-- {if $nav.cat_list}-->
     <dl class="dl{$smarty.foreach.nav_middle_list.iteration}">

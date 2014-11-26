@@ -102,6 +102,30 @@ var process_request = "{$lang.process_request}";
 <div class="blank5"></div>
 
 <!-- 此处为主导航模块，样式修改 -->
+<script language="javascript">
+		    <!--
+		    $(function(){
+		        $(window).scroll(function(){
+		            $offset = $('.placeholder').offset();//不能用自身的div，不然滚动起来会很卡
+		            if($(window).scrollTop()>$offset.top){
+		                $('#mainNav').css({
+		                'position':'fixed',
+		                'top':'0px',
+		                'left':$offset.left+'px',
+		                'z-index':'999',
+		                'border-bottom': '1px dotted #000',
+		                'background-color': '#fff',
+                        'width':'100%',
+                        'padding-left':'465px'
+		                }); 
+		            }else{
+		                $('#mainNav').removeAttr('style')
+		            }
+		        });
+		    })
+		    -->
+ </script>
+<div class="placeholder"></div>
 <div id="mainNav" class="clearfix block" style="border-top:1px;" >
   <script language="javascript">
 		    <!--
@@ -129,7 +153,7 @@ var process_request = "{$lang.process_request}";
 		    -->
  </script>
   <!-- {foreach name=nav_middle_list from=$navigator_list.middle item=nav } -->
-  <ul class="u1" onmouseover="changnavdis(this,{$nav.cid})" onmouseout="changnavnone(this)" >
+  <ul class="u1" id="scroll_id"   onmouseover="changnavdis(this,{$nav.cid})" onmouseout="changnavnone(this)" >
     <li class="subCatName">
     <a  class="a1" href="{$nav.url}" {if $nav.opennew eq 1} target="_blank" {/if} {if $nav.active eq 1} id="cur"{/if}>{$nav.name}</a>
     </li> 

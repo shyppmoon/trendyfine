@@ -116,7 +116,7 @@ var process_request = "{$lang.process_request}";
 		                'border-bottom': '1px dotted #000',
 		                'background-color': '#fff',
                         'width':'100%',
-                        'padding-left':'465px'
+                        'padding-left':'25%'
 		                }); 
 		            }else{
 		                $('#mainNav').removeAttr('style')

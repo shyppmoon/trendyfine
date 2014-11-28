@@ -8,7 +8,7 @@ var process_request = "{$lang.process_request}";
 <a name=header></a>
  <!-- modify by lth  -->
   <div class="box_1" style="width:100%;height:28px;line-heigth:28px;">
-      <div class="headT">
+      <div class="headT" id="main_header_r">
              <div class="headBg">
                 <div style="font-family: Arial, Helvetica;font-size: 11px">
                     <div class="f_l" style="color:#c41230">
@@ -22,15 +22,16 @@ var process_request = "{$lang.process_request}";
 						    <div class="currency">
 						    <form action="" method="post" id="currency-view-form" name="currency_view_form">
 								     <input type="hidden" name="currency" value=""/>  
-								    <a href="#" style="color: #FF7A23;text-decoration: none;"  style="color: #FF7A23;text-decoration: none;" id="currency_selector"  rel="nofollow">Currency:€ EUR</a>
+								    <a href="#" style="color: #FF7A23;text-decoration: none;"  style="color: #FF7A23;text-decoration: none;" id="currency_selector"  rel="nofollow">Currency:{$currency_to}</a>
 								    <dl style="background: #7f7b72";>
 									    <!-- {foreach from=$currency_list item=currency} -->
-									    <dd><a id="money_change_id"   rel="nofollow" title="{$currency.currency_to}" href="javascript:jumpCurrency('{$currency.currency_to}')" style="background:url(data/currency_icon/{$currency.currency_icon}) left center no-repeat; text-decoration:none;">{$currency.currency_name}</a></dd>
+									    <dd style="background:none repeat scroll 0% 0% #7F7B72;width: 133px;"   onmouseover="this.style.backgroundColor='#050505';" onmouseout="this.style.backgroundColor='#7f7b72';"><a id="money_change_id"   rel="nofollow" title="{$currency.currency_to}" href="javascript:jumpCurrency('{$currency.currency_to}')" style="background:url(data/currency_icon/{$currency.currency_icon}) left center no-repeat; text-decoration:none;color: #FFF;">{$currency.currency_name}</a></dd>
 									    <!-- {/foreach} -->
 									    <script language="javascript">
 									    <!--
 									    function jumpCurrency(currency_to)
-									    {
+									    { 
+									    	
 									        document.currency_view_form.currency.value = currency_to;
 									        document.currency_view_form.action=window.location;
 									        document.currency_view_form.submit();
@@ -89,7 +90,7 @@ var process_request = "{$lang.process_request}";
       </div>
   </div>
   <!-- end modify  -->
-<div class="block clearfix " style=" z-index:9;   position:relative" >
+<div class="block clearfix " style=" z-index:9;   position:relative" id="search_input_id" >
   <div class="f_l"> <a id="logo" href="/"  title="Women's Street Fashion Online - TrendyFine"> <img alt="TrendyFine" src="../images/logo.gif" /></a>
     <form  id="searchForm" name="searchForm" method="get" action="search.php" onSubmit="return checkSearchForm()"    >
       <input name="keywords" type="text" id="keyword" class="searchArea" maxlength="120" value="" onclick="javascript:this.value='';"    />
@@ -105,18 +106,36 @@ var process_request = "{$lang.process_request}";
 <script language="javascript">
 		    <!--
 		    $(function(){
+		    	
+		    	/*menu  display*/
+		    	var li = $("#TS_menu > li"); /*找到#mainNav中子元素li；*/
+		    	/*var ul;*/
+		    	li.each(function(i){ /*循环每一个LI*/
+		    		li.eq(i).hover(
+		    			function(){
+		    				$(this).find("div.Second_ca").show(); /*找到li里面的ul元素设置为显示*/
+		    				$(this).find(".box-HelpCentery").show();
+		    				$(this).find('.header_arrow_top').show();
+		    			},
+		    			function(){
+		    				$(this).find("div.Second_ca").hide();
+		    				$(this).find(".box-HelpCentery").hide();
+		    				$(this).find('.header_arrow_top').hide();
+		    			}
+		    		)
+		    	});
+		    	
+		    	
 		        $(window).scroll(function(){
 		            $offset = $('.placeholder').offset();//不能用自身的div，不然滚动起来会很卡
 		            if($(window).scrollTop()>$offset.top){
 		                $('#mainNav').css({
 		                'position':'fixed',
 		                'top':'0px',
-		                'left':$offset.left+'px',
-		                'z-index':'999',
+		                'z-index':'1001',
 		                'border-bottom': '1px dotted #000',
 		                'background-color': '#fff',
                         'width':'100%',
-                        'padding-left':'25%'
 		                }); 
 		            }else{
 		                $('#mainNav').removeAttr('style')
@@ -127,94 +146,106 @@ var process_request = "{$lang.process_request}";
  </script>
 <div class="placeholder"></div>
 <div id="mainNav" class="clearfix block" style="border-top:1px;" >
-  <script language="javascript">
-		    <!--
-		    function changnavdis(obj,cid)
-		    {
-		    	//此处只是例子
-		    	obj.className ="u1 u1_over";
-		    	if(cid =='73'){
-		    		$("#em_button_id").css("display","block");  
-			    	$("#Second_ca_id").css("display","block"); 
-		    	}
-		    	
-		    }
-		    
-		    function changnavnone(obj,cid)
-		    {
-		    		obj.className ="u1";
-		    		$("#em_button_id").css("display","none");  
-			    	$("#Second_ca_id").css("display","none"); 
-		    	
-		    	
-		    }
-		    
-		    
-		    -->
- </script>
-  <!-- {foreach name=nav_middle_list from=$navigator_list.middle item=nav } -->
-  <ul class="u1" id="scroll_id"   onmouseover="changnavdis(this,{$nav.cid})" onmouseout="changnavnone(this)" >
-    <li class="subCatName">
-    <a  class="a1" href="{$nav.url}" {if $nav.opennew eq 1} target="_blank" {/if} {if $nav.active eq 1} id="cur"{/if}>{$nav.name}</a>
-    </li> 
-      {if $nav.cid eq 73} 
-      <!-- 此处以women dress为例子 -->
-      <li>
-          <em id="em_button_id" class="header_arrow_top" style="display: none; no-repeat scroll 0 0 transparent;
-width: 12px;
-height: 9px;
-display: none;
-position: absolute;
-left: 50%;
-margin-left: -6px;
-bottom: -1px;
-z-index: 1001;"></em>
-          <div id="Second_ca_id"  class="Second_ca" >	
-		<ul class="loop_ul" style="width: 160px; float:left;">
-		   						<li style="height: 16px;
-line-height: 16px;list-style: none;">
+  <div class="head_bottom_wrap">
+<div class="head_bottom head_bottom_no_scroll">
+<ul id="TS_menu" class="no_scroll">
+  	<li class="subCatName">
+        <a title="WHAT'S NEW" href="http://www.sheinside.com/daily-new.html">DAILY NEW</a>
+        <em class="header_arrow_top"></em>
+        <div class="Second_ca" style="width:479px;">
+            <ul class="fix_height">
+            	<li class="li_title"><a title="WHAT'S NEW" href="http://www.sheinside.com/daily-new.html">DAILY NEW</a></li>
+                                    <li><a href="http://www.sheinside.com/daily/2014-11-27/">2014-11-27</a></li>
+                                    <li><a href="http://www.sheinside.com/daily/2014-11-26/">2014-11-26</a></li>
+                                    <li><a href="http://www.sheinside.com/daily/2014-11-25/">2014-11-25</a></li>
+                                    <li><a href="http://www.sheinside.com/daily/2014-11-24/">2014-11-24</a></li>
+                                    <li><a href="http://www.sheinside.com/daily/2014-11-23/">2014-11-23</a></li>
+                                    <li><a href="http://www.sheinside.com/daily/2014-11-22/">2014-11-22</a></li>
+                                    <li><a href="http://www.sheinside.com/daily/2014-11-21/">2014-11-21</a></li>
+                 
+                <li class="li_title mar_top_8"><a class="no_href">By Sheinside</a></li>
+                <li class="li_title"><a class="nav_red" href="http://www.sheinside.com/pre-sale.html?url_from=presaleen">Presale -50% off</a></li>
+                <li class="li_title"><a class="nav_red" href="http://www.sheinside.com/pre-sale-end.html">Only ours!</a></li>
+                <li class="li_title"><a href="http://www.sheinside.com/Editor-s-Picks-vc-569.html">Editor’s Picks</a></li>
+                <li class="li_title"><a href="http://www.sheinside.com/back-in-stock.html">Back In Stock</a></li>
+            </ul>
+            <ul class="fix_height">
+            	<li class="li_title"><a class="no_href">Trending</a></li>
+            	            	<li class="li_con"><a href="http://www.sheinside.com/Backless-Dresses-vc-420.html">Backless Dresses</a></li>
+            	            	<li class="li_con"><a href="http://www.sheinside.com/Florals-Print-vc-409.html">Florals Print</a></li>
+            	            	<li class="li_con"><a href="http://www.sheinside.com/Bold-color-block-clothes-vc-245.html">Colorblock</a></li>
+            	            	<li class="li_con"><a href="http://www.sheinside.com/Plaid-vc-142.html">Fashion Plaid </a></li>
+            	            	<li class="li_con"><a href="http://www.sheinside.com/Clearance-Sale-vc-138.html">Clearance Sale</a></li>
+            	            	<li class="li_con"><a href="http://www.sheinside.com/Shine-On-vc-608.html">Shine On</a></li>
+            	            	<li class="li_con"><a href="http://www.sheinside.com/Cozy-Sweaters-vc-607.html">Cozy Sweaters</a></li>
+            	            	<li class="li_con"><a href="http://www.sheinside.com/Faux-Fur-ever-vc-606.html">Faux Fur-ever</a></li>
+            	            	<li class="li_con"><a href="http://www.sheinside.com/Christmas-Jumpers-vc-585.html">Christmas Jumpers</a></li>
+            	            	<li class="li_con"><a href="http://www.sheinside.com/The-world-of-cartoons-vc-562.html">The world of cartoons</a></li>
+            	            	<li class="li_con"><a href="http://www.sheinside.com/Geometric-Stripe-Sweaters-vc-339.html">Geometric & Stripe Sweaters</a></li>
+            	            </ul>
+                         <ul class="only_img bor_left_dotted">
+                <a class="no_padding" href="http://www.sheinside.com/New-in-knitwear-vc-582.html"><img src="http://img.sheinside.com/images/sheinside.com/1415103880146619915.jpg"></a> 
+            </ul>
+                    </div>
+	</li>
+ 
+ <li class="subCatName">
+ 	<a title="Dresses" href="http://www.sheinside.com/women-dresses-c-1727.html">WOMEN DRESSES</a>
+ 	<em class="header_arrow_top"></em>
+       
+               
+                   
+               
+               
+               
+               
+            									 	<div class="Second_ca" style="width:477px; left:0px;">	
+		<ul class="loop_ul">
+		   						<li>
 																		
-				<div class="box-HelpCentery" style="display: block;">
+				<div class="box-HelpCentery">
 					<div class="help_list_header">
-						<ul style="width: 160px; float:left;">
+						<ul>
 													<li><a href="http://www.sheinside.com/attribute-279_27923-1727.html">Vintage Dresses</a></li>
 													<li><a href="http://www.sheinside.com/attribute-279_27973-1727.html">Sexy Dresses</a></li>
 												</ul>
 					</div>
 				</div>
 														
-				<div class="box-HelpCentery" style="display: block;">
+				<div class="box-HelpCentery">
 					<div class="help_list_header">
-						<ul style="width: 160px; float:left;">
-													<li><a href="http://www.sheinside.com/attribute-279_27923-1727.html">Vintage Dresses</a></li>
-													<li><a href="http://www.sheinside.com/attribute-279_27973-1727.html">Sexy Dresses</a></li>
+						<ul>
+													<li><a href="http://www.sheinside.com/attribute-280_28033-1727.html">Chiffon Dresses</a></li>
+													<li><a href="http://www.sheinside.com/attribute-280_280123-1727.html">Lace Dresses</a></li>
 												</ul>
 					</div>
 				</div>
 														
-				<div class="box-HelpCentery" style="display: block;">
+				<div class="box-HelpCentery">
 					<div class="help_list_header">
-						<ul style="width: 160px; float:left;">
-													<li><a href="http://www.sheinside.com/attribute-279_27923-1727.html">Vintage Dresses</a></li>
-													<li><a href="http://www.sheinside.com/attribute-279_27973-1727.html">Sexy Dresses</a></li>
+						<ul>
+													<li><a href="http://www.sheinside.com/attribute-282_28213-1727.html">Short Sleeve Dresses</a></li>
+													<li><a href="http://www.sheinside.com/attribute-282_28223-1727.html">Sleeveless Dresses</a></li>
+													<li><a href="http://www.sheinside.com/attribute-282_28243-1727.html">Long Sleeve Dresses</a></li>
 												</ul>
 					</div>
 				</div>
 														
-				<div class="box-HelpCentery" style="display: block;">
+				<div class="box-HelpCentery">
 					<div class="help_list_header">
-						<ul style="width: 160px; float:left;">
-													<li><a href="http://www.sheinside.com/attribute-279_27923-1727.html">Vintage Dresses</a></li>
-													<li><a href="http://www.sheinside.com/attribute-279_27973-1727.html">Sexy Dresses</a></li>
+						<ul>
+													<li><a href="http://www.sheinside.com/attribute-283_28323-1727.html">Shift Dresses</a></li>
+													<li><a href="http://www.sheinside.com/attribute-283_28383-1727.html">High Low Dresses</a></li>
 												</ul>
 					</div>
 				</div>
 														
-				<div class="box-HelpCentery" style="display: block;">
+				<div class="box-HelpCentery">
 					<div class="help_list_header">
-						<ul style="width: 160px; float:left;">
-													<li><a href="http://www.sheinside.com/attribute-279_27923-1727.html">Vintage Dresses</a></li>
-													<li><a href="http://www.sheinside.com/attribute-279_27973-1727.html">Sexy Dresses</a></li>
+						<ul>
+													<li><a href="http://www.sheinside.com/attribute-290_29013-1727.html">Floral Dresses</a></li>
+													<li><a href="http://www.sheinside.com/attribute-290_29023-1727.html">Print Dresses</a></li>
+													<li><a href="http://www.sheinside.com/attribute-290_290143-1727.html">Color Block Dresses</a></li>
 												</ul>
 					</div>
 				</div>
@@ -222,11 +253,11 @@ line-height: 16px;list-style: none;">
 							   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   						</ul> 
             
                         
-                         <ul class="only_img  bor_left_dotted" style="float: left;">
+                         <ul class="only_img bor_left_dotted">
                    
-                   <a class="no_padding_img"  href="http://www.sheinside.com/SheInside-Basics-vc-491.html"><img  style="margin-left: 20px;width: 138px;height: 200px" src="http://img.sheinside.com/images/sheinside.com/1415162489007584845.jpg"></a>
+                   <a class="no_padding" href="http://www.sheinside.com/SheInside-Basics-vc-491.html"><img src="http://img.sheinside.com/images/sheinside.com/1415162489007584845.jpg"></a>
                     
-                   <a class="no_padding" href="http://www.sheinside.com/Party-Dresses-vc-76.html"><img  style="margin-left: 20px;width: 138px;height: 200px"  src="http://img.sheinside.com/images/sheinside.com/1415104122794099585.jpg"></a>
+                   <a class="no_padding" href="http://www.sheinside.com/Party-Dresses-vc-76.html"><img src="http://img.sheinside.com/images/sheinside.com/1415104122794099585.jpg"></a>
                   
             </ul>  
                        
@@ -234,48 +265,452 @@ line-height: 16px;list-style: none;">
                         
                         
                      	</div>
-      </li>
-     <!--  
-	<dl class="dl_yan1" style="width:600px;">
-	    <div style="float:left;border:1px;">
-		<div class="dd"> 
-		    <a class="t" href="/category-73-attr0-0-0-0-0-0-1280-0-0-0-0-Women-Dresses.html" style="font-weight:bold;">Print Dresses</a>
-		    <a class="t" href="/category-73-attr0-0-0-0-0-0-1280-0-0-0-0-Women-Dresses.html" style="font-weight:normal;">Print Dresses_1</a>
-		    <a class="t" href="/category-73-attr0-0-0-0-0-0-1280-0-0-0-0-Women-Dresses.html" style="font-weight:normal;">Print Dresses_2</a>
-		    <a class="t" href="/category-73-attr0-0-0-0-0-0-1280-0-0-0-0-Women-Dresses.html" style="font-weight:normal;">Print Dresses_3</a>
-		</div>
-		
-		</div>
-		<div style="float:right;border:1px;">
-		  <ul class="only_img bor_left_dotted f_l">
+ </li>
+  <li class="subCatName">
+ 	<a title="Tops" href="http://localhost/trendyfinenew/category-85-Women-Tops.html">WOMEN TOPS</a>
+ 	<em class="header_arrow_top"></em>
+       
+               
+               
                    
-                   <a class="no_padding" href="http://www.sheinside.com/Military-Parka-vc-383.html"><img src="http://img.sheinside.com/images/sheinside.com/1415104911601063504.jpg"></a>
+               
+               
+               
+            									 	<div class="Second_ca" style="width:799px; left:-200px;">	
+		<ul class="loop_ul">
+		   					   					   						<li>
+								<a class="nav_title" title="Kimonos" href="http://www.sheinside.com/Kimonos-c-1878.html">Kimonos</a>
+											</li>
+							   						<li>
+								<a class="nav_title" title="Tank Tops & Camis" href="http://www.sheinside.com/Vests-Camis-c-1779.html">Tank Tops & Camis</a>
+											</li>
+							   						<li>
+								<a class="nav_title" title="Blouses" href="http://www.sheinside.com/Shirts-c-1733.html">Blouses</a>
+																		
+				<div class="box-HelpCentery">
+					<div class="help_list_header">
+						<ul>
+													<li><a href="http://www.sheinside.com/attribute-319_31933-1733.html">Denim Blouses</a></li>
+												</ul>
+					</div>
+				</div>
+														
+				<div class="box-HelpCentery">
+					<div class="help_list_header">
+						<ul>
+													<li><a href="http://www.sheinside.com/attribute-320_32023-1733.html">Print Blouses</a></li>
+													<li><a href="http://www.sheinside.com/attribute-320_32093-1733.html">Color Block Blouses</a></li>
+												</ul>
+					</div>
+				</div>
+															</li>
+							   						<li>
+								<a class="nav_title" title="T-Shirts" href="http://www.sheinside.com/T-shirt-c-1738.html">T-Shirts</a>
+																		
+				<div class="box-HelpCentery">
+					<div class="help_list_header">
+						<ul>
+													<li><a href="http://www.sheinside.com/attribute-354_35403-1738.html">Cotton T-Shirts</a></li>
+												</ul>
+					</div>
+				</div>
+														
+				<div class="box-HelpCentery">
+					<div class="help_list_header">
+						<ul>
+													<li><a href="http://www.sheinside.com/attribute-355_35513-1738.html">Casual T-Shirts</a></li>
+												</ul>
+					</div>
+				</div>
+														
+				<div class="box-HelpCentery">
+					<div class="help_list_header">
+						<ul>
+													<li><a href="http://www.sheinside.com/attribute-356_35603-1738.html">Long Sleeve T-Shirts</a></li>
+												</ul>
+					</div>
+				</div>
+														
+				<div class="box-HelpCentery">
+					<div class="help_list_header">
+						<ul>
+													<li><a href="http://www.sheinside.com/attribute-358_35823-1738.html">Printed T-Shirts</a></li>
+												</ul>
+					</div>
+				</div>
+															</li>
+			 			</ul>
+			<ul class="loop_ul">
+						   						<li>
+								<a class="nav_title" title="Knitwear" href="http://www.sheinside.com/Sweaters-c-1734.html">Knitwear</a>
+																		
+				<div class="box-HelpCentery">
+					<div class="help_list_header">
+						<ul>
+													<li><a href="http://www.sheinside.com/attribute-285_28513-1734.html">Floral Knitwear</a></li>
+													<li><a href="http://www.sheinside.com/attribute-285_28523-1734.html">Print Knitwear</a></li>
+													<li><a href="http://www.sheinside.com/attribute-285_28543-1734.html">Striped Knitwear</a></li>
+													<li><a href="http://www.sheinside.com/attribute-285_28553-1734.html">Plaid Knitwear</a></li>
+													<li><a href="http://www.sheinside.com/attribute-285_28583-1734.html">Geometric Knitwear</a></li>
+													<li><a href="http://www.sheinside.com/attribute-285_285143-1734.html">Cable Knitwear</a></li>
+												</ul>
+					</div>
+				</div>
+														
+				<div class="box-HelpCentery">
+					<div class="help_list_header">
+						<ul>
+													<li><a href="http://www.sheinside.com/attribute-289_28903-1734.html">Casual Knitwear</a></li>
+													<li><a href="http://www.sheinside.com/attribute-289_28953-1734.html">Vintage Knitwear</a></li>
+												</ul>
+					</div>
+				</div>
+														
+				<div class="box-HelpCentery">
+					<div class="help_list_header">
+						<ul>
+													<li><a href="http://www.sheinside.com/attribute-292_29213-1734.html">Cardigan Knitwear</a></li>
+													<li><a href="http://www.sheinside.com/attribute-292_29223-1734.html">Coat Knitwear</a></li>
+												</ul>
+					</div>
+				</div>
+														
+				<div class="box-HelpCentery">
+					<div class="help_list_header">
+						<ul>
+													<li><a href="http://www.sheinside.com/attribute-293_29323-1734.html">Loose Knitwear</a></li>
+												</ul>
+					</div>
+				</div>
+															</li>
+			 			</ul>
+			<ul class="loop_ul">
+						   						<li>
+								<a class="nav_title" title="Outerwear" href="http://www.sheinside.com/Outerwear-c-1735.html">Outerwear</a>
+																		
+				<div class="box-HelpCentery">
+					<div class="help_list_header">
+						<ul>
+													<li><a href="http://www.sheinside.com/attribute-366_36603-1735.html">Coats Outerwear</a></li>
+													<li><a href="http://www.sheinside.com/attribute-366_36623-1735.html">Parka Outerwear</a></li>
+													<li><a href="http://www.sheinside.com/attribute-366_36653-1735.html">Capes Outerwear</a></li>
+													<li><a href="http://www.sheinside.com/attribute-366_36663-1735.html">Vests Outerwear</a></li>
+													<li><a href="http://www.sheinside.com/attribute-366_36673-1735.html">Trench Coat Outerwear</a></li>
+												</ul>
+					</div>
+				</div>
+														
+				<div class="box-HelpCentery">
+					<div class="help_list_header">
+						<ul>
+													<li><a href="http://www.sheinside.com/attribute-367_36713-1735.html">Black Outerwear</a></li>
+												</ul>
+					</div>
+				</div>
+														
+				<div class="box-HelpCentery">
+					<div class="help_list_header">
+						<ul>
+													<li><a href="http://www.sheinside.com/attribute-368_368133-1735.html">Faux Fur Outerwear</a></li>
+												</ul>
+					</div>
+				</div>
+														
+				<div class="box-HelpCentery">
+					<div class="help_list_header">
+						<ul>
+													<li><a href="http://www.sheinside.com/attribute-370_37013-1735.html">Fashion Outerwear</a></li>
+												</ul>
+					</div>
+				</div>
+														
+				<div class="box-HelpCentery">
+					<div class="help_list_header">
+						<ul>
+													<li><a href="http://www.sheinside.com/attribute-372_37223-1735.html">Long Outerwear</a></li>
+												</ul>
+					</div>
+				</div>
+														
+				<div class="box-HelpCentery">
+					<div class="help_list_header">
+						<ul>
+													<li><a href="http://www.sheinside.com/attribute-373_37333-1735.html">Winter Outerwear</a></li>
+												</ul>
+					</div>
+				</div>
+														
+				<div class="box-HelpCentery">
+					<div class="help_list_header">
+						<ul>
+													<li><a href="http://www.sheinside.com/attribute-1601_160104-1735.html">Plain Outerwear</a></li>
+												</ul>
+					</div>
+				</div>
+															</li>
+			 			</ul>
+			<ul class="loop_ul">
+						   						<li>
+								<a class="nav_title" title="Sweatshirts" href="http://www.sheinside.com/Sweatshirts-c-1773.html">Sweatshirts</a>
+																		
+				<div class="box-HelpCentery">
+					<div class="help_list_header">
+						<ul>
+													<li><a href="http://www.sheinside.com/attribute-490_49023-1773.html">Hoodie Sweatshirts</a></li>
+												</ul>
+					</div>
+				</div>
+														
+				<div class="box-HelpCentery">
+					<div class="help_list_header">
+						<ul>
+													<li><a href="http://www.sheinside.com/attribute-492_49293-1773.html">Print Sweatshirts</a></li>
+												</ul>
+					</div>
+				</div>
+															</li>
+							   						<li>
+								<a class="nav_title" title="Jackets" href="http://www.sheinside.com/Jackets-c-1776.html">Jackets</a>
+																		
+				<div class="box-HelpCentery">
+					<div class="help_list_header">
+						<ul>
+													<li><a href="http://www.sheinside.com/attribute-512_51213-1776.html">PU Leather Jackets</a></li>
+												</ul>
+					</div>
+				</div>
+															</li>
+							   						<li>
+								<a class="nav_title" title="Blazers" href="http://www.sheinside.com/Suits-c-1739.html">Blazers</a>
+											</li>
+							   						<li>
+								<a class="nav_title" title="Two-piece Suit" href="http://www.sheinside.com/Two-piece-Suit-c-1780.html">Two-piece Suit</a>
+											</li>
+							   						<li>
+								<a class="nav_title" title="Lingerie" href="http://www.sheinside.com/Lingerie-c-1862.html">Lingerie</a>
+											</li>
+							   						<li>
+								<a class="nav_title" title="Swimwear" href="http://www.sheinside.com/Swimwear-c-1866.html">Swimwear</a>
+											</li>
+							   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   						</ul> 
+            
+                        
+                        
+                         <ul class="only_img bor_left_dotted">
                    
                    <a class="no_padding" href="http://www.sheinside.com/Military-Parka-vc-383.html"><img src="http://img.sheinside.com/images/sheinside.com/1415104911601063504.jpg"></a>
                   
-            </ul>
-        </div>
-	</dl>
-	-->
-      {/if}
-    <!-- {if $nav.cat_list}-->
-    <dl class="dl{$smarty.foreach.nav_middle_list.iteration}">
-      <!--{foreach from=$nav.cat_list item=cat}-->
-      <div class="dd"><a class="t" href="{$cat.url}">{$cat.name|escape:html}</a> 
-        <!--{foreach from=$cat.cat_id item=child name=no}-->
-        <!-- {if $smarty.foreach.no.iteration<11}--> 
-        <a class="b" href="{$child.url}">{$child.name|escape:html}</a> 
-        <!-- {/if} --> 
-        <!--{/foreach}--> 
-      </div>
-      <!--{/foreach}-->
-      
-      
-    </dl>
-    <!-- {/if} -->
-    
-  </ul>
-  <!-- {/foreach} --> 
+            </ul>  
+                       
+                        
+                        
+                     	</div>
+ </li>
+  <li class="subCatName">
+ 	<a title="OUTEWEAR" href="http://www.sheinside.com/Bottoms-c-1767.html">OUTEWEAR</a>
+ 	<em class="header_arrow_top"></em>
+       
+               
+               
+               
+                   
+               
+               
+            									 	<div class="Second_ca" style="width:637px; left:-200px;">	
+		<ul class="loop_ul">
+		   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   						<li>
+								<a class="nav_title" title="Skirts" href="http://www.sheinside.com/Skirts-c-1732.html">Skirts</a>
+																		
+				<div class="box-HelpCentery">
+					<div class="help_list_header">
+						<ul>
+													<li><a href="http://www.sheinside.com/attribute-343_34303-1732.html">Chiffon Skirts</a></li>
+													<li><a href="http://www.sheinside.com/attribute-343_34343-1732.html">Lace Skirts</a></li>
+												</ul>
+					</div>
+				</div>
+														
+				<div class="box-HelpCentery">
+					<div class="help_list_header">
+						<ul>
+													<li><a href="http://www.sheinside.com/attribute-345_34503-1732.html">A Line Skirts</a></li>
+													<li><a href="http://www.sheinside.com/attribute-345_34543-1732.html">Pleated Skirts</a></li>
+													<li><a href="http://www.sheinside.com/attribute-345_34583-1732.html">Flared Skirts</a></li>
+												</ul>
+					</div>
+				</div>
+														
+				<div class="box-HelpCentery">
+					<div class="help_list_header">
+						<ul>
+													<li><a href="http://www.sheinside.com/attribute-346_34643-1732.html">Vintage Skirts</a></li>
+												</ul>
+					</div>
+				</div>
+														
+				<div class="box-HelpCentery">
+					<div class="help_list_header">
+						<ul>
+													<li><a href="http://www.sheinside.com/attribute-347_34703-1732.html">Plain Skirts</a></li>
+													<li><a href="http://www.sheinside.com/attribute-347_34713-1732.html">Floral Skirts</a></li>
+													<li><a href="http://www.sheinside.com/attribute-347_34723-1732.html">Print Skirts</a></li>
+												</ul>
+					</div>
+				</div>
+															</li>
+			 			</ul>
+			<ul class="loop_ul">
+						   						<li>
+								<a class="nav_title" title="Pants" href="http://www.sheinside.com/Pants-c-1740.html">Pants</a>
+																		
+				<div class="box-HelpCentery">
+					<div class="help_list_header">
+						<ul>
+													<li><a href="http://www.sheinside.com/attribute-380_38003-1740.html">Trousers Pants</a></li>
+													<li><a href="http://www.sheinside.com/attribute-380_38023-1740.html">Shorts Pants</a></li>
+												</ul>
+					</div>
+				</div>
+														
+				<div class="box-HelpCentery">
+					<div class="help_list_header">
+						<ul>
+													<li><a href="http://www.sheinside.com/attribute-382_38233-1740.html">Denim Pants</a></li>
+													<li><a href="http://www.sheinside.com/attribute-382_38253-1740.html">Leather/PU Pants</a></li>
+												</ul>
+					</div>
+				</div>
+														
+				<div class="box-HelpCentery">
+					<div class="help_list_header">
+						<ul>
+													<li><a href="http://www.sheinside.com/attribute-384_38423-1740.html">Print Pants</a></li>
+												</ul>
+					</div>
+				</div>
+															</li>
+							   						<li>
+								<a class="nav_title" title="Jumpsuits" href="http://www.sheinside.com/Jumpsuits-c-1860.html">Jumpsuits</a>
+											</li>
+							   						<li>
+								<a class="nav_title" title="Leggings" href="http://www.sheinside.com/Leggings-c-1871.html">Leggings</a>
+											</li>
+							   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   						</ul> 
+            
+                        
+                        
+                        
+                         <ul class="only_img bor_left_dotted">
+                   
+                   <a class="no_padding" href="http://www.sheinside.com/Flare-Skirts-vc-583.html"><img src="http://img.sheinside.com/images/sheinside.com/1415178208421118224.jpg"></a>
+                    
+                   <a class="no_padding" href="http://www.sheinside.com/Denim-Collection-vc-512.html"><img src="http://img.sheinside.com/images/sheinside.com/1415180032361954821.jpg"></a>
+                  
+            </ul>  
+                       
+                        
+                     	</div>
+ </li>
+  <li class="subCatName">
+ 	<a title="BOTTOMS" href="http://www.sheinside.com/Jewelry-c-1760.html">BOTTOMS</a>
+ 	<em class="header_arrow_top"></em>
+       
+               
+               
+               
+               
+                   
+               
+            									 	<div class="Second_ca" style="width:319px; left:0px;">	
+		<ul class="loop_ul">
+		   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   						<li>
+								<a class="nav_title" title="Necklaces" href="http://www.sheinside.com/Necklaces-c-1755.html">Necklaces</a>
+											</li>
+							   						<li>
+								<a class="nav_title" title="Earrings" href="http://www.sheinside.com/Earrings-c-1757.html">Earrings</a>
+											</li>
+							   						<li>
+								<a class="nav_title" title="Bracelets" href="http://www.sheinside.com/Bracelets-c-1758.html">Bracelets</a>
+											</li>
+							   						<li>
+								<a class="nav_title" title="Rings" href="http://www.sheinside.com/Rings-c-1759.html">Rings</a>
+											</li>
+							   						<li>
+								<a class="nav_title" title="Brooches" href="http://www.sheinside.com/Brooches-c-1777.html">Brooches</a>
+											</li>
+							   						<li>
+								<a class="nav_title" title="Sets" href="http://www.sheinside.com/Pendants-c-1756.html">Sets</a>
+											</li>
+							   						<li>
+								<a class="nav_title" title="Hair Accessories" href="http://www.sheinside.com/Hair-Accessories-c-1778.html">Hair Accessories</a>
+											</li>
+							   					   					   					   					   					   					   					   					   					   						</ul> 
+            
+                        
+                        
+                        
+                        
+                         <ul class="only_img bor_left_dotted">
+                   
+                   <a class="no_padding" href="http://www.sheinside.com/Geometric-vc-584.html"><img src="http://img.sheinside.com/images/sheinside.com/1415180481871733392.jpg"></a>
+                  
+            </ul>  
+                       
+                     	</div>
+ </li>
+  <li class="subCatName">
+ 	<a title="PROMOTION" href="http://www.sheinside.com/Accessories-c-1765.html">PROMOTION</a>
+ 	<em class="header_arrow_top"></em>
+       
+               
+               
+               
+               
+               
+                   
+            									 	<div class="Second_ca" style="width:319px; left:0px;">	
+		<ul class="loop_ul">
+		   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   						<li>
+								<a class="nav_title" title="Bags" href="http://www.sheinside.com/Bags-Purses-c-1764.html">Bags</a>
+											</li>
+							   						<li>
+								<a class="nav_title" title="Belts" href="http://www.sheinside.com/Belts-c-1875.html">Belts</a>
+											</li>
+							   						<li>
+								<a class="nav_title" title="Sunglasses" href="http://www.sheinside.com/Sunglasses-c-1770.html">Sunglasses</a>
+											</li>
+							   						<li>
+								<a class="nav_title" title="Hats" href="http://www.sheinside.com/Hats-c-1772.html">Hats</a>
+											</li>
+							   						<li>
+								<a class="nav_title" title="Scarves" href="http://www.sheinside.com/Scarves-c-1872.html">Scarves</a>
+											</li>
+							   						<li>
+								<a class="nav_title" title="Women Shoes" href="http://www.sheinside.com/Flats-c-1771.html">Women Shoes</a>
+											</li>
+							   						<li>
+								<a class="nav_title" title="Makeup Brushes" href="http://www.sheinside.com/Makeup-Brushes-c-1865.html">Makeup Brushes</a>
+											</li>
+							   						<li>
+								<a class="nav_title" title="Hair" href="http://www.sheinside.com/Hair-Chalks-c-1867.html">Hair</a>
+											</li>
+							   						</ul> 
+            
+                        
+                        
+                        
+                        
+                        
+                         <ul class="only_img bor_left_dotted">
+                   
+                   <a class="no_padding" href="http://www.sheinside.com/Scarves-c-1872.html"><img src="http://img.sheinside.com/images/sheinside.com/1415180832102384586.jpg"></a>
+                  
+            </ul>  
+                    	</div>
+ </li>
+</ul>
+</div>
+</div>
 </div>
 <div class="header_banner">
 	<ul>

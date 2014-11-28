@@ -747,8 +747,8 @@ a#logo:hover span {
 }
 
 #mainNav {
-	height: 33px;
-	line-height: 33px;
+	height: 41px;
+	line-height: 41px;
 	border-bottom: 1px solid #dcdcdc;
 	border-top: 1px solid #dcdcdc;
 	position: relative;
@@ -3937,50 +3937,32 @@ h4.goods-aImg-list {
 
 
 /*主导航模块样式*/
-.subCatName{
-	float: left;
-	height: 40px;
-	line-height: 40px;
-	text-decoration: none;
-	position: relative;list-style: none;
-}
-
-.header_arrow_top{
-	display: none; no-repeat scroll 0 0 transparent;
-	width: 12px;
-	height: 9px;
-	display: none;
-	position: absolute;
-	left: 50%;
-	margin-left: -6px;
-	bottom: -1px;
-	z-index: 1001;
-}
-.Second_ca{
-	width: 477px;
-	left: 0px; 
-	display: none;
-	position: absolute;
-	left: 0;
-	top: 40px;
-	z-index: 1000;
-	border: 1px solid #838383;
-	padding: 20px;
-	background-color: #fff;
-	opacity: 0.96;
-}
-.no_padding_img{
-	padding: 0;color: #000;
-text-transform: uppercase;
-float: left;
-display: inline-block;
-text-decoration: none;
-
-font-size: 12px;
-font-weight: bold;
-font-family: Tahoma;
-outline: none;
-border-left: 1px dotted #000;
-}
-
+/* head-bottom   2014-10-30 yym start ---------------------------------------------------*/
+.head_bottom_wrap{width:100%;margin:0;}
+.head_bottom{ height:40px;background-color: #fff;}
+.head_bottom_no_scroll{width:960px;margin:0 auto;position:relative;z-index: 1001;}
+.head_bottom_scroll{position:fixed;_position:relative;top:36px;width:100%;z-index: 1001;}
+.no_scroll{} 
+.mar_top_8{margin-top:8px;}
+.scroll{margin: 0 auto;width:960px;left:0;}
+.subCatName{ float:left;height:40px;line-height:40px;text-decoration:none; position:relative;*z-index:100;}
+.subCatName a{color:#000; text-transform: uppercase;float:left;display:inline-block;text-decoration:none; padding:0 28px;font-size:12px;font-weight: bold;font-family:Tahoma;outline: none; }
+.subCatName a:hover, .subCatName a.nav_red:hover{color: #b10000;}
+.subCatName a.no_padding{padding:0;}
+.subCatName .header_arrow_top{background: url('../../header_arrow_up.png') no-repeat scroll 0 0 transparent;width: 12px;height: 9px;display: none;position: absolute;left:50%;margin-left:-6px;bottom:-1px;z-index:1001;}
+.subCatName a.nav_red, .Second_ca ul li.li_title a.nav_red{color:#f00;}
+.bor_left_dotted{border-left:1px dotted #000;}
+.Second_ca{position:absolute;display: none;left:0; top:40px;width:449px; z-index:1000;border: 1px solid #838383;padding:20px;background-color: #fff;display:none;opacity:0.96;filter:alpha(opacity=96);}
+.last_Second_ca.Second_ca, .Second_ca ul.loop_ul{width:160px;}
+.Second_ca ul, .Second_ca ul.only_img{float: left;}
+.Second_ca ul.fix_height{height:225px;overflow: hidden;width:160px;}
+.Second_ca ul.only_img img{margin-left:20px;width:138px;height:200px;*margin-left:10px;}
+.Second_ca ul li {height:16px;line-height:16px;*height:auto;}
+.Second_ca ul li.li_title{height:18px;line-height:18px;*height:14px;*line-height:14px;}
+.Second_ca ul li a {color: #232323; padding:0;font-weight: normal;text-transform:capitalize;font-family: arial;}
+.Second_ca ul li.li_title a{font-weight: bold;color: #000;}
+.Second_ca ul li a:hover, .collections_header a:hover, .Second_ca ul li a.nav_red:hover {color: #c00;}
+.Second_ca a.no_href:hover{color:#000;}	
+.Second_ca a.nav_title, .subCatName .last_Second_ca a{font-weight: bold;height:20px;line-height:20px;color: #000;width:160px;}
+/* head-bottom   2014-10-30 yym over ---------------------------------------------------*/
 

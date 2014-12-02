@@ -237,6 +237,7 @@ if (!defined('INIT_NO_SMARTY'))
 		
 	}
 	
+	
 	$smarty->assign('currency_list',        $currency_list);
 	$smarty->assign('currency_to',          $currency_to);
 	$smarty->assign('currency_name',        $currency_name);

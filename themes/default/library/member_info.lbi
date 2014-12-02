@@ -1,9 +1,9 @@
  
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 {if $user_info}
- <a href="user.php"><span>{$lang.hello}，</span><span class="f4_b">{$user_info.username}</span></a>
+ <a href="user.php" ><span  style="color: #FF7A23;text-decoration: none;font-family: Arial,Helvetica;font-size: 11px">{$lang.hello}，</span><span class="f4_b" style="color: #FF7A23;text-decoration: none;font-family: Arial,Helvetica;font-size: 11px">{$user_info.username}</span></a>
  
- <a href="user.php?act=logout">{$lang.user_logout}</a>  
+ <a href="user.php?act=logout" style="color: #FF7A23;text-decoration: none;font-family: Arial,Helvetica;font-size: 11px">{$lang.user_logout}</a>  
 
 {else}
  <a href="user.php" style="color: #FF7A23;text-decoration: none;">SIGNIN/REGISTER</a> 

@@ -1663,8 +1663,8 @@ function assign_template($ctype = '', $catlist = array())
     $smarty->assign('catalog_list',  cat_list(0, 0, false, 1, false));
 
 	//严学文debug
-// 	$yan_navi = get_navigator($ctype, $catlist);
-// 	dump($yan_navi);
+//  	$yan_navi = get_navigator($ctype, $catlist);
+//  	dump($yan_navi);
     $smarty->assign('navigator_list',        get_navigator($ctype, $catlist));  //自定义导航栏
 
     if (!empty($GLOBALS['_CFG']['search_keywords']))
@@ -1962,7 +1962,6 @@ function get_navigator($ctype = '', $catlist = array())
     $res = $GLOBALS['db']->query($sql);
 
     $cur_url = substr(strrchr($_SERVER['REQUEST_URI'],'/'),1);
-
     if (intval($GLOBALS['_CFG']['rewrite']))
     {
         if(strpos($cur_url, '-'))

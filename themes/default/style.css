@@ -548,14 +548,13 @@ a#logo:hover span {
 /*椤甸潰涓诲鑸�*/
 .buy_car_bg {
 	float: right;
-	height: 26px;
-	line-height: 26px;
+	height: 28px;
+	line-height: 28px;
 	width: 120px;
-	background: url(images/bag.gif) 4px center no-repeat;
+	/*background: url(images/bag.gif) 4px center no-repeat; 没找到合适的购物车图标 */ 
 	position: relative;
 	z-index: 999;
-	border: 1px solid #fff;
-	padding: 2px 8px 2px 30px;
+	border: 0px solid #fff;
 }
 
 .buy_car_bg img {

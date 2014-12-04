@@ -57,7 +57,6 @@ $filter_attr_str = preg_match('/^[\d\-]+$/',$filter_attr_str) ? $filter_attr_str
 $filter_attr_str = trim($filter_attr_str,'-');
 $filter_attr = empty($filter_attr_str) ? '' : explode('-', $filter_attr_str);
 
-
 /* 排序、显示方式以及类型 */
 $default_display_type = $_CFG['show_order_type'] == '0' ? 'list' : ($_CFG['show_order_type'] == '1' ? 'grid' : 'text');
 $default_sort_order_method = $_CFG['sort_order_method'] == '0' ? 'DESC' : 'ASC';
@@ -564,10 +563,18 @@ if (!$smarty->is_cached('category.dwt', $cache_id))
 				unset($all_attr_list[$key]);				  //如果整排属性所对应的商品数量都=0，则整排删除
 			}
 		}
+		
+		//add by lth 对前3条数据不增加 display：none 属性
+		foreach ($all_attr_list as $key=>&$val){
+			if(!empty($val['attr_list']) && $key >'2'){
+				$val["none"] = "none";
+			}
+		}
+		
 
         $smarty->assign('attr_list_selected', $arr_attr_bread_cancel);	    /*--wzys ecshop前台属性筛选带删除功能　颜色属性带图片展示修改过代码--*/
         $smarty->assign('filter_attr_list',  $all_attr_list);			/*--wzys ecshop前台属性筛选带删除功能　颜色属性带图片展示修改过代码end--*/
-
+//         dump($all_attr_list);
 		/* 开始疑问：这段代码是什么意思？？？*/
 		if (!empty($filter_attr))
 		{

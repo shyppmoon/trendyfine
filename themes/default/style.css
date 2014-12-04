@@ -554,7 +554,7 @@ a#logo:hover span {
 	/*background: url(images/bag.gif) 4px center no-repeat; 没找到合适的购物车图标 */ 
 	position: relative;
 	z-index: 999;
-	border: 0px solid #fff;
+	border: 0px solid red;
 }
 
 .buy_car_bg img {
@@ -582,7 +582,7 @@ a#logo:hover span {
 
 .buy_car_bg_box .ul1_on {
 	cursor: pointer;
-	border: 1px solid #262626
+	border: 0px solid #262626
 }
 
 .buy_car_bg_box .ul1_on  .car_ul {
@@ -3964,4 +3964,9 @@ h4.goods-aImg-list {
 .Second_ca a.no_href:hover{color:#000;}	
 .Second_ca a.nav_title, .subCatName .last_Second_ca a{font-weight: bold;height:20px;line-height:20px;color: #000;width:160px;}
 /* head-bottom   2014-10-30 yym over ---------------------------------------------------*/
+
+/*购物车*/
+.logo_rightyy {float:left;display:inline;cursor: pointer;margin-left:8px;position: relative;}
+.logo_rightyy a.shopping_cart {display:block;cursor: pointer;height:36px;line-height:36px;color:#fff;text-decoration:none;font-size:12px;float: left;
+	 width:70px;}
 

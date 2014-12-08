@@ -384,6 +384,12 @@ h6 span {
 	overflow: hidden
 }
 
+/*针对帮助中心底部的样式*/
+.AreaRHelp {
+	float: right;
+	overflow: hidden
+}
+
 .AreaL h3 {
 	font-weight: bold;
 	height: 23px;
@@ -871,7 +877,7 @@ a#logo:hover span {
 	height: 30px;
 	line-height: 30px;
 	padding: 0px;
-	border-bottom: 1px solid #ddd;
+	/*border-bottom: 1px solid #ddd; 屏蔽面包屑导航的下划线*/
 }
 
 .header_banner {

@@ -53,8 +53,7 @@ function reg(str){
     <div class="textInfo">
       <form action="javascript:addToCart({$goods.goods_id})" method="post" name="ECS_FORMBUY" id="ECS_FORMBUY" class="ui-form-item">
         <div class="clearfix">
-          <p style="font: bold 16px/25px Arial;
-color: #111; line-height:18px;">{$goods.goods_style_name}</p>
+          <h1 style="color: #000;font-family: Arial,Helvetica,sans-serif; font-size: 25px;line-height: 30px;margin: 0 0 10px;">{$goods.goods_style_name}</h1>
         </div>
         <ul>
           <!-- {if $promotion} -->

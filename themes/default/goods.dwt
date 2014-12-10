@@ -45,7 +45,10 @@ function reg(str){
 <div class="block block1 clearfix"> <!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
   <div id="goodsInfo" class="clearfix">
     <div class="imgInfo">
-      <div class="imgInfo_img" style="border:#ccc solid 1px; padding:1px; width:402px;"> <a href="{$goods.goods_img}" id="zoom1" class="MagicZoom MagicThumb cloud-zoom" rel="adjustX: 10, adjustY:-4"> <img src="{$goods.goods_img}" alt="{$goods.goods_name|escape:html}" id="goodsimg" class="thumb" jqimg="{$goods.goods_img}"  style="width:400px; margin:0px auto"/> </a> </div>
+      <div class="imgInfo_img" style="border:#ccc solid 1px; padding:1px; width:340px;"> 
+      <a href="{$goods.goods_img}" id="zoom1" class="MagicZoom MagicThumb cloud-zoom" rel="adjustX: 10, adjustY:-4"> 
+      <img src="{$goods.goods_thumb}" alt="{$goods.goods_name|escape:html}" id="goodsimg" class="thumb"  style="margin:0px auto"/> 
+      </a> </div>
       <div class="blank5"></div>
       <!-- #BeginLibraryItem "/library/goods_gallery.lbi" --><!-- #EndLibraryItem --> <!-- TemplateBeginEditable name="商品相册下广告（宽230px）" --> <!-- TemplateEndEditable --> </div>
     

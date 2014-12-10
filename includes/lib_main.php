@@ -388,7 +388,6 @@ function assign_dynamic($tmp)
             case 2:
                 /* 品牌的商品 */
                 $brand_goods = assign_brand_goods($row['id'], $row['number']);
-
                 $GLOBALS['smarty']->assign('brand_goods_' . $row['id'], $brand_goods['goods']);
                 $GLOBALS['smarty']->assign('goods_brand_' . $row['id'], $brand_goods['brand']);
             break;

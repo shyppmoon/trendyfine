@@ -888,7 +888,6 @@ function assign_brand_goods($brand_id, $num = 0, $cat_id = 0,$order_rule = '')
         $goods[$idx]['thumb']         = get_image_path($row['goods_id'], $row['goods_thumb'], true);
         $goods[$idx]['goods_img']     = get_image_path($row['goods_id'], $row['goods_img']);
         $goods[$idx]['url']           = build_uri('goods', array('gid' => $row['goods_id']), $row['goods_name']);
-
         $idx++;
     }
 

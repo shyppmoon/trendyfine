@@ -189,11 +189,11 @@ var process_request = "{$lang.process_request}";
 <div class="head_bottom head_bottom_no_scroll">
 <ul id="TS_menu" class="no_scroll">
   	<li class="subCatName">
-        <a title="WHAT'S NEW" href="http://www.sheinside.com/daily-new.html">DAILY NEW</a>
+        <a title="WHAT'S NEW" href="#">DAILY NEW</a>
         <em class="header_arrow_top"></em>
         <div class="Second_ca" style="width:479px;">
             <ul class="fix_height">
-            	<li class="li_title"><a title="WHAT'S NEW" href="http://www.sheinside.com/daily-new.html">DAILY NEW</a></li>
+            	<li class="li_title"><a title="WHAT'S NEW" href="#">DAILY NEW</a></li>
             	                   <!-- {foreach name=nav_middle_list from=$navigator_list.middle.0.cat_list item=nav } -->
             	                               <li><a href="{$nav.url}">{$nav.name|escape:html}</a></li>
                                     <!--{/foreach}-->
@@ -201,20 +201,20 @@ var process_request = "{$lang.process_request}";
             </ul>
             <ul class="fix_height">
             	<li class="li_title"><a class="no_href">Trending</a></li>
-            	            	<li class="li_con"><a href="http://www.sheinside.com/Backless-Dresses-vc-420.html">Backless Dresses</a></li>
-            	            	<li class="li_con"><a href="http://www.sheinside.com/Florals-Print-vc-409.html">Florals Print</a></li>
-            	            	<li class="li_con"><a href="http://www.sheinside.com/Bold-color-block-clothes-vc-245.html">Colorblock</a></li>
-            	            	<li class="li_con"><a href="http://www.sheinside.com/Plaid-vc-142.html">Fashion Plaid </a></li>
-            	            	<li class="li_con"><a href="http://www.sheinside.com/Clearance-Sale-vc-138.html">Clearance Sale</a></li>
-            	            	<li class="li_con"><a href="http://www.sheinside.com/Shine-On-vc-608.html">Shine On</a></li>
-            	            	<li class="li_con"><a href="http://www.sheinside.com/Cozy-Sweaters-vc-607.html">Cozy Sweaters</a></li>
-            	            	<li class="li_con"><a href="http://www.sheinside.com/Faux-Fur-ever-vc-606.html">Faux Fur-ever</a></li>
-            	            	<li class="li_con"><a href="http://www.sheinside.com/Christmas-Jumpers-vc-585.html">Christmas Jumpers</a></li>
-            	            	<li class="li_con"><a href="http://www.sheinside.com/The-world-of-cartoons-vc-562.html">The world of cartoons</a></li>
-            	            	<li class="li_con"><a href="http://www.sheinside.com/Geometric-Stripe-Sweaters-vc-339.html">Geometric & Stripe Sweaters</a></li>
+            	            	<li class="li_con"><a href="#">Backless Dresses</a></li>
+            	            	<li class="li_con"><a href="#">Florals Print</a></li>
+            	            	<li class="li_con"><a href="#">Colorblock</a></li>
+            	            	<li class="li_con"><a href="#">Fashion Plaid </a></li>
+            	            	<li class="li_con"><a href="#">Clearance Sale</a></li>
+            	            	<li class="li_con"><a href="#">Shine On</a></li>
+            	            	<li class="li_con"><a href="#">Cozy Sweaters</a></li>
+            	            	<li class="li_con"><a href="#">Faux Fur-ever</a></li>
+            	            	<li class="li_con"><a href="#">Christmas Jumpers</a></li>
+            	            	<li class="li_con"><a href="#">The world of cartoons</a></li>
+            	            	<li class="li_con"><a href="#">Geometric & Stripe Sweaters</a></li>
             	            </ul>
                          <ul class="only_img bor_left_dotted">
-                <a class="no_padding" href="http://www.sheinside.com/New-in-knitwear-vc-582.html"><img src="http://img.sheinside.com/images/sheinside.com/1415103880146619915.jpg"></a> 
+                <a class="no_padding" href="#"><img src="http://img.sheinside.com/images/sheinside.com/1415103880146619915.jpg"></a> 
             </ul>
                     </div>
 	</li>
@@ -236,8 +236,8 @@ var process_request = "{$lang.process_request}";
 				<div class="box-HelpCentery">
 					<div class="help_list_header">
 						<ul>
-													<li><a href="http://www.sheinside.com/attribute-279_27923-1727.html">Vintage Dresses</a></li>
-													<li><a href="http://www.sheinside.com/attribute-279_27973-1727.html">Sexy Dresses</a></li>
+													<li><a href="#">Vintage Dresses</a></li>
+													<li><a href="#">Sexy Dresses</a></li>
 												</ul>
 					</div>
 				</div>
@@ -245,8 +245,8 @@ var process_request = "{$lang.process_request}";
 				<div class="box-HelpCentery">
 					<div class="help_list_header">
 						<ul>
-													<li><a href="http://www.sheinside.com/attribute-280_28033-1727.html">Chiffon Dresses</a></li>
-													<li><a href="http://www.sheinside.com/attribute-280_280123-1727.html">Lace Dresses</a></li>
+													<li><a href="#">Chiffon Dresses</a></li>
+													<li><a href="#">Lace Dresses</a></li>
 												</ul>
 					</div>
 				</div>
@@ -254,9 +254,9 @@ var process_request = "{$lang.process_request}";
 				<div class="box-HelpCentery">
 					<div class="help_list_header">
 						<ul>
-													<li><a href="http://www.sheinside.com/attribute-282_28213-1727.html">Short Sleeve Dresses</a></li>
-													<li><a href="http://www.sheinside.com/attribute-282_28223-1727.html">Sleeveless Dresses</a></li>
-													<li><a href="http://www.sheinside.com/attribute-282_28243-1727.html">Long Sleeve Dresses</a></li>
+													<li><a href="#">Short Sleeve Dresses</a></li>
+													<li><a href="#">Sleeveless Dresses</a></li>
+													<li><a href="#">Long Sleeve Dresses</a></li>
 												</ul>
 					</div>
 				</div>
@@ -264,8 +264,8 @@ var process_request = "{$lang.process_request}";
 				<div class="box-HelpCentery">
 					<div class="help_list_header">
 						<ul>
-													<li><a href="http://www.sheinside.com/attribute-283_28323-1727.html">Shift Dresses</a></li>
-													<li><a href="http://www.sheinside.com/attribute-283_28383-1727.html">High Low Dresses</a></li>
+													<li><a href="#">Shift Dresses</a></li>
+													<li><a href="#">High Low Dresses</a></li>
 												</ul>
 					</div>
 				</div>
@@ -273,9 +273,9 @@ var process_request = "{$lang.process_request}";
 				<div class="box-HelpCentery">
 					<div class="help_list_header">
 						<ul>
-													<li><a href="http://www.sheinside.com/attribute-290_29013-1727.html">Floral Dresses</a></li>
-													<li><a href="http://www.sheinside.com/attribute-290_29023-1727.html">Print Dresses</a></li>
-													<li><a href="http://www.sheinside.com/attribute-290_290143-1727.html">Color Block Dresses</a></li>
+													<li><a href="#">Floral Dresses</a></li>
+													<li><a href="#">Print Dresses</a></li>
+													<li><a href="#">Color Block Dresses</a></li>
 												</ul>
 					</div>
 				</div>
@@ -285,9 +285,8 @@ var process_request = "{$lang.process_request}";
                         
                          <ul class="only_img bor_left_dotted">
                    
-                   <a class="no_padding" href="http://www.sheinside.com/SheInside-Basics-vc-491.html"><img src="http://img.sheinside.com/images/sheinside.com/1415162489007584845.jpg"></a>
-                    
-                   <a class="no_padding" href="http://www.sheinside.com/Party-Dresses-vc-76.html"><img src="http://img.sheinside.com/images/sheinside.com/1415104122794099585.jpg"></a>
+                   <a class="no_padding" href="#"><img src="http://img.sheinside.com/images/sheinside.com/1415162489007584845.jpg"></a>
+                   <a class="no_padding" href="#"><img src="http://img.sheinside.com/images/sheinside.com/1415104122794099585.jpg"></a>
                   
             </ul>  
                        
@@ -309,18 +308,18 @@ var process_request = "{$lang.process_request}";
             									 	<div class="Second_ca" style="width:799px; left:-200px;">	
 		<ul class="loop_ul">
 		   					   					   						<li>
-								<a class="nav_title" title="Kimonos" href="http://www.sheinside.com/Kimonos-c-1878.html">Kimonos</a>
+								<a class="nav_title" title="Kimonos" href="#">Kimonos</a>
 											</li>
 							   						<li>
-								<a class="nav_title" title="Tank Tops & Camis" href="http://www.sheinside.com/Vests-Camis-c-1779.html">Tank Tops & Camis</a>
+								<a class="nav_title" title="Tank Tops & Camis" href="#">Tank Tops & Camis</a>
 											</li>
 							   						<li>
-								<a class="nav_title" title="Blouses" href="http://www.sheinside.com/Shirts-c-1733.html">Blouses</a>
+								<a class="nav_title" title="Blouses" href="#">Blouses</a>
 																		
 				<div class="box-HelpCentery">
 					<div class="help_list_header">
 						<ul>
-													<li><a href="http://www.sheinside.com/attribute-319_31933-1733.html">Denim Blouses</a></li>
+													<li><a href="#">Denim Blouses</a></li>
 												</ul>
 					</div>
 				</div>
@@ -328,19 +327,19 @@ var process_request = "{$lang.process_request}";
 				<div class="box-HelpCentery">
 					<div class="help_list_header">
 						<ul>
-													<li><a href="http://www.sheinside.com/attribute-320_32023-1733.html">Print Blouses</a></li>
-													<li><a href="http://www.sheinside.com/attribute-320_32093-1733.html">Color Block Blouses</a></li>
+													<li><a href="#">Print Blouses</a></li>
+													<li><a href="#">Color Block Blouses</a></li>
 												</ul>
 					</div>
 				</div>
 															</li>
 							   						<li>
-								<a class="nav_title" title="T-Shirts" href="http://www.sheinside.com/T-shirt-c-1738.html">T-Shirts</a>
+								<a class="nav_title" title="T-Shirts" href="#">T-Shirts</a>
 																		
 				<div class="box-HelpCentery">
 					<div class="help_list_header">
 						<ul>
-													<li><a href="http://www.sheinside.com/attribute-354_35403-1738.html">Cotton T-Shirts</a></li>
+													<li><a href="#">Cotton T-Shirts</a></li>
 												</ul>
 					</div>
 				</div>
@@ -348,7 +347,7 @@ var process_request = "{$lang.process_request}";
 				<div class="box-HelpCentery">
 					<div class="help_list_header">
 						<ul>
-													<li><a href="http://www.sheinside.com/attribute-355_35513-1738.html">Casual T-Shirts</a></li>
+													<li><a href="#">Casual T-Shirts</a></li>
 												</ul>
 					</div>
 				</div>
@@ -356,7 +355,7 @@ var process_request = "{$lang.process_request}";
 				<div class="box-HelpCentery">
 					<div class="help_list_header">
 						<ul>
-													<li><a href="http://www.sheinside.com/attribute-356_35603-1738.html">Long Sleeve T-Shirts</a></li>
+													<li><a href="#">Long Sleeve T-Shirts</a></li>
 												</ul>
 					</div>
 				</div>
@@ -364,7 +363,7 @@ var process_request = "{$lang.process_request}";
 				<div class="box-HelpCentery">
 					<div class="help_list_header">
 						<ul>
-													<li><a href="http://www.sheinside.com/attribute-358_35823-1738.html">Printed T-Shirts</a></li>
+													<li><a href="#">Printed T-Shirts</a></li>
 												</ul>
 					</div>
 				</div>
@@ -372,17 +371,17 @@ var process_request = "{$lang.process_request}";
 			 			</ul>
 			<ul class="loop_ul">
 						   						<li>
-								<a class="nav_title" title="Knitwear" href="http://www.sheinside.com/Sweaters-c-1734.html">Knitwear</a>
+								<a class="nav_title" title="Knitwear" href="#">Knitwear</a>
 																		
 				<div class="box-HelpCentery">
 					<div class="help_list_header">
 						<ul>
-													<li><a href="http://www.sheinside.com/attribute-285_28513-1734.html">Floral Knitwear</a></li>
-													<li><a href="http://www.sheinside.com/attribute-285_28523-1734.html">Print Knitwear</a></li>
-													<li><a href="http://www.sheinside.com/attribute-285_28543-1734.html">Striped Knitwear</a></li>
-													<li><a href="http://www.sheinside.com/attribute-285_28553-1734.html">Plaid Knitwear</a></li>
-													<li><a href="http://www.sheinside.com/attribute-285_28583-1734.html">Geometric Knitwear</a></li>
-													<li><a href="http://www.sheinside.com/attribute-285_285143-1734.html">Cable Knitwear</a></li>
+													<li><a href="#">Floral Knitwear</a></li>
+													<li><a href="#">Print Knitwear</a></li>
+													<li><a href="#">Striped Knitwear</a></li>
+													<li><a href="#">Plaid Knitwear</a></li>
+													<li><a href="#">Geometric Knitwear</a></li>
+													<li><a href="#">Cable Knitwear</a></li>
 												</ul>
 					</div>
 				</div>
@@ -390,8 +389,8 @@ var process_request = "{$lang.process_request}";
 				<div class="box-HelpCentery">
 					<div class="help_list_header">
 						<ul>
-													<li><a href="http://www.sheinside.com/attribute-289_28903-1734.html">Casual Knitwear</a></li>
-													<li><a href="http://www.sheinside.com/attribute-289_28953-1734.html">Vintage Knitwear</a></li>
+													<li><a href="#">Casual Knitwear</a></li>
+													<li><a href="#">Vintage Knitwear</a></li>
 												</ul>
 					</div>
 				</div>
@@ -399,8 +398,8 @@ var process_request = "{$lang.process_request}";
 				<div class="box-HelpCentery">
 					<div class="help_list_header">
 						<ul>
-													<li><a href="http://www.sheinside.com/attribute-292_29213-1734.html">Cardigan Knitwear</a></li>
-													<li><a href="http://www.sheinside.com/attribute-292_29223-1734.html">Coat Knitwear</a></li>
+													<li><a href="#">Cardigan Knitwear</a></li>
+													<li><a href="#">Coat Knitwear</a></li>
 												</ul>
 					</div>
 				</div>
@@ -408,7 +407,7 @@ var process_request = "{$lang.process_request}";
 				<div class="box-HelpCentery">
 					<div class="help_list_header">
 						<ul>
-													<li><a href="http://www.sheinside.com/attribute-293_29323-1734.html">Loose Knitwear</a></li>
+													<li><a href="#">Loose Knitwear</a></li>
 												</ul>
 					</div>
 				</div>
@@ -416,16 +415,16 @@ var process_request = "{$lang.process_request}";
 			 			</ul>
 			<ul class="loop_ul">
 						   						<li>
-								<a class="nav_title" title="Outerwear" href="http://www.sheinside.com/Outerwear-c-1735.html">Outerwear</a>
+								<a class="nav_title" title="Outerwear" href="#">Outerwear</a>
 																		
 				<div class="box-HelpCentery">
 					<div class="help_list_header">
 						<ul>
-													<li><a href="http://www.sheinside.com/attribute-366_36603-1735.html">Coats Outerwear</a></li>
-													<li><a href="http://www.sheinside.com/attribute-366_36623-1735.html">Parka Outerwear</a></li>
-													<li><a href="http://www.sheinside.com/attribute-366_36653-1735.html">Capes Outerwear</a></li>
-													<li><a href="http://www.sheinside.com/attribute-366_36663-1735.html">Vests Outerwear</a></li>
-													<li><a href="http://www.sheinside.com/attribute-366_36673-1735.html">Trench Coat Outerwear</a></li>
+													<li><a href="#">Coats Outerwear</a></li>
+													<li><a href="#">Parka Outerwear</a></li>
+													<li><a href="#">Capes Outerwear</a></li>
+													<li><a href="#">Vests Outerwear</a></li>
+													<li><a href="#">Trench Coat Outerwear</a></li>
 												</ul>
 					</div>
 				</div>
@@ -433,7 +432,7 @@ var process_request = "{$lang.process_request}";
 				<div class="box-HelpCentery">
 					<div class="help_list_header">
 						<ul>
-													<li><a href="http://www.sheinside.com/attribute-367_36713-1735.html">Black Outerwear</a></li>
+													<li><a href="#">Black Outerwear</a></li>
 												</ul>
 					</div>
 				</div>
@@ -441,7 +440,7 @@ var process_request = "{$lang.process_request}";
 				<div class="box-HelpCentery">
 					<div class="help_list_header">
 						<ul>
-													<li><a href="http://www.sheinside.com/attribute-368_368133-1735.html">Faux Fur Outerwear</a></li>
+													<li><a href="#">Faux Fur Outerwear</a></li>
 												</ul>
 					</div>
 				</div>
@@ -449,7 +448,7 @@ var process_request = "{$lang.process_request}";
 				<div class="box-HelpCentery">
 					<div class="help_list_header">
 						<ul>
-													<li><a href="http://www.sheinside.com/attribute-370_37013-1735.html">Fashion Outerwear</a></li>
+													<li><a href="#">Fashion Outerwear</a></li>
 												</ul>
 					</div>
 				</div>
@@ -457,7 +456,7 @@ var process_request = "{$lang.process_request}";
 				<div class="box-HelpCentery">
 					<div class="help_list_header">
 						<ul>
-													<li><a href="http://www.sheinside.com/attribute-372_37223-1735.html">Long Outerwear</a></li>
+													<li><a href="#">Long Outerwear</a></li>
 												</ul>
 					</div>
 				</div>
@@ -465,7 +464,7 @@ var process_request = "{$lang.process_request}";
 				<div class="box-HelpCentery">
 					<div class="help_list_header">
 						<ul>
-													<li><a href="http://www.sheinside.com/attribute-373_37333-1735.html">Winter Outerwear</a></li>
+													<li><a href="#">Winter Outerwear</a></li>
 												</ul>
 					</div>
 				</div>
@@ -473,7 +472,7 @@ var process_request = "{$lang.process_request}";
 				<div class="box-HelpCentery">
 					<div class="help_list_header">
 						<ul>
-													<li><a href="http://www.sheinside.com/attribute-1601_160104-1735.html">Plain Outerwear</a></li>
+													<li><a href="#">Plain Outerwear</a></li>
 												</ul>
 					</div>
 				</div>
@@ -481,12 +480,12 @@ var process_request = "{$lang.process_request}";
 			 			</ul>
 			<ul class="loop_ul">
 						   						<li>
-								<a class="nav_title" title="Sweatshirts" href="http://www.sheinside.com/Sweatshirts-c-1773.html">Sweatshirts</a>
+								<a class="nav_title" title="Sweatshirts" href="#">Sweatshirts</a>
 																		
 				<div class="box-HelpCentery">
 					<div class="help_list_header">
 						<ul>
-													<li><a href="http://www.sheinside.com/attribute-490_49023-1773.html">Hoodie Sweatshirts</a></li>
+													<li><a href="#">Hoodie Sweatshirts</a></li>
 												</ul>
 					</div>
 				</div>
@@ -494,33 +493,33 @@ var process_request = "{$lang.process_request}";
 				<div class="box-HelpCentery">
 					<div class="help_list_header">
 						<ul>
-													<li><a href="http://www.sheinside.com/attribute-492_49293-1773.html">Print Sweatshirts</a></li>
+													<li><a href="#">Print Sweatshirts</a></li>
 												</ul>
 					</div>
 				</div>
 															</li>
 							   						<li>
-								<a class="nav_title" title="Jackets" href="http://www.sheinside.com/Jackets-c-1776.html">Jackets</a>
+								<a class="nav_title" title="Jackets" href="#">Jackets</a>
 																		
 				<div class="box-HelpCentery">
 					<div class="help_list_header">
 						<ul>
-													<li><a href="http://www.sheinside.com/attribute-512_51213-1776.html">PU Leather Jackets</a></li>
+													<li><a href="#">PU Leather Jackets</a></li>
 												</ul>
 					</div>
 				</div>
 															</li>
 							   						<li>
-								<a class="nav_title" title="Blazers" href="http://www.sheinside.com/Suits-c-1739.html">Blazers</a>
+								<a class="nav_title" title="Blazers" href="#">Blazers</a>
 											</li>
 							   						<li>
-								<a class="nav_title" title="Two-piece Suit" href="http://www.sheinside.com/Two-piece-Suit-c-1780.html">Two-piece Suit</a>
+								<a class="nav_title" title="Two-piece Suit" href="#">Two-piece Suit</a>
 											</li>
 							   						<li>
-								<a class="nav_title" title="Lingerie" href="http://www.sheinside.com/Lingerie-c-1862.html">Lingerie</a>
+								<a class="nav_title" title="Lingerie" href="#">Lingerie</a>
 											</li>
 							   						<li>
-								<a class="nav_title" title="Swimwear" href="http://www.sheinside.com/Swimwear-c-1866.html">Swimwear</a>
+								<a class="nav_title" title="Swimwear" href="#">Swimwear</a>
 											</li>
 							   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   						</ul> 
             
@@ -528,7 +527,7 @@ var process_request = "{$lang.process_request}";
                         
                          <ul class="only_img bor_left_dotted">
                    
-                   <a class="no_padding" href="http://www.sheinside.com/Military-Parka-vc-383.html"><img src="http://img.sheinside.com/images/sheinside.com/1415104911601063504.jpg"></a>
+                   <a class="no_padding" href="#"><img src="http://img.sheinside.com/images/sheinside.com/1415104911601063504.jpg"></a>
                   
             </ul>  
                        
@@ -537,7 +536,7 @@ var process_request = "{$lang.process_request}";
                      	</div>
  </li>
   <li class="subCatName">
- 	<a title="OUTEWEAR" href="http://www.sheinside.com/Bottoms-c-1767.html">OUTEWEAR</a>
+ 	<a title="OUTEWEAR" href="#">OUTEWEAR</a>
  	<em class="header_arrow_top"></em>
        
                
@@ -549,13 +548,13 @@ var process_request = "{$lang.process_request}";
             									 	<div class="Second_ca" style="width:637px; left:-200px;">	
 		<ul class="loop_ul">
 		   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   						<li>
-								<a class="nav_title" title="Skirts" href="http://www.sheinside.com/Skirts-c-1732.html">Skirts</a>
+								<a class="nav_title" title="Skirts" href="#">Skirts</a>
 																		
 				<div class="box-HelpCentery">
 					<div class="help_list_header">
 						<ul>
-													<li><a href="http://www.sheinside.com/attribute-343_34303-1732.html">Chiffon Skirts</a></li>
-													<li><a href="http://www.sheinside.com/attribute-343_34343-1732.html">Lace Skirts</a></li>
+													<li><a href="#">Chiffon Skirts</a></li>
+													<li><a href="#">Lace Skirts</a></li>
 												</ul>
 					</div>
 				</div>
@@ -563,9 +562,9 @@ var process_request = "{$lang.process_request}";
 				<div class="box-HelpCentery">
 					<div class="help_list_header">
 						<ul>
-													<li><a href="http://www.sheinside.com/attribute-345_34503-1732.html">A Line Skirts</a></li>
-													<li><a href="http://www.sheinside.com/attribute-345_34543-1732.html">Pleated Skirts</a></li>
-													<li><a href="http://www.sheinside.com/attribute-345_34583-1732.html">Flared Skirts</a></li>
+													<li><a href="#">A Line Skirts</a></li>
+													<li><a href="#">Pleated Skirts</a></li>
+													<li><a href="#">Flared Skirts</a></li>
 												</ul>
 					</div>
 				</div>
@@ -573,7 +572,7 @@ var process_request = "{$lang.process_request}";
 				<div class="box-HelpCentery">
 					<div class="help_list_header">
 						<ul>
-													<li><a href="http://www.sheinside.com/attribute-346_34643-1732.html">Vintage Skirts</a></li>
+													<li><a href="#">Vintage Skirts</a></li>
 												</ul>
 					</div>
 				</div>
@@ -581,9 +580,9 @@ var process_request = "{$lang.process_request}";
 				<div class="box-HelpCentery">
 					<div class="help_list_header">
 						<ul>
-													<li><a href="http://www.sheinside.com/attribute-347_34703-1732.html">Plain Skirts</a></li>
-													<li><a href="http://www.sheinside.com/attribute-347_34713-1732.html">Floral Skirts</a></li>
-													<li><a href="http://www.sheinside.com/attribute-347_34723-1732.html">Print Skirts</a></li>
+													<li><a href="#">Plain Skirts</a></li>
+													<li><a href="#">Floral Skirts</a></li>
+													<li><a href="#">Print Skirts</a></li>
 												</ul>
 					</div>
 				</div>
@@ -591,13 +590,13 @@ var process_request = "{$lang.process_request}";
 			 			</ul>
 			<ul class="loop_ul">
 						   						<li>
-								<a class="nav_title" title="Pants" href="http://www.sheinside.com/Pants-c-1740.html">Pants</a>
+								<a class="nav_title" title="Pants" href="#">Pants</a>
 																		
 				<div class="box-HelpCentery">
 					<div class="help_list_header">
 						<ul>
-													<li><a href="http://www.sheinside.com/attribute-380_38003-1740.html">Trousers Pants</a></li>
-													<li><a href="http://www.sheinside.com/attribute-380_38023-1740.html">Shorts Pants</a></li>
+													<li><a href="#">Trousers Pants</a></li>
+													<li><a href="#">Shorts Pants</a></li>
 												</ul>
 					</div>
 				</div>
@@ -605,8 +604,8 @@ var process_request = "{$lang.process_request}";
 				<div class="box-HelpCentery">
 					<div class="help_list_header">
 						<ul>
-													<li><a href="http://www.sheinside.com/attribute-382_38233-1740.html">Denim Pants</a></li>
-													<li><a href="http://www.sheinside.com/attribute-382_38253-1740.html">Leather/PU Pants</a></li>
+													<li><a href="#">Denim Pants</a></li>
+													<li><a href="#">Leather/PU Pants</a></li>
 												</ul>
 					</div>
 				</div>
@@ -614,16 +613,16 @@ var process_request = "{$lang.process_request}";
 				<div class="box-HelpCentery">
 					<div class="help_list_header">
 						<ul>
-													<li><a href="http://www.sheinside.com/attribute-384_38423-1740.html">Print Pants</a></li>
+													<li><a href="#">Print Pants</a></li>
 												</ul>
 					</div>
 				</div>
 															</li>
 							   						<li>
-								<a class="nav_title" title="Jumpsuits" href="http://www.sheinside.com/Jumpsuits-c-1860.html">Jumpsuits</a>
+								<a class="nav_title" title="Jumpsuits" href="#">Jumpsuits</a>
 											</li>
 							   						<li>
-								<a class="nav_title" title="Leggings" href="http://www.sheinside.com/Leggings-c-1871.html">Leggings</a>
+								<a class="nav_title" title="Leggings" href="#">Leggings</a>
 											</li>
 							   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   						</ul> 
             
@@ -632,9 +631,9 @@ var process_request = "{$lang.process_request}";
                         
                          <ul class="only_img bor_left_dotted">
                    
-                   <a class="no_padding" href="http://www.sheinside.com/Flare-Skirts-vc-583.html"><img src="http://img.sheinside.com/images/sheinside.com/1415178208421118224.jpg"></a>
+                   <a class="no_padding" href="#"><img src="http://img.sheinside.com/images/sheinside.com/1415178208421118224.jpg"></a>
                     
-                   <a class="no_padding" href="http://www.sheinside.com/Denim-Collection-vc-512.html"><img src="http://img.sheinside.com/images/sheinside.com/1415180032361954821.jpg"></a>
+                   <a class="no_padding" href="#"><img src="http://img.sheinside.com/images/sheinside.com/1415180032361954821.jpg"></a>
                   
             </ul>  
                        
@@ -642,7 +641,7 @@ var process_request = "{$lang.process_request}";
                      	</div>
  </li>
   <li class="subCatName">
- 	<a title="BOTTOMS" href="http://www.sheinside.com/Jewelry-c-1760.html">BOTTOMS</a>
+ 	<a title="BOTTOMS" href="#">BOTTOMS</a>
  	<em class="header_arrow_top"></em>
        
                
@@ -654,25 +653,25 @@ var process_request = "{$lang.process_request}";
             									 	<div class="Second_ca" style="width:319px; left:0px;">	
 		<ul class="loop_ul">
 		   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   						<li>
-								<a class="nav_title" title="Necklaces" href="http://www.sheinside.com/Necklaces-c-1755.html">Necklaces</a>
+								<a class="nav_title" title="Necklaces" href="#">Necklaces</a>
 											</li>
 							   						<li>
-								<a class="nav_title" title="Earrings" href="http://www.sheinside.com/Earrings-c-1757.html">Earrings</a>
+								<a class="nav_title" title="Earrings" href="#">Earrings</a>
 											</li>
 							   						<li>
-								<a class="nav_title" title="Bracelets" href="http://www.sheinside.com/Bracelets-c-1758.html">Bracelets</a>
+								<a class="nav_title" title="Bracelets" href="#">Bracelets</a>
 											</li>
 							   						<li>
-								<a class="nav_title" title="Rings" href="http://www.sheinside.com/Rings-c-1759.html">Rings</a>
+								<a class="nav_title" title="Rings" href="#">Rings</a>
 											</li>
 							   						<li>
-								<a class="nav_title" title="Brooches" href="http://www.sheinside.com/Brooches-c-1777.html">Brooches</a>
+								<a class="nav_title" title="Brooches" href="#">Brooches</a>
 											</li>
 							   						<li>
-								<a class="nav_title" title="Sets" href="http://www.sheinside.com/Pendants-c-1756.html">Sets</a>
+								<a class="nav_title" title="Sets" href="#">Sets</a>
 											</li>
 							   						<li>
-								<a class="nav_title" title="Hair Accessories" href="http://www.sheinside.com/Hair-Accessories-c-1778.html">Hair Accessories</a>
+								<a class="nav_title" title="Hair Accessories" href="#">Hair Accessories</a>
 											</li>
 							   					   					   					   					   					   					   					   					   					   						</ul> 
             
@@ -682,14 +681,14 @@ var process_request = "{$lang.process_request}";
                         
                          <ul class="only_img bor_left_dotted">
                    
-                   <a class="no_padding" href="http://www.sheinside.com/Geometric-vc-584.html"><img src="http://img.sheinside.com/images/sheinside.com/1415180481871733392.jpg"></a>
+                   <a class="no_padding" href="#"><img src="http://img.sheinside.com/images/sheinside.com/1415180481871733392.jpg"></a>
                   
             </ul>  
                        
                      	</div>
  </li>
   <li class="subCatName">
- 	<a title="PROMOTION" href="http://www.sheinside.com/Accessories-c-1765.html">PROMOTION</a>
+ 	<a title="PROMOTION" href="#">PROMOTION</a>
  	<em class="header_arrow_top"></em>
        
                
@@ -701,28 +700,28 @@ var process_request = "{$lang.process_request}";
             									 	<div class="Second_ca" style="width:319px; left:0px;">	
 		<ul class="loop_ul">
 		   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   					   						<li>
-								<a class="nav_title" title="Bags" href="http://www.sheinside.com/Bags-Purses-c-1764.html">Bags</a>
+								<a class="nav_title" title="Bags" href="#">Bags</a>
 											</li>
 							   						<li>
-								<a class="nav_title" title="Belts" href="http://www.sheinside.com/Belts-c-1875.html">Belts</a>
+								<a class="nav_title" title="Belts" href="#">Belts</a>
 											</li>
 							   						<li>
-								<a class="nav_title" title="Sunglasses" href="http://www.sheinside.com/Sunglasses-c-1770.html">Sunglasses</a>
+								<a class="nav_title" title="Sunglasses" href="#">Sunglasses</a>
 											</li>
 							   						<li>
-								<a class="nav_title" title="Hats" href="http://www.sheinside.com/Hats-c-1772.html">Hats</a>
+								<a class="nav_title" title="Hats" href="#">Hats</a>
 											</li>
 							   						<li>
-								<a class="nav_title" title="Scarves" href="http://www.sheinside.com/Scarves-c-1872.html">Scarves</a>
+								<a class="nav_title" title="Scarves" href="#">Scarves</a>
 											</li>
 							   						<li>
-								<a class="nav_title" title="Women Shoes" href="http://www.sheinside.com/Flats-c-1771.html">Women Shoes</a>
+								<a class="nav_title" title="Women Shoes" href="#">Women Shoes</a>
 											</li>
 							   						<li>
-								<a class="nav_title" title="Makeup Brushes" href="http://www.sheinside.com/Makeup-Brushes-c-1865.html">Makeup Brushes</a>
+								<a class="nav_title" title="Makeup Brushes" href="#">Makeup Brushes</a>
 											</li>
 							   						<li>
-								<a class="nav_title" title="Hair" href="http://www.sheinside.com/Hair-Chalks-c-1867.html">Hair</a>
+								<a class="nav_title" title="Hair" href="#">Hair</a>
 											</li>
 							   						</ul> 
             
@@ -733,7 +732,7 @@ var process_request = "{$lang.process_request}";
                         
                          <ul class="only_img bor_left_dotted">
                    
-                   <a class="no_padding" href="http://www.sheinside.com/Scarves-c-1872.html"><img src="http://img.sheinside.com/images/sheinside.com/1415180832102384586.jpg"></a>
+                   <a class="no_padding" href="#"><img src="http://img.sheinside.com/images/sheinside.com/1415180832102384586.jpg"></a>
                   
             </ul>  
                     	</div>

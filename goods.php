@@ -238,7 +238,7 @@ if (!$smarty->is_cached('goods.dwt', $cache_id))
         $smarty->assign('pictures',            get_goods_gallery($goods_id));                    // 商品相册
         $smarty->assign('bought_goods',        get_also_bought($goods_id));                      // 购买了该商品的用户还购买了哪些商品
         $smarty->assign('goods_rank',          get_goods_rank($goods_id));                       // 商品的销售排名
-
+        dump(get_cat_goods($goods['cat_id'],$goods['relative_goods_ids'],21,$goods_id));
         $smarty->assign('same_cat_goods',        get_cat_goods($goods['cat_id'],$goods['relative_goods_ids'],21,$goods_id)); 
         //获取tag
         $tag_array = get_tags($goods_id);

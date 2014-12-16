@@ -588,7 +588,6 @@ a#logo:hover span {
 
 .buy_car_bg_box .ul1_on {
 	cursor: pointer;
-	border: 0px solid #262626
 }
 
 .buy_car_bg_box .ul1_on  .car_ul {
@@ -602,7 +601,9 @@ a#logo:hover span {
 	margin-top: 4px;
 	width: 270px;
 	padding: 5px;
-	border: 1px solid #262626
+	border: 1px solid #262626;
+	border-top:none;
+	z-index:1px;
 }
 
 .buy_car_bg_box .ul1_on  .car_ul li {

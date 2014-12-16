@@ -202,24 +202,25 @@ color: #D10003;">
       <h3>Customers Also Viewed</h3>
     </div>
     <div id="attribute_content" class="attribute_content"> <a href="javascript:void(0)" class="prev_selling" id="prev_customer_view"></a>
-      <div id="view_products_list" class="attribute_content_bg" style="width: 882px; overflow: hidden;">
-         <ul>
-         <!--{foreach from=$same_cat_goods item=releated_goods_data}-->
-        <li class="also-product-list list_all_items">
-          <div class="alsoLike_aImg"><a href="{$releated_goods_data.url}" title="{$releated_goods_data.goods_name}"><img src="{$releated_goods_data.goods_thumb}" alt="{$releated_goods_data.goods_name}"></a></div>
-          <h4 class="goods-aImg-list list_all_items_price">
-            <div class="product-list list_all_items_price" style="display: block"> <span class="index-price special_price final_price"><strong class="final_price_strong"> <!-- {if $releated_goods_data.promote_price neq 0} --> 
-        <font class="shop_s">{$releated_goods_data.formated_promote_price}</font> 
-        <!-- {else} --> 
-        <font class="shop_s">{$releated_goods_data.shop_price}</font> 
-        <!-- {/if} --> </strong></span> </div>
-            <span class="index-price shop_price"><strike>{$releated_goods_data.market_price}</strike></span>
-          </h4>
-        </li>
-         <!--{/foreach}--> 
-        </ul>
-      </div>
-      <a href="javascript:void(0)" class="next_selling" id="next_customer_view"></a> </div>
+	      <div id="view_products_list" class="attribute_content_bg" style="width: 882px; overflow: hidden;">
+	         <ul>
+	         <!--{foreach from=$same_cat_goods item=releated_goods_data}-->
+	        <li class="also-product-list list_all_items">
+	          <div class="alsoLike_aImg"><a href="{$releated_goods_data.url}" title="{$releated_goods_data.goods_name}"><img src="{$releated_goods_data.goods_thumb}" alt="{$releated_goods_data.goods_name}"></a></div>
+	          <h4 class="goods-aImg-list list_all_items_price">
+	            <div class="product-list list_all_items_price" style="display: block"> <span class="index-price special_price final_price"><strong class="final_price_strong"> <!-- {if $releated_goods_data.promote_price neq 0} --> 
+	        <font class="shop_s">{$releated_goods_data.formated_promote_price}</font> 
+	        <!-- {else} --> 
+	        <font class="shop_s">{$releated_goods_data.shop_price}</font> 
+	        <!-- {/if} --> </strong></span> </div>
+	            <span class="index-price shop_price"><strike>{$releated_goods_data.market_price}</strike></span>
+	          </h4>
+	        </li>
+	         <!--{/foreach}--> 
+	        </ul>
+	      </div>
+	      <a href="javascript:void(0)" class="next_selling" id="next_customer_view"></a> 
+	      </div>
   </div>
  
   
@@ -259,7 +260,7 @@ color: #D10003;">
 	$(function() {	
 		$("#view_products_list").jCarouselLite({        
 			visible:7,		
-			scroll:7,
+			scroll:1,  //每次滚动一个
 			speed:800,
 			vertical:false,
 			auto:160000,

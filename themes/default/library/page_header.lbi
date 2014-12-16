@@ -89,13 +89,7 @@ var process_request = "{$lang.process_request}";
 	                       
 	                        <div style="float:left;display:inline;cursor: pointer;margin-left:8px;position: relative;" class="buy_car_bg_box">
 					            <div onmouseout="this.className='buy_car_bg'" onmouseover="this.className='buy_car_bg ul1_on'" class="buy_car_bg">
-						            <div id="ECS_CARTINFO" style="border-bottom:0px;"> <a href="flow.php"><script src="js/transport_1.js" type="text/javascript"></script></a><a href="flow.php" style="color:#ff7a23;font-size: 11px;font-family: Arial,Helvetica;">My shopping bag (<b>0</b>)</a>
-								    <ul class="car_ul">
-										<div style="position:relative;">
-										<div class="dang dang2"></div>
-										<a style="color:#999; padding-left:30px;" href="#">Your shopping cart is empty.</a>
-										</div> 
-								   </ul>
+						            <div id="ECS_CARTINFO" style="border-bottom:0px;"> <a href="flow.php">{insert name='cart_info'}</a>
 									<script type="text/javascript">
 										function deleteCartGoods(rec_id)
 										{

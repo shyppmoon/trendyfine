@@ -14,7 +14,7 @@ var process_request = "{$lang.process_request}";
                     <div class="f_l" style="color:#c41230">
                 		Free Shipping Worldwide. No Minimum Purchase Required.
                 	</div>
-                	<div class="f_r" style="width:498px;height:28px;line-height:28px;">
+                	<div class="f_r" style="width:590px;height:28px;line-height:28px;">
                 	       
                 	  <ul id="insert_member_info" class="ulclass">
                 	    <li class="liclass_1">

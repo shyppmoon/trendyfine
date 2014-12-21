@@ -260,7 +260,7 @@ color: #D10003;">
 	$(function() {	
 		$("#view_products_list").jCarouselLite({        
 			visible:7,		
-			scroll:1,  //每次滚动一个
+			scroll:3,  //每次滚动3个
 			speed:800,
 			vertical:false,
 			auto:160000,

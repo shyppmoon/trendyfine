@@ -600,9 +600,8 @@ a#logo:hover span {
 	top: 26px;
 	margin-top: 4px;
 	width: 270px;
-	padding: 5px;
+	padding: 9px;
 	border: 1px solid #262626;
-	border-top:none;
 	z-index:1px;
 }
 

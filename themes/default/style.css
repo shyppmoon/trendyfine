@@ -1999,7 +1999,7 @@ a.agrayright:hover {
 }
 
 #goodsInfo .textInfo .buy_bot {
-	background: #f8f8f8;
+	/*background: #f8f8f8; 屏蔽颜色，使用纯白*/
 	margin-top: 10px;
 	padding: 10px 10px
 }
@@ -3975,4 +3975,6 @@ h4.goods-aImg-list {
 .logo_rightyy {float:left;display:inline;cursor: pointer;margin-left:8px;position: relative;}
 .logo_rightyy a.shopping_cart {display:block;cursor: pointer;height:36px;line-height:36px;color:#fff;text-decoration:none;font-size:12px;float: left;
 	 width:70px;}
+	 
+
 

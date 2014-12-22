@@ -179,7 +179,9 @@ color: #D10003;">
           
           <li class="clearfix">
             <dd> <strong>QTY：</strong>
+              <a href="javascript:void(0)" onclick="changePriceClick(0)" class="reduce" style=" display: inline;padding: 0;text-decoration: none;" > - </a>
               <input class="B_input" name="number" type="text" id="number" value="1" size="4" onblur="changePrice()"  />
+              <a href="javascript:void(0)" onclick="changePriceClick(1)" class="add" style=" display: inline;padding: 0;text-decoration: none;"> + </a>
               Unit(s) </dd>
           </li>
           <li class="clearfix">
@@ -301,6 +303,7 @@ var now_time = {$now_time};
 onload = function(){
   changePrice();
   fixpng();
+  changePriceClick(num);
   try { onload_leftTime(); }
   catch (e) {}
 }
@@ -314,6 +317,26 @@ function changePrice()
   var qty = document.forms['ECS_FORMBUY'].elements['number'].value;
 
   Ajax.call('goods.php', 'act=price&id=' + goodsId + '&attr=' + attr + '&number=' + qty, changePriceResponse, 'GET', 'JSON');
+}
+
+/**
+ * 通过点击- +改变价格
+ */
+function changePriceClick(num)
+{
+  var attr = getSelectedAttributes(document.forms['ECS_FORMBUY']);
+  var qty = document.forms['ECS_FORMBUY'].elements['number'].value;
+  if(num =='0'){
+	  var qty_new =  parseInt(qty)-1;
+	  if(qty_new ==0){
+		  alert('Please be noted the minium number is 1');
+	  }
+  }else{
+	  var qty_new =  parseInt(qty)+1;
+  }
+  $("#number").attr('value',qty_new);
+  
+  Ajax.call('goods.php', 'act=price&id=' + goodsId + '&attr=' + attr + '&number=' + qty_new, changePriceResponse, 'GET', 'JSON');
 }
 
 /**

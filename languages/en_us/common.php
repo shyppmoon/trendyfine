@@ -544,7 +544,7 @@ $_LANG['email_invalid'] = 'Email is invalid!';
 $_LANG['email_alreadyin_list'] = 'Email is already in the list!';
 $_LANG['email_notin_list'] = 'Email is not in the list!';
 $_LANG['email_re_check'] = 'Check email has been sent again, please check!';
-$_LANG['email_check'] = 'Please check email and confirm!';
+$_LANG['email_check'] = 'thanks for your subscribe!';
 $_LANG['email_not_alive'] = 'Emali is not alive, cannot be canceled!';
 $_LANG['check_mail'] = 'Check mail';
 $_LANG['check_mail_content'] = "Click the following url \n<a href=\"%s\" target=\"_blank\">%s</a>\n to complete";

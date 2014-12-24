@@ -168,7 +168,7 @@ var process_request = "{$lang.process_request}";
 		                'position':'fixed',
 		                'top':'0px',
 		                'z-index':'1001',
-		                'border-bottom': '1px dotted #000',
+		                'border': '0px',
 		                'background-color': '#fff',
                         'width':'100%',
 		                }); 
@@ -180,7 +180,7 @@ var process_request = "{$lang.process_request}";
 		    -->
  </script>
 <div class="placeholder"></div>
-<div id="mainNav" class="clearfix block" style="border-top:1px;" >
+<div id="mainNav" class="clearfix block" style="border:none;" >
   <div class="head_bottom_wrap">
 <div class="head_bottom head_bottom_no_scroll">
 <ul id="TS_menu" class="no_scroll">

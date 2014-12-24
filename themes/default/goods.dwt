@@ -45,7 +45,7 @@ function reg(str){
 <div class="block block1 clearfix"> <!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
   <div id="goodsInfo" class="clearfix">
     <div class="imgInfo">
-      <div class="imgInfo_img" style="border:#ccc solid 1px; padding:1px; width:340px;"> 
+      <div class="imgInfo_img" style="border:#ccc solid 1px; padding:1px; width:425px;"> 
       <a href="{$goods.goods_img}" id="zoom1" class="MagicZoom MagicThumb cloud-zoom" rel="adjustX: 10, adjustY:-4"> 
       <img src="{$goods.goods_thumb}" alt="{$goods.goods_name|escape:html}" id="goodsimg" class="thumb"  style="margin:0px auto"/> 
       </a> </div>
@@ -303,7 +303,7 @@ var now_time = {$now_time};
 onload = function(){
   changePrice();
   fixpng();
-  changePriceClick(num);
+  changePriceClick();
   try { onload_leftTime(); }
   catch (e) {}
 }

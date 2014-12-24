@@ -126,9 +126,10 @@
             <b>{$goods.shop_price}</b> 
 	    <br>
 	     <b><font class="market" style="color:#aaa;">{$goods.market_price}</font></b> 
+	     <b style="background-position:-85px -60px;height: 14px;
+	    background-image: url('images/goods-sprite.png');background-repeat: no-repeat;width:100%;float:right;"></b>
 	    <br>
-	    <b style="background-position:-85px -60px;height: 14px;
-	    background-image: url('images/goods-sprite.png');background-repeat: no-repeat;width:100%;float:left;"></b>
+	    
 	    <br>
 	    <br>
             <!--{/if}-->

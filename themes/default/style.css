@@ -754,8 +754,6 @@ a#logo:hover span {
 #mainNav {
 	height: 41px;
 	line-height: 41px;
-	border-bottom: 1px solid #dcdcdc;
-	border-top: 1px solid #dcdcdc;
 	position: relative;
 	z-index: 8
 }
@@ -1848,7 +1846,7 @@ a#logo:hover span {
 /*鏂囧瓧淇℃伅*/
 #goodsInfo .textInfo {
 	background: #fff;
-	width: 540px;
+	width: 525px;
 	float: right;
 	padding: 0px;
 	padding-top: 0px;
@@ -2059,12 +2057,12 @@ a.agrayright:hover {
 }
 
 .shuomin ul {
-	height: 230px;
-	overflow: scroll
+	height:auto !important;height:230px;overflow:visible;
+/*	overflow: scroll*/
 }
 
 .shuomin dl {
-	height: 213px;
+	height:auto !important;height:213px;overflow:visible; //高度自适应
 	overflow: hidden
 }
 
@@ -3944,7 +3942,7 @@ h4.goods-aImg-list {
 /*主导航模块样式*/
 /* head-bottom   2014-10-30 yym start ---------------------------------------------------*/
 .head_bottom_wrap{width:100%;margin:0;}
-.head_bottom{ height:40px;background-color: #fff;}
+.head_bottom{ height:40px;background-color: #fff;border-bottom:1px dotted #000;border-top:0px;}
 .head_bottom_no_scroll{width:960px;margin:0 auto;position:relative;z-index: 1001;}
 .head_bottom_scroll{position:fixed;_position:relative;top:36px;width:100%;z-index: 1001;}
 .no_scroll{} 
@@ -3957,7 +3955,7 @@ h4.goods-aImg-list {
 .subCatName .header_arrow_top{background: url('../../header_arrow_up.png') no-repeat scroll 0 0 transparent;width: 12px;height: 9px;display: none;position: absolute;left:50%;margin-left:-6px;bottom:-1px;z-index:1001;}
 .subCatName a.nav_red, .Second_ca ul li.li_title a.nav_red{color:#f00;}
 .bor_left_dotted{border-left:1px dotted #000;}
-.Second_ca{position:absolute;display: none;left:0; top:40px;width:449px; z-index:1000;border: 1px solid #838383;padding:20px;background-color: #fff;display:none;opacity:0.96;filter:alpha(opacity=96);}
+.Second_ca{position:absolute;display: none;left:0; top:41px;width:449px; z-index:1000;border: 1px solid #838383;padding:20px;background-color: #fff;display:none;opacity:0.96;filter:alpha(opacity=96);}
 .last_Second_ca.Second_ca, .Second_ca ul.loop_ul{width:160px;}
 .Second_ca ul, .Second_ca ul.only_img{float: left;}
 .Second_ca ul.fix_height{height:225px;overflow: hidden;width:160px;}

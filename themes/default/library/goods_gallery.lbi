@@ -6,7 +6,7 @@
 <!-- {foreach from=$pictures item=picture name=pictures}-->       
 				<li>
     <a href="{$picture.img_url}" class="cloud-zoom-gallery zoomThumbActive" rel="useZoom: 'zoom1', smallImage: '{$picture.img_url}' " >
-    <img src="{if $picture.thumb_url}{$picture.thumb_url}{else}{$picture.img_url}{/if}" alt="{$goods.goods_style_name}"  width="70" height="93">
+    <img src="{if $picture.thumb_url}{$picture.thumb_url}{else}{$picture.img_url}{/if}" alt="{$goods.goods_style_name}"  width="90" height="93">
     </a>
 				</li>
 <!--{/foreach}-->

@@ -4,22 +4,29 @@
      <div class="box_1">
       <h3><span class="text">{$lang.user_comment}</span>({$lang.total}<font class="f1">{$pager.record_count}</font>{$lang.user_comment_num})</h3>
       <div class="boxCenterList clearfix" style="height:1%;">
-       <ul class="comments">
-       <!-- {if $comments} -->
-       <!-- {foreach from=$comments item=comment} -->
-        <li class="word">
-        <font class="f2"><!-- {if $comment.username} -->{$comment.username|escape:html}<!-- {else} -->{$lang.anonymous}<!-- {/if} --></font> <font class="f3">( {$comment.add_time} )</font><br />
-        <img src="../images/stars{$comment.rank}.gif" alt="{$comment.comment_rank}" />
-        <p>{$comment.content}</p>
-				<!-- {if $comment.re_content} -->
-        <p><font class="f1">{$lang.admin_username}</font>{$comment.re_content}</p>
-				<!-- {/if} -->
-        </li>
-        <!-- {/foreach} -->
-        <!--{else}-->
-        <li>{$lang.no_comments}</li>
-        <!--{/if}-->
-       </ul>
+      <div class="forComments" style="padding:10px 0">
+            <!-- {if $comments} -->
+            <!-- {foreach from=$comments item=comment} -->
+			<div class="ask" style="overflow:hidden;margin:10px 0;float:left;">
+			<span ><img style="height:13px;line-height:13px;margin-top:2px;display:inline-block;" src="../images/stars{$comment.rank}.gif" alt="{$comment.rank}" /></span>
+			<span><strong >By qzhang00</strong></span>
+			<span>{$comment.add_time} </span>
+		   </div>
+		<div  style=" border-bottom: 1px solid #ccc; color: #666; line-height: 165%;margin: 10px 0;overflow: hidden;padding-bottom: 5px;position: relative;width: 100%;">
+			 <p class="translated">
+			</p>
+			<p class="no_translated">
+				{$comment.content}
+			</p>
+			 <!-- {/foreach} -->
+             <!--{else}-->
+			<p class="no_translated">
+				{$lang.no_comments}
+			</p>
+			 <!--{/if}-->
+		</div>
+	</div>
+      
        <!--翻页 start-->
        <div id="pagebar" class="f_r">
         <form name="selectPageForm" action="{$smarty.server.PHP_SELF}" method="get">
@@ -87,6 +94,17 @@
         </tr>
         
         <tr>
+          <td align="right">Rank：</td>
+          <td>
+          <input type="radio" name="rank" id="rank_1"  value="1"/>1
+          <input type="radio" name="rank" id="rank_2"  value="2"/>2
+          <input type="radio" name="rank" id="rank_3"  value="3"/>3
+          <input type="radio" name="rank" id="rank_4"  value="4"/>4
+          <input type="radio" name="rank" id="rank_5"  value="5"/>5
+          </td>
+        </tr>
+        
+        <tr>
           <td align="right" valign="top">{$lang.comment_content}：</td>
           <td>
           <textarea name="content" class="inputBorder" style="height:50px; width:580px;"></textarea>
@@ -134,7 +152,7 @@ function submitComment(frm)
   cmt.id              = frm.elements['id'].value;
   cmt.enabled_captcha = frm.elements['enabled_captcha'] ? frm.elements['enabled_captcha'].value : '0';
   cmt.captcha         = frm.elements['captcha'] ? frm.elements['captcha'].value : '';
-  cmt.rank            = 5;
+  cmt.rank            =  frm.elements['rank'].value;
 
  /* for (i = 0; i < frm.elements['comment_rank'].length; i++)
   {

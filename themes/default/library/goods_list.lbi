@@ -127,7 +127,7 @@
 	    <br>
 	     <b><font class="market" style="color:#aaa;">{$goods.market_price}</font></b> 
 	     <b style="background-position:-85px -60px;height: 14px;
-	    background-image: url('images/goods-sprite.png');background-repeat: no-repeat;width:100%;float:right;"></b>
+	    background-image: url('images/goods-sprite.png');background-repeat: no-repeat;width:53%;float:right;margin-top:3px;"></b>
 	    <br>
 	    
 	    <br>

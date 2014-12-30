@@ -227,6 +227,9 @@ color: #D10003;">
  
   
   <div class="blank"></div>
+  <div class="comment_list_title" style="margin-top:55px;">
+      <h3>Customers Comment</h3>
+    </div>
   <div style="padding-top:0; float:left; width:770px;"> <!-- #BeginLibraryItem "/library/comments.lbi" --> {insert_scripts files='transport_1.js,utils.js'}
     <div id="ECS_COMMENT"> {* ECSHOP 提醒您：动态载入comments_list.lbi，显示评论列表和评论表单 *}{insert name='comments' type=$type id=$id}</div>
     <!-- #EndLibraryItem --> 

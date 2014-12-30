@@ -2101,7 +2101,7 @@ a.agrayright:hover {
 }
 
 .commentsList {
-	border: 1px solid #ccc;
+	border-top: 1px solid #ccc;
 	padding: 10px;
 }
 
@@ -2116,7 +2116,7 @@ a.agrayright:hover {
 	top: -1px;
 	*margin-left: 8px;
 	*position: relative;
-	top: 3px;
+	top: 6px;
 	cursor: pointer;
 }
 /* ====================
@@ -3754,14 +3754,14 @@ a.agrayright:hover {
 	width: 100%
 }
 
-.attr_goodsyy_tite,.review_title,.explore_goods_title {
+.attr_goodsyy_tite,.review_title,.explore_goods_title,.comment_list_title {
 	background: #000;
 	float: left;
 	height: 29px;
 	width: 100%
 }
 
-.attr_goodsyy_tite h3,.review_title h3,.explore_goods_title h3 {
+.attr_goodsyy_tite h3,.review_title h3,.explore_goods_title h3,.comment_list_title h3 {
 	background: #fff;
 	color: #000;
 	float: left;
@@ -3772,7 +3772,7 @@ a.agrayright:hover {
 	padding: 0 20px
 }
 
-.attr_goodsyy_tite,.review_title,.explore_goods_title,.maylike_title {
+.attr_goodsyy_tite,.review_title,.explore_goods_title,.maylike_title,.comment_list_title {
 	background-color: #242424
 }
 
@@ -3790,6 +3790,21 @@ a.agrayright:hover {
 	padding: 0 38px;
 	position: relative;
 	width: 882px
+}
+
+.comment_list{
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	border-color: -moz-use-text-color #aaa #aaa;
+	border-image: none;
+	border-right: 1px solid #aaa;
+	border-style: none solid solid;
+	border-width: medium 1px 1px;
+	float: left;
+	position: relative;
+	width: 958px
 }
 
 .prev_selling,.next_selling {

@@ -1707,9 +1707,9 @@ a#logo:hover span {
 }
 
 #goodsInfo .imgInfo {
-	width: 400px;
+	width: 430px;
 	float: left;
-	position: relative;
+	/*position: relative;*/
 	z-index: 3
 }
 
@@ -3988,6 +3988,63 @@ h4.goods-aImg-list {
 .logo_rightyy {float:left;display:inline;cursor: pointer;margin-left:8px;position: relative;}
 .logo_rightyy a.shopping_cart {display:block;cursor: pointer;height:36px;line-height:36px;color:#fff;text-decoration:none;font-size:12px;float: left;
 	 width:70px;}
+	 
+	 
+
+/*图片放大镜样式*/
+.jqzoom{float:left;border:none;position:relative;padding:0px;cursor:pointer;margin:0px;display:block;}
+.zoomdiv{z-index:100;position:absolute;top:0px;left:0px;width:350px;height:350px;background:#ffffff;border:1px solid #CCCCCC;display:none;text-align:center;overflow:hidden;}
+.jqZoomPup{z-index:10;visibility:hidden;position:absolute;top:0px;left:0px;width:20px;height:20px;border:1px solid #aaa;background:#ffffff /*url(../images/zoom.png) 50% center no-repeat*/;opacity: 0.5;-moz-opacity: 0.5;-khtml-opacity: 0.5;filter: alpha(Opacity=50);}
+
+/*图片小图预览列表*/
+.spec-preview{width:350px;height:350px;border:1px solid #DFDFDF;}
+.spec-scroll{clear:both;margin-top:5px;}
+.spec-scroll .prev{float:left;margin-right:4px;}
+.spec-scroll .next{float:right;}
+.spec-scroll .prev,.spec-scroll .next{display:block;font-family:"宋体";text-align:center;width:10px;height:54px; line-height:54px;border:1px solid #CCC;background:#EBEBEB;cursor:pointer;text-decoration:none;}
+.spec-scroll .items{float:left;position:relative;width:1800px;height:140px;overflow:hidden;width: 400px;}
+.spec-scroll .items ul{position:absolute;width:999999px;}
+.spec-scroll .items ul li{float:left;width:100px;text-align:center;padding:left:10px;}
+.spec-scroll .items ul li img{border:1px solid #CCC;padding:2px;}
+.spec-scroll .items ul li img:hover{border:1px solid #ee1919;padding:1px;}
+
+/*图标样式*/
+
+#preview{
+    border: 1px solid #b7b7b7;
+	float: left;
+	font-size: 0;
+	/*position: relative;*/
+	text-align: center;
+}
+
+.prev, .next {
+    top: 45% !important;
+}
+.prev {
+    left: 0;
+}
+.prev, .next {
+    background: url("../../images/good-sprite.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    cursor: pointer;
+    height: 35px;
+    position: absolute;
+    top: 47%;
+    width: 35px;
+    z-index: 100;
+}
+
+
+.next {
+    background-position: -35px 0;
+    right: 0;
+}
+.prev:hover {
+    background-position: 0 -35px;
+}
+.next:hover {
+    background-position: -35px -35px;
+}
 	 
 
 

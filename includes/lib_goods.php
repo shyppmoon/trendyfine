@@ -593,6 +593,7 @@ function get_goods_info($goods_id)
         /* 修正商品图片 */
         $row['goods_img']   = get_image_path($goods_id, $row['goods_img']);
         $row['goods_thumb'] = get_image_path($goods_id, $row['goods_thumb'], true);
+        $row['original_img']   = get_image_path($goods_id, $row['original_img']);
 
         return $row;
     }

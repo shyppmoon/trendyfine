@@ -45,12 +45,19 @@ function reg(str){
 <div class="block block1 clearfix"> <!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
   <div id="goodsInfo" class="clearfix">
     <div class="imgInfo">
-      <div class="imgInfo_img" style="border:#ccc solid 1px; padding:1px; width:425px;"> 
-      <a href="{$goods.goods_img}" id="zoom1" class="MagicZoom MagicThumb cloud-zoom" rel="adjustX: 10, adjustY:-4"> 
-      <img src="{$goods.goods_thumb}" alt="{$goods.goods_name|escape:html}" id="goodsimg" class="thumb"  style="margin:0px auto"/> 
-      </a> </div>
+     <div class="right-extra"  >  <!-- style="margin:100px;" 去除后可进行放大镜定位 -->
+	  <!--产品参数开始-->
+	  <div style="float:left;text-align:center;padding:10px 0 0;width:425px;">
+	    <div id="preview" style="width: 423px; cursor: crosshair;" class="click_menu"> 
+		  <span class="jqzoom" ><img  id="demo_img_id" style="width:423px;height:535px; "jqimg="{$goods.original_img}" src="{$goods.original_img}" /></span>   
+		  <span num="0" class="prev"></span>
+		  <span class="next"></span>
+		</div>
+	  </div>
+</div>
       <div class="blank5"></div>
-      <!-- #BeginLibraryItem "/library/goods_gallery.lbi" --><!-- #EndLibraryItem --> <!-- TemplateBeginEditable name="商品相册下广告（宽230px）" --> <!-- TemplateEndEditable --> </div>
+      <!-- #BeginLibraryItem "/library/goods_gallery.lbi" --><!-- #EndLibraryItem --> <!-- TemplateBeginEditable name="商品相册下广告（宽230px）" --> <!-- TemplateEndEditable --> 
+      </div>
     
     <!--商品图片和相册 end-->
     <div class="textInfo">
@@ -249,8 +256,12 @@ color: #D10003;">
   
 </div>
 <div class="blank"></div>
-<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem --> {insert_scripts files='cloud-zoom.1.0.2.min.js'}
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+ {insert_scripts files='cloud-zoom.1.0.2.min.js'}
 {insert_scripts files='slider.js'}
+
+{insert_scripts files='base.js'}
+{insert_scripts files='jquery.jqzoom.js'}
 </body>
 <script type="text/javascript">
 	$(function(){

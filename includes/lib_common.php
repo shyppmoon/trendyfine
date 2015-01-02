@@ -2205,7 +2205,8 @@ function exception_handler($errno, $errstr, $errfile, $errline)
 function get_image_path($goods_id, $image='', $thumb=false, $call='goods', $del=false)
 {
     $url = empty($image) ? $GLOBALS['_CFG']['no_picture'] : $image;
-    return "http://www.trendyfine.com/".$url;
+    return "http://www.trendyfine.com/".$url."?".time();  //图片加上数字仿照图片缓存
+//     return $SERVER['HTTP_HOST'].$url;
 }
 
 /**

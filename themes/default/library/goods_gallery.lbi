@@ -1,16 +1,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<div class="scrolllist" id="s1">
-		<a class="abtn aleft" href="#left" title="left"></a>
-		<div class="imglist_w">
-			<ul class="imglist" id="imglist">
-<!-- {foreach from=$pictures item=picture name=pictures}-->       
-				<li>
-    <a href="{$picture.img_url}" class="cloud-zoom-gallery zoomThumbActive" rel="useZoom: 'zoom1', smallImage: '{$picture.img_url}' " >
-    <img src="{if $picture.thumb_url}{$picture.thumb_url}{else}{$picture.img_url}{/if}" alt="{$goods.goods_style_name}"  width="90" height="93">
-    </a>
-				</li>
-<!--{/foreach}-->
-			</ul><!--imglist end-->
-		</div>
-		<a class="abtn aright" href="#right" title="right"></a>
-</div>
+    <!--缩图开始-->
+    <div class="spec-scroll"> 
+	<!--
+	 <a class="prev">&lt;</a> <a class="next">&gt;</a>
+	-->
+      <div class="items">
+        <ul style="height:125px;float:left;overflow:hidden;margin:11px 0" >
+        <!-- {foreach from=$pictures item=picture name=pictures}--> 
+          <li><img  style="width:90px;height:118px;" alt="{$goods.goods_style_name}" bimg="{$picture.img_url}" src="{$picture.img_url}" onclick="preview(this);"></li>
+          <!--{/foreach}-->
+        </ul>
+      </div>
+    </div>
+    <!--缩图结束-->

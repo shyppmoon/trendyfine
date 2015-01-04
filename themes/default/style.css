@@ -4014,7 +4014,7 @@ h4.goods-aImg-list {
     border: 1px solid #b7b7b7;
 	float: left;
 	font-size: 0;
-	/*position: relative;*/
+	/*position: relative;图标定位研究*/
 	text-align: center;
 }
 
@@ -4025,7 +4025,7 @@ h4.goods-aImg-list {
     left: 0;
 }
 .prev, .next {
-    background: url("../../images/good-sprite.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+   /* background: url("../../images/good-sprite.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);图标定位研究*/
     cursor: pointer;
     height: 35px;
     position: absolute;

@@ -102,7 +102,6 @@
 
 				    var bigheight = $(".bigimg").get(0).offsetHeight;
 				    
-				    console.log('bigwidth:'+bigwidth +'----'+'bigheight:'+bigheight)
 
 				    var scaley ='x';
 

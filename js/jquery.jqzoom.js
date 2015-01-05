@@ -115,13 +115,18 @@
 				    var  scalex  = scalex > '0.8' ?'0.5':scalex;
 
 				    var scaley = (bigheight/imageHeight);
+                    
+				    //解决首次加载放大镜太长的问题
+                	var  width_new   = parseInt((settings.yzoom)/scaley) > 535 ?200:(settings.xzoom)*scalex ;
+				    var  height_new  = parseInt((settings.yzoom)/scaley) > 535 ?200:(settings.yzoom)/scaley;
 
-                	
 
+				    $("div.jqZoomPup").width(width_new);
 
-				    $("div.jqZoomPup").width((settings.xzoom)*scalex );
-
-		    		$("div.jqZoomPup").height((settings.yzoom)/scaley);
+		    		$("div.jqZoomPup").height(height_new);
+		    		
+		    		
+		    		
 
                     if(settings.lens){
                     $("div.jqZoomPup").css('visibility','visible');
@@ -150,12 +155,12 @@
                 		'background': "none repeat scroll 0 0 #555",
                 		'border': "1px solid #000",
                 	    'position': "absolute",
-                	    'z-index': "100"
+                	    'z-index': "100",
+                	    'display':'block'
                 	});
 
                     }
-
-
+                    
 
 					scrolly = ypos;
 

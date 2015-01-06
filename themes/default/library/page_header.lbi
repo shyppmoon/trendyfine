@@ -11,87 +11,18 @@ var process_request = "{$lang.process_request}";
       <div class="headT" id="main_header_r">
              <div class="headBg">
                 <div style="font-family: Arial, Helvetica;font-size: 11px">
-                    <div class="f_l" style="color:#c41230">
-                		Free Shipping Worldwide. No Minimum Purchase Required.
+                    <div class="f_l" style="color:#fff;font-size:11px;line-height:36px;height:36px;text-transform:uppercase;">
+                		 {insert_scripts files='utils.js'} 
+                         <font id="ECS_MEMBERZONE">{* ECSHOP 提醒您：根据用户id来调用member_info.lbi显示不同的界面  *}{insert name='member_info'} </font> 
                 	</div>
                 	<div class="f_r" style="width:620px;height:28px;line-height:28px;">
                 	       
                 	  <ul id="insert_member_info" class="ulclass">
-                	    <li class="liclass_1">
-						<div class="change_money fl">
-						    <div class="currency">
-						    <form action="" method="post" id="currency-view-form" name="currency_view_form">
-								     <input type="hidden" name="currency" value=""/>  
-								    <a href="#" style="color: #FF7A23;text-decoration: none;"  style="color: #FF7A23;text-decoration: none;" id="currency_selector"  rel="nofollow"><img border="0" src="../data/currency_icon/{$currency_icon}" id="icon_id">&nbsp;{$currency_to}</a>
-								    <dl style="background: #7f7b72";>
-									    <!-- {foreach from=$currency_list item=currency} -->
-									    <dd style="background:none repeat scroll 0% 0% #7F7B72;width: 133px;"   onmouseover="this.style.backgroundColor='#050505';" onmouseout="this.style.backgroundColor='#7f7b72';">
-									    <a id="money_change_id"   rel="nofollow" title="{$currency.currency_to}" href="javascript:jumpCurrency('{$currency.currency_to}','{$currency.currency_icon}')" style="background:url(data/currency_icon/{$currency.currency_icon}) left center no-repeat; text-decoration:none;color: #FFF;">{$currency.currency_name}</a></dd>
-									    <!-- {/foreach} -->
-									    <script language="javascript">
-									    <!--
-									    function jumpCurrency(currency_to,currency_icon)
-									    { 
-									        document.currency_view_form.currency.value = currency_to;
-									        document.currency_view_form.action=window.location;
-									        document.currency_view_form.submit();
-									    }
-									    -->
-						               </script>
-					               </dl>
-			                  </form>
-				    	</div>
-					 </div>   
-					   </li>
-					   <li  class="liclass_2" >
-					   {insert_scripts files='utils.js'} 
-                       <font id="ECS_MEMBERZONE">{* ECSHOP 提醒您：根据用户id来调用member_info.lbi显示不同的界面  *}{insert name='member_info'} </font> 
-                       </li>
-					   <!--{if $navigator_list.top}--> 
-			          <!-- {foreach name=nav_top_list from=$navigator_list.top item=nav} --> 
-			          <li style="float: right;position: relative;cursor: pointer;" >
-			          <a  style="color: #FF7A23;text-decoration: none;"  href="user.php?act=order_list" <!-- {if $nav.opennew eq 1} --> target="_blank" <!-- {/if} -->>{$nav.name}</a> 
-			          
-			          <a  style="color: #FF7A23;text-decoration: none;"  href="user.php?act=collection_list" <!-- {if $nav.opennew eq 1} --> target="_blank" <!-- {/if} -->>MY FAVORITE</a> 
-			          </li>
-			          <!-- {/foreach} --> 
-			          <!-- {/if} --> 
-					</ul>
-					      <!-- offline help  -->
-	                        <div id="chat" class="chatmain">
-								<div class="chatimg" id="comm100-button-265"><img id="comm100-button-265img" src="https://chatserver.comm100.com/DBResource/DBImage.ashx?imgId=65&amp;type=2&amp;siteId=202762" style="border:none;" alt="">
-								</div>
-								
-								<div id="livechat_box" class="chatbox">
-								      <div class="fr" style="position:absolute; left:-40px; top:10px;">
-										            <!--Begin Comm100 Live Chat Code-->
-										<div id="comm100-button-265"></div>  
-										<script type="text/javascript">
-										    var Comm100API = Comm100API || new Object;
-										    Comm100API.chat_buttons = Comm100API.chat_buttons || [];
-										    var comm100_chatButton = new Object;
-										    comm100_chatButton.code_plan = 265;
-										    comm100_chatButton.div_id = 'comm100-button-265';
-										    Comm100API.chat_buttons.push(comm100_chatButton);
-										    Comm100API.site_id = 202762;
-										    Comm100API.main_code_plan = 265;
-										    var comm100_lc = document.createElement('script');
-										    comm100_lc.type = 'text/javascript';
-										    comm100_lc.async = true;
-										    comm100_lc.src = 'https://chatserver.comm100.com/livechat.ashx?siteId=' + Comm100API.site_id;
-										    var comm100_s = document.getElementsByTagName('script')[0];
-										    comm100_s.parentNode.insertBefore(comm100_lc, comm100_s);
-										</script>
-										<!--End Comm100 Live Chat Code-->
-	         						 </div>
-		                         </div>
-	                       </div>	
-	                       
+                	   <li style="float: right;position: relative;cursor: pointer;">
 	                       <!-- 购物车模块 -->	
-	                       
 	                        <div style="float:left;display:inline;cursor: pointer;margin-left:8px;position: relative;" class="buy_car_bg_box">
 					            <div onmouseout="this.className='buy_car_bg'" onmouseover="this.className='buy_car_bg ul1_on'" class="buy_car_bg">
-						            <div id="ECS_CARTINFO" style="border-bottom:0px;"> <a href="flow.php">{insert name='cart_info'}</a>
+						            <div id="ECS_CARTINFO" style="border-bottom:0px;"> <a href="flow.php"  >{insert name='cart_info'}</a>
 									<script type="text/javascript">
 										function deleteCartGoods(rec_id)
 										{
@@ -117,8 +48,82 @@ var process_request = "{$lang.process_request}";
 							 </div>
                          </div>
 	                       
-	                       
-	                       <!-- end 购物车 -->		
+	                       <!-- end 购物车 -->	
+                	    
+                	   </li>
+                	   <!--  暂时先屏蔽留言消息
+                	    <li style="float: right;position: relative;cursor: pointer;background: url('images/top-line.gif') no-repeat scroll right center rgba(0, 0, 0, 0);padding: 0 8px;">
+	                        <div id="chat" class="chatmain" >
+								<div class="chatimg" id="comm100-button-265"><img id="comm100-button-265img" src="https://chatserver.comm100.com/DBResource/DBImage.ashx?imgId=65&amp;type=2&amp;siteId=202762" style="border:none;" alt="">
+								</div>
+								
+								<div id="livechat_box" class="chatbox">
+								      <div class="fr" style="position:absolute; left:-40px; top:10px;">
+										<div id="comm100-button-265"></div>  
+										<script type="text/javascript">
+										    var Comm100API = Comm100API || new Object;
+										    Comm100API.chat_buttons = Comm100API.chat_buttons || [];
+										    var comm100_chatButton = new Object;
+										    comm100_chatButton.code_plan = 265;
+										    comm100_chatButton.div_id = 'comm100-button-265';
+										    Comm100API.chat_buttons.push(comm100_chatButton);
+										    Comm100API.site_id = 202762;
+										    Comm100API.main_code_plan = 265;
+										    var comm100_lc = document.createElement('script');
+										    comm100_lc.type = 'text/javascript';
+										    comm100_lc.async = true;
+										    comm100_lc.src = 'https://chatserver.comm100.com/livechat.ashx?siteId=' + Comm100API.site_id;
+										    var comm100_s = document.getElementsByTagName('script')[0];
+										    comm100_s.parentNode.insertBefore(comm100_lc, comm100_s);
+										</script>
+	         						 </div>
+		                         </div>
+	                       </div>
+			            </li>
+                	    -->
+                	    <li class="liclass_1" style="background: url('images/top-line.gif') no-repeat scroll right center rgba(0, 0, 0, 0);padding: 0 8px;">
+						<div class="change_money fl" >
+						    <div class="currency">
+						    <form action="" method="post" id="currency-view-form" name="currency_view_form">
+								     <input type="hidden" name="currency" value=""/>  
+								    <a href="#" style="text-decoration: none;color: #fff;font-size: 11px;line-height: 36px;"  style="color: #FF7A23;text-decoration: none;" id="currency_selector"  rel="nofollow"><img  border="0" src="../data/currency_icon/{$currency_icon}" id="icon_id">&nbsp;{$currency_to}</a>
+								    <dl style="background:none repeat scroll 0 0 #242424;float:left;width:133px;">
+									    <!-- {foreach from=$currency_list item=currency} -->
+									    <dd style="width: 133px;background:none repeat scroll 0 0 #242424"   onmouseover="this.style.backgroundColor='#343434'" onmouseout="this.style.backgroundColor='#242424'">
+									    <a style="border-bottom:1px solid #3c3c3c;display:block;line-height:16px;background:url(data/currency_icon/{$currency.currency_icon}) left center no-repeat; text-decoration:none;color: #FFF;"  id="money_change_id"  height="10px;" rel="nofollow" title="{$currency.currency_to}" href="javascript:jumpCurrency('{$currency.currency_to}','{$currency.currency_icon}')" >{$currency.currency_name}</a></dd>
+									    <!-- {/foreach} -->
+									    <script language="javascript">
+									    <!--
+									    function jumpCurrency(currency_to,currency_icon)
+									    { 
+									        document.currency_view_form.currency.value = currency_to;
+									        document.currency_view_form.action=window.location;
+									        document.currency_view_form.submit();
+									    }
+									    -->
+						               </script>
+					               </dl>
+			                  </form>
+				    	</div>
+					 </div>   
+					   </li>
+					   <!--{if $navigator_list.top}--> 
+			          <!-- {foreach name=nav_top_list from=$navigator_list.top item=nav} --> 
+			          <li style="float: right;position: relative;cursor: pointer; background: url('images/top-line.gif') no-repeat scroll right center rgba(0, 0, 0, 0);padding: 0 8px;" >
+			            <a  style="text-decoration: none;color: #fff;font-size: 11px;line-height: 36px;"  href="user.php?act=collection_list" <!-- {if $nav.opennew eq 1} --> target="_blank" <!-- {/if} -->>
+			            WISH LIST</a> 
+			          </li>
+			          
+			          <li style="float: right;position: relative;cursor: pointer; background: url('images/top-line.gif') no-repeat scroll right center rgba(0, 0, 0, 0);padding: 0 8px;" >
+			             <a  style="text-decoration: none;color: #fff;font-size: 11px;line-height: 36px;"  href="user.php?act=order_list" <!-- {if $nav.opennew eq 1} --> target="_blank" <!-- {/if} -->>ORDER LIST</a> 
+			          </li>
+			          
+			           
+			          <!-- {/foreach} --> 
+			          <!-- {/if} --> 
+			          
+			          
+					</ul>
 				    </div>
                 </div>
              </div>

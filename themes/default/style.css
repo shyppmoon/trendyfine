@@ -554,9 +554,9 @@ a#logo:hover span {
 /*椤甸潰涓诲鑸�*/
 .buy_car_bg {
 	float: right;
-	height: 28px;
-	line-height: 28px;
-	width: 120px;
+	height: 36px;
+	line-height: 36px;
+	width: 150px;
 	/*background: url(images/bag.gif) 4px center no-repeat; 没找到合适的购物车图标 */ 
 	position: relative;
 	z-index: 999;
@@ -598,7 +598,7 @@ a#logo:hover span {
 	right: -1px;
 	_right: -2px;
 	top: 26px;
-	margin-top: 4px;
+	margin-top: 12px;
 	width: 270px;
 	padding: 9px;
 	border: 1px solid #262626;
@@ -675,8 +675,10 @@ a#logo:hover span {
 .currency {
 	position: relative;
 	float: left;
-	height: 20px;
+	height: 36px;
+	line-height: 36px;
 	z-index: 9999999;
+	padding:0 8px;
 }
 
 .currency a.act {
@@ -3884,8 +3886,8 @@ h4.goods-aImg-list {
 /*对头部导航的样式优化部分   modify by lth*/
 .headT {
 	background-color: #464646;
-	height: 28px;
-	line-height: 28px;
+	height: 36px;
+	line-height: 36px;
 	z-index: 1000;
 }
 
@@ -3897,7 +3899,7 @@ h4.goods-aImg-list {
 }
 
 .headT .headBg .ulclass {
-	float: left;
+	float: right;
 	list-style: none;
 }
 
@@ -3925,6 +3927,7 @@ h4.goods-aImg-list {
 	width: 81px;
 	margin: 5px 0 0 8px;
 	display: inline;
+	line-height:36px;
 }
 
 .chatmain .chatimg {
@@ -3933,9 +3936,7 @@ h4.goods-aImg-list {
 	padding: 0;
 	border: 0;
 	list-style: none outside none;
-	"
-	id
-	="comm100-button-265
+	padding-top:1px;
 }
 
 .chatmain .chatbox {
@@ -4045,6 +4046,17 @@ h4.goods-aImg-list {
 .next:hover {
     background-position: -35px -35px;
 }
-	 
 
+.char_logo{
+	background: url('../../images/browse-sprite.png') no-repeat scroll 0 -30px rgba(0, 0, 0, 0);
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-size: 12px;
+    height: 36px;
+    line-height: 36px;
+    text-decoration: none;
+    width: 35px;
+}
 

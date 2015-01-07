@@ -679,6 +679,7 @@ a#logo:hover span {
 	line-height: 36px;
 	z-index: 9999999;
 	padding:0 8px;
+	width:115px;
 }
 
 .currency a.act {
@@ -710,18 +711,16 @@ a#logo:hover span {
 .currency dl {
 	margin: 0px;
 	position: absolute;
-	top: 20px;
+	top: 36px;
 	left: 0px;
 	background: #fff;
 	left: 0px;
 	width: 130px;
-	border: 1px solid #999;
+	border: 1px solid #242424;
 	display: none;
 	box-shadow: 1px 1px 3px #ccc;
 	padding: 5px;
-	border-radius: 3px;
-	z-index: 9999999;
-	z-index: 99999
+	border-top:none;
 }
 
 .currency:hover dl {
@@ -734,6 +733,13 @@ a#logo:hover span {
 	text-align: left;
 	display: block;
 	float: none
+}
+
+.currency .hidden_div {
+	padding: 3px 0;
+	margin: 0px;
+	text-align: left;
+	display: none;
 }
 
 .currency dd:hover,.currency dd:hover a {
@@ -1208,10 +1214,22 @@ a#logo:hover span {
 	position: fixed;
 	bottom: 100px;
 	right: 135px;
-	background: url(images/go2top.png) no-repeat;
+	background: url(../../images/fixed-panel-elements.png) no-repeat;
 	width: 48px;
 	height: 48px;
+	border-radius: 16px;
+    opacity: 0.2;
+    cursor: pointer;
+    display: block;
+    height: 32px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    width: 32px;
 }
+
+.go2top:hover { opacity: 0.7;}
+
+
 
 * html,* html body {
 	background-image: url(about:blank);
@@ -3885,7 +3903,7 @@ h4.goods-aImg-list {
 
 /*对头部导航的样式优化部分   modify by lth*/
 .headT {
-	background-color: #464646;
+	background-color: #242424;
 	height: 36px;
 	line-height: 36px;
 	z-index: 1000;
@@ -3971,7 +3989,7 @@ h4.goods-aImg-list {
 .subCatName .header_arrow_top{background: url('../../header_arrow_up.png') no-repeat scroll 0 0 transparent;width: 12px;height: 9px;display: none;position: absolute;left:50%;margin-left:-6px;bottom:-1px;z-index:1001;}
 .subCatName a.nav_red, .Second_ca ul li.li_title a.nav_red{color:#f00;}
 .bor_left_dotted{border-left:1px dotted #000;}
-.Second_ca{position:absolute;display: none;left:0; top:41px;width:449px; z-index:1000;border: 1px solid #838383;padding:20px;background-color: #fff;display:none;opacity:0.96;filter:alpha(opacity=96);}
+.Second_ca{position:absolute;display: none;left:0; top:40px;width:449px; z-index:1000;border: 1px solid #838383;padding:20px;background-color: #fff;display:none;opacity:0.96;filter:alpha(opacity=96);}
 .last_Second_ca.Second_ca, .Second_ca ul.loop_ul{width:160px;}
 .Second_ca ul, .Second_ca ul.only_img{float: left;}
 .Second_ca ul.fix_height{height:225px;overflow: hidden;width:160px;}

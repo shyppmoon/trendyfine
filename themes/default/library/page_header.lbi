@@ -83,14 +83,14 @@ var process_request = "{$lang.process_request}";
                 	    -->
                 	    <li class="liclass_1" style="background: url('images/top-line.gif') no-repeat scroll right center rgba(0, 0, 0, 0);padding: 0 8px;">
 						<div class="change_money fl" >
-						    <div class="currency">
+						    <div class="currency" onmouseover="show_hidden_div()"  onmouseout="hidden_div()" id="show_currency_id">
 						    <form action="" method="post" id="currency-view-form" name="currency_view_form">
 								     <input type="hidden" name="currency" value=""/>  
-								    <a href="#" style="text-decoration: none;color: #fff;font-size: 11px;line-height: 36px;"  style="color: #FF7A23;text-decoration: none;" id="currency_selector"  rel="nofollow"><img  border="0" src="../data/currency_icon/{$currency_icon}" id="icon_id">&nbsp;{$currency_to}</a>
-								    <dl style="background:none repeat scroll 0 0 #242424;float:left;width:133px;">
+								    <a href="#" style="text-decoration: none;color: #fff;font-size: 11px;line-height: 36px;"   id="currency_selector"  rel="nofollow"><img style="margin-left:10px;" border="0" src="../data/currency_icon/{$currency_icon}" id="icon_id">&nbsp;{$currency_to}</a>
 									    <!-- {foreach from=$currency_list item=currency} -->
-									    <dd style="width: 133px;background:none repeat scroll 0 0 #242424"   onmouseover="this.style.backgroundColor='#343434'" onmouseout="this.style.backgroundColor='#242424'">
-									    <a style="border-bottom:1px solid #3c3c3c;display:block;line-height:16px;background:url(data/currency_icon/{$currency.currency_icon}) left center no-repeat; text-decoration:none;color: #FFF;"  id="money_change_id"  height="10px;" rel="nofollow" title="{$currency.currency_to}" href="javascript:jumpCurrency('{$currency.currency_to}','{$currency.currency_icon}')" >{$currency.currency_name}</a></dd>
+									    <div  class="hidden_div" style="width: 115px;background:none repeat scroll 0 0 #242424;"   onmouseover="this.style.backgroundColor='#343434'" onmouseout="this.style.backgroundColor='#242424'">
+									    <a style="border-bottom:1px solid #3c3c3c;display:block;line-height:16px;background:url(data/currency_icon/{$currency.currency_icon}) left center no-repeat; text-decoration:none;color: #FFF;padding-left:22px;margin-left:10px;"  id="money_change_id"   rel="nofollow" title="{$currency.currency_to}" href="javascript:jumpCurrency('{$currency.currency_to}','{$currency.currency_icon}')" >{$currency.currency_name}</a>
+									    </div>
 									    <!-- {/foreach} -->
 									    <script language="javascript">
 									    <!--
@@ -100,9 +100,16 @@ var process_request = "{$lang.process_request}";
 									        document.currency_view_form.action=window.location;
 									        document.currency_view_form.submit();
 									    }
+									    
+									    function show_hidden_div(){
+									    	$(".hidden_div").css('display','block');
+									    }
+									    
+									    function hidden_div(){
+									    	$(".hidden_div").css('display','none');
+									    }
 									    -->
 						               </script>
-					               </dl>
 			                  </form>
 				    	</div>
 					 </div>   

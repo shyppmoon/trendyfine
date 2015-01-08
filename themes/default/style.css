@@ -4037,33 +4037,6 @@ h4.goods-aImg-list {
 	text-align: center;
 }
 
-.prev, .next {
-    top: 45% !important;
-}
-.prev {
-    left: 0;
-}
-.prev, .next {
-   /* background: url("../../images/good-sprite.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);图标定位研究*/
-    cursor: pointer;
-    height: 35px;
-    position: absolute;
-    top: 47%;
-    width: 35px;
-    z-index: 100;
-}
-
-
-.next {
-    background-position: -35px 0;
-    right: 0;
-}
-.prev:hover {
-    background-position: 0 -35px;
-}
-.next:hover {
-    background-position: -35px -35px;
-}
 
 .char_logo{
 	background: url('../../images/browse-sprite.png') no-repeat scroll 0 -30px rgba(0, 0, 0, 0);

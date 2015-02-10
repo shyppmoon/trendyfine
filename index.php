@@ -355,6 +355,7 @@ function index_get_links()
     }
 
     return $links;
+	
 }
 
 ?>
